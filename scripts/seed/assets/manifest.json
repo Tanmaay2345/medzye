@@ -1,0 +1,84 @@
+{
+  "forms": {
+    "tablet-strip": {
+      "tier": "placeholder",
+      "assetPath": "assets/tablet-strip.svg",
+      "source": "Original illustration (Medyze). Verified-CC0 photo candidates evaluated and rejected — see file header.",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "tablet-strip.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/tablet-strip.webp"
+    },
+    "capsule-bottle": {
+      "tier": "placeholder",
+      "assetPath": "assets/capsule-bottle.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "capsule-bottle.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/capsule-bottle.webp"
+    },
+    "syrup-bottle": {
+      "tier": "placeholder",
+      "assetPath": "assets/syrup-bottle.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "syrup-bottle.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/syrup-bottle.webp"
+    },
+    "oral-suspension": {
+      "tier": "placeholder",
+      "assetPath": "assets/oral-suspension.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "oral-suspension.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/oral-suspension.webp"
+    },
+    "ointment-tube": {
+      "tier": "placeholder",
+      "assetPath": "assets/ointment-tube.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "ointment-tube.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/ointment-tube.webp"
+    },
+    "eye-drop-bottle": {
+      "tier": "placeholder",
+      "assetPath": "assets/eye-drop-bottle.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "eye-drop-bottle.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/eye-drop-bottle.webp"
+    },
+    "inhaler": {
+      "tier": "placeholder",
+      "assetPath": "assets/inhaler.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "inhaler.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/inhaler.webp"
+    },
+    "first-aid": {
+      "tier": "placeholder",
+      "assetPath": "assets/first-aid.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "first-aid.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/first-aid.webp"
+    },
+    "supplement-jar": {
+      "tier": "placeholder",
+      "assetPath": "assets/supplement-jar.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "supplement-jar.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/supplement-jar.webp"
+    },
+    "liquid-bottle": {
+      "tier": "placeholder",
+      "assetPath": "assets/liquid-bottle.svg",
+      "source": "Original illustration (Medyze).",
+      "license": "Original artwork — no external license required.",
+      "storagePath": "liquid-bottle.webp",
+      "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/liquid-bottle.webp"
+    }
+  }
+}

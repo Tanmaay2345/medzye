@@ -6,21 +6,42 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:seed:medicines": "tsx --env-file=.env.local scripts/seed/seed-medicines.ts",
+    "db:seed:prices": "tsx --env-file=.env.local scripts/seed/seed-prices.ts",
+    "db:seed:source-images": "tsx --env-file=.env.local scripts/seed/source-images.ts",
+    "db:seed:upload-images": "tsx --env-file=.env.local scripts/seed/upload-images.ts",
+    "db:seed:update-images": "tsx --env-file=.env.local scripts/seed/update-medicine-images.ts",
+    "db:seed:verify": "tsx --env-file=.env.local scripts/seed/verify.ts",
+    "db:seed:standardize-real": "tsx scripts/seed/standardize-real-images.ts",
+    "db:seed:upload-real": "tsx --env-file=.env.local scripts/seed/upload-real-images.ts",
+    "db:seed:update-real": "tsx --env-file=.env.local scripts/seed/update-real-medicine-images.ts",
+    "db:seed:all": "tsx --env-file=.env.local scripts/seed/run-all.ts"
   },
   "dependencies": {
-    "next": "16.2.12",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "@base-ui/react": "^1.6.0",
+    "@supabase/supabase-js": "^2.110.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.27.0",
+    "next": "15.5.22",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "shadcn": "^4.15.0",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.12",
+    "eslint-config-next": "15.5.22",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4",
+    "tsx": "^4.23.1",
     "typescript": "^5"
   }
 }

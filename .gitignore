@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw local source photos used to seed medicine images (unprocessed, includes
+# rejected/watermarked candidates) — the standardized output actually used by
+# the app lives in scripts/seed/assets/real/ and Supabase Storage instead
+Medicine\ Image\ /

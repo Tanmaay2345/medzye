@@ -1,0 +1,681 @@
+{
+  "Allegra 120": {
+    "sourceFile": "Allegra 120.webp",
+    "outputFile": "allegra-120.webp",
+    "kebabName": "allegra-120",
+    "storagePath": "real/allegra-120.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/allegra-120.webp"
+  },
+  "Amaryl": {
+    "sourceFile": "Amaryl.webp",
+    "outputFile": "amaryl.webp",
+    "kebabName": "amaryl",
+    "storagePath": "real/amaryl.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/amaryl.webp"
+  },
+  "Amlokind-AT": {
+    "sourceFile": "Amlokind-AT.avif",
+    "outputFile": "amlokind-at.webp",
+    "kebabName": "amlokind-at",
+    "storagePath": "real/amlokind-at.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/amlokind-at.webp"
+  },
+  "Amlong 5": {
+    "sourceFile": "Amlong 5.webp",
+    "outputFile": "amlong-5.webp",
+    "kebabName": "amlong-5",
+    "storagePath": "real/amlong-5.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/amlong-5.webp"
+  },
+  "Ascoril LS Syrup": {
+    "sourceFile": "Ascoril LS Syrup.jpeg",
+    "outputFile": "ascoril-ls-syrup.webp",
+    "kebabName": "ascoril-ls-syrup",
+    "storagePath": "real/ascoril-ls-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/ascoril-ls-syrup.webp"
+  },
+  "Asthalin Inhaler": {
+    "sourceFile": "Asthalin Inhaler.jpeg",
+    "outputFile": "asthalin-inhaler.webp",
+    "kebabName": "asthalin-inhaler",
+    "storagePath": "real/asthalin-inhaler.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/asthalin-inhaler.webp"
+  },
+  "Band-Aid": {
+    "sourceFile": "Band-Aid.jpeg",
+    "outputFile": "band-aid.webp",
+    "kebabName": "band-aid",
+    "storagePath": "real/band-aid.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/band-aid.webp"
+  },
+  "Becosules Capsules": {
+    "sourceFile": "Becosules Capsules.webp",
+    "outputFile": "becosules-capsules.webp",
+    "kebabName": "becosules-capsules",
+    "storagePath": "real/becosules-capsules.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/becosules-capsules.webp"
+  },
+  "Benadryl Cough Syrup": {
+    "sourceFile": "Benadryl Cough Syrup.jpeg",
+    "outputFile": "benadryl-cough-syrup.webp",
+    "kebabName": "benadryl-cough-syrup",
+    "storagePath": "real/benadryl-cough-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/benadryl-cough-syrup.webp"
+  },
+  "Betadine Ointment": {
+    "sourceFile": "Betadine Ointment.webp",
+    "outputFile": "betadine-ointment.webp",
+    "kebabName": "betadine-ointment",
+    "storagePath": "real/betadine-ointment.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/betadine-ointment.webp"
+  },
+  "Betnovate-N Cream": {
+    "sourceFile": "Betnovate-N Cream.jpeg",
+    "outputFile": "betnovate-n-cream.webp",
+    "kebabName": "betnovate-n-cream",
+    "storagePath": "real/betnovate-n-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/betnovate-n-cream.webp"
+  },
+  "Budecort Inhaler": {
+    "sourceFile": "Budecort Inhaler.webp",
+    "outputFile": "budecort-inhaler.webp",
+    "kebabName": "budecort-inhaler",
+    "storagePath": "real/budecort-inhaler.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/budecort-inhaler.webp"
+  },
+  "Burnol Cream": {
+    "sourceFile": "Burnol Cream.webp",
+    "outputFile": "burnol-cream.webp",
+    "kebabName": "burnol-cream",
+    "storagePath": "real/burnol-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/burnol-cream.webp"
+  },
+  "Calpol 250 Syrup": {
+    "sourceFile": "Calpol 250 Syrup.jpg",
+    "outputFile": "calpol-250-syrup.webp",
+    "kebabName": "calpol-250-syrup",
+    "storagePath": "real/calpol-250-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/calpol-250-syrup.webp"
+  },
+  "Calpol": {
+    "sourceFile": "Calpol.webp",
+    "outputFile": "calpol.webp",
+    "kebabName": "calpol",
+    "storagePath": "real/calpol.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/calpol.webp"
+  },
+  "Candid-B Cream": {
+    "sourceFile": "Candid-B Cream.webp",
+    "outputFile": "candid-b-cream.webp",
+    "kebabName": "candid-b-cream",
+    "storagePath": "real/candid-b-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/candid-b-cream.webp"
+  },
+  "Combiflam": {
+    "sourceFile": "Combiflam.webp",
+    "outputFile": "combiflam.webp",
+    "kebabName": "combiflam",
+    "storagePath": "real/combiflam.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/combiflam.webp"
+  },
+  "Concor": {
+    "sourceFile": "Concor.jpg",
+    "outputFile": "concor.webp",
+    "kebabName": "concor",
+    "storagePath": "real/concor.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/concor.webp"
+  },
+  "Cremaffin Syrup": {
+    "sourceFile": "Cremaffin Syrup.jpg",
+    "outputFile": "cremaffin-syrup.webp",
+    "kebabName": "cremaffin-syrup",
+    "storagePath": "real/cremaffin-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/cremaffin-syrup.webp"
+  },
+  "Crocin Advance": {
+    "sourceFile": "Crocin Advance.jpeg",
+    "outputFile": "crocin-advance.webp",
+    "kebabName": "crocin-advance",
+    "storagePath": "real/crocin-advance.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/crocin-advance.webp"
+  },
+  "Crocin Pediatric Drops": {
+    "sourceFile": "Crocin Pediatric Drops.avif",
+    "outputFile": "crocin-pediatric-drops.webp",
+    "kebabName": "crocin-pediatric-drops",
+    "storagePath": "real/crocin-pediatric-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/crocin-pediatric-drops.webp"
+  },
+  "Cyclopam": {
+    "sourceFile": "Cyclopam.webp",
+    "outputFile": "cyclopam.webp",
+    "kebabName": "cyclopam",
+    "storagePath": "real/cyclopam.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/cyclopam.webp"
+  },
+  "D-Cold Total": {
+    "sourceFile": "D-Cold Total.jpeg",
+    "outputFile": "d-cold-total.webp",
+    "kebabName": "d-cold-total",
+    "storagePath": "real/d-cold-total.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/d-cold-total.webp"
+  },
+  "Deriphyllin Retard": {
+    "sourceFile": "Deriphyllin Retard.webp",
+    "outputFile": "deriphyllin-retard.webp",
+    "kebabName": "deriphyllin-retard",
+    "storagePath": "real/deriphyllin-retard.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/deriphyllin-retard.webp"
+  },
+  "Dettol Antiseptic Liquid": {
+    "sourceFile": "Dettol Antiseptic Liquid.webp",
+    "outputFile": "dettol-antiseptic-liquid.webp",
+    "kebabName": "dettol-antiseptic-liquid",
+    "storagePath": "real/dettol-antiseptic-liquid.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/dettol-antiseptic-liquid.webp"
+  },
+  "Diamicron": {
+    "sourceFile": "Diamicron.jpeg",
+    "outputFile": "diamicron.webp",
+    "kebabName": "diamicron",
+    "storagePath": "real/diamicron.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/diamicron.webp"
+  },
+  "Digene": {
+    "sourceFile": "Digene.jpeg",
+    "outputFile": "digene.webp",
+    "kebabName": "digene",
+    "storagePath": "real/digene.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/digene.webp"
+  },
+  "Duolin Respules": {
+    "sourceFile": "Duolin Respules.jpeg",
+    "outputFile": "duolin-respules.webp",
+    "kebabName": "duolin-respules",
+    "storagePath": "real/duolin-respules.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/duolin-respules.webp"
+  },
+  "Duphaston": {
+    "sourceFile": "Duphaston.jpeg",
+    "outputFile": "duphaston.webp",
+    "kebabName": "duphaston",
+    "storagePath": "real/duphaston.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/duphaston.webp"
+  },
+  "Evecare Syrup": {
+    "sourceFile": "Evecare Syrup.webp",
+    "outputFile": "evecare-syrup.webp",
+    "kebabName": "evecare-syrup",
+    "storagePath": "real/evecare-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/evecare-syrup.webp"
+  },
+  "Evion 400": {
+    "sourceFile": "Evion 400.jpg",
+    "outputFile": "evion-400.webp",
+    "kebabName": "evion-400",
+    "storagePath": "real/evion-400.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/evion-400.webp"
+  },
+  "Febrex Plus": {
+    "sourceFile": "Febrex Plus.webp",
+    "outputFile": "febrex-plus.webp",
+    "kebabName": "febrex-plus",
+    "storagePath": "real/febrex-plus.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/febrex-plus.webp"
+  },
+  "Folvite": {
+    "sourceFile": "Folvite.jpg",
+    "outputFile": "folvite.webp",
+    "kebabName": "folvite",
+    "storagePath": "real/folvite.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/folvite.webp"
+  },
+  "Foracort Inhaler": {
+    "sourceFile": "Foracort Inhaler.jpg",
+    "outputFile": "foracort-inhaler.webp",
+    "kebabName": "foracort-inhaler",
+    "storagePath": "real/foracort-inhaler.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/foracort-inhaler.webp"
+  },
+  "Galvus Met": {
+    "sourceFile": "Galvus Met.webp",
+    "outputFile": "galvus-met.webp",
+    "kebabName": "galvus-met",
+    "storagePath": "real/galvus-met.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/galvus-met.webp"
+  },
+  "Gelusil": {
+    "sourceFile": "Gelusil.jpeg",
+    "outputFile": "gelusil.webp",
+    "kebabName": "gelusil",
+    "storagePath": "real/gelusil.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/gelusil.webp"
+  },
+  "Genteal Eye Drops": {
+    "sourceFile": "Genteal Eye Drops.jpeg",
+    "outputFile": "genteal-eye-drops.webp",
+    "kebabName": "genteal-eye-drops",
+    "storagePath": "real/genteal-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/genteal-eye-drops.webp"
+  },
+  "Glucophage": {
+    "sourceFile": "Glucophage.webp",
+    "outputFile": "glucophage.webp",
+    "kebabName": "glucophage",
+    "storagePath": "real/glucophage.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/glucophage.webp"
+  },
+  "Grilinctus Syrup": {
+    "sourceFile": "Grilinctus Syrup.webp",
+    "outputFile": "grilinctus-syrup.webp",
+    "kebabName": "grilinctus-syrup",
+    "storagePath": "real/grilinctus-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/grilinctus-syrup.webp"
+  },
+  "Hansaplast": {
+    "sourceFile": "Hansaplast.webp",
+    "outputFile": "hansaplast.webp",
+    "kebabName": "hansaplast",
+    "storagePath": "real/hansaplast.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/hansaplast.webp"
+  },
+  "Honitus Cough Syrup": {
+    "sourceFile": "Honitus Cough Syrup.jpg",
+    "outputFile": "honitus-cough-syrup.webp",
+    "kebabName": "honitus-cough-syrup",
+    "storagePath": "real/honitus-cough-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/honitus-cough-syrup.webp"
+  },
+  "I-Kul Eye Drops": {
+    "sourceFile": "I-Kul Eye Drops.jpeg",
+    "outputFile": "i-kul-eye-drops.webp",
+    "kebabName": "i-kul-eye-drops",
+    "storagePath": "real/i-kul-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/i-kul-eye-drops.webp"
+  },
+  "I-Pill": {
+    "sourceFile": "I-Pill.png",
+    "outputFile": "i-pill.webp",
+    "kebabName": "i-pill",
+    "storagePath": "real/i-pill.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/i-pill.webp"
+  },
+  "Isabgol": {
+    "sourceFile": "Isabgol.jpeg",
+    "outputFile": "isabgol.webp",
+    "kebabName": "isabgol",
+    "storagePath": "real/isabgol.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/isabgol.webp"
+  },
+  "Istamet": {
+    "sourceFile": "Istamet.jpeg",
+    "outputFile": "istamet.webp",
+    "kebabName": "istamet",
+    "storagePath": "real/istamet.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/istamet.webp"
+  },
+  "Itchguard Cream": {
+    "sourceFile": "Itchguard Cream.jpeg",
+    "outputFile": "itchguard-cream.webp",
+    "kebabName": "itchguard-cream",
+    "storagePath": "real/itchguard-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/itchguard-cream.webp"
+  },
+  "Januvia": {
+    "sourceFile": "Januvia.jpeg",
+    "outputFile": "januvia.webp",
+    "kebabName": "januvia",
+    "storagePath": "real/januvia.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/januvia.webp"
+  },
+  "Levocet": {
+    "sourceFile": "Levocet.jpeg",
+    "outputFile": "levocet.webp",
+    "kebabName": "levocet",
+    "storagePath": "real/levocet.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/levocet.webp"
+  },
+  "Liv 52": {
+    "sourceFile": "Liv 52.webp",
+    "outputFile": "liv-52.webp",
+    "kebabName": "liv-52",
+    "storagePath": "real/liv-52.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/liv-52.webp"
+  },
+  "Lubrex Eye Drops": {
+    "sourceFile": "Lubrex Eye Drops.jpeg",
+    "outputFile": "lubrex-eye-drops.webp",
+    "kebabName": "lubrex-eye-drops",
+    "storagePath": "real/lubrex-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/lubrex-eye-drops.webp"
+  },
+  "Meftal Spas": {
+    "sourceFile": "Meftal Spas.webp",
+    "outputFile": "meftal-spas.webp",
+    "kebabName": "meftal-spas",
+    "storagePath": "real/meftal-spas.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/meftal-spas.webp"
+  },
+  "Metacin": {
+    "sourceFile": "Metacin.avif",
+    "outputFile": "metacin.webp",
+    "kebabName": "metacin",
+    "storagePath": "real/metacin.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/metacin.webp"
+  },
+  "Milflox Eye Drops": {
+    "sourceFile": "Milflox Eye Drops.jpeg",
+    "outputFile": "milflox-eye-drops.webp",
+    "kebabName": "milflox-eye-drops",
+    "storagePath": "real/milflox-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/milflox-eye-drops.webp"
+  },
+  "Montair-LC": {
+    "sourceFile": "Montair-LC.jpeg",
+    "outputFile": "montair-lc.webp",
+    "kebabName": "montair-lc",
+    "storagePath": "real/montair-lc.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/montair-lc.webp"
+  },
+  "Moov Pain Relief Spray": {
+    "sourceFile": "Moov Pain Relief Spray.webp",
+    "outputFile": "moov-pain-relief-spray.webp",
+    "kebabName": "moov-pain-relief-spray",
+    "storagePath": "real/moov-pain-relief-spray.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/moov-pain-relief-spray.webp"
+  },
+  "Moxicip Eye Drops": {
+    "sourceFile": "Moxicip Eye Drops.webp",
+    "outputFile": "moxicip-eye-drops.webp",
+    "kebabName": "moxicip-eye-drops",
+    "storagePath": "real/moxicip-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/moxicip-eye-drops.webp"
+  },
+  "Neurobion Forte": {
+    "sourceFile": "Neurobion Forte.jpeg",
+    "outputFile": "neurobion-forte.webp",
+    "kebabName": "neurobion-forte",
+    "storagePath": "real/neurobion-forte.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/neurobion-forte.webp"
+  },
+  "Norflox-TZ": {
+    "sourceFile": "Norflox-TZ.jpg",
+    "outputFile": "norflox-tz.webp",
+    "kebabName": "norflox-tz",
+    "storagePath": "real/norflox-tz.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/norflox-tz.webp"
+  },
+  "Panderm Plus Cream": {
+    "sourceFile": "Panderm Plus Cream.webp",
+    "outputFile": "panderm-plus-cream.webp",
+    "kebabName": "panderm-plus-cream",
+    "storagePath": "real/panderm-plus-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/panderm-plus-cream.webp"
+  },
+  "Paracip 650": {
+    "sourceFile": "Paracip 650.webp",
+    "outputFile": "paracip-650.webp",
+    "kebabName": "paracip-650",
+    "storagePath": "real/paracip-650.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/paracip-650.webp"
+  },
+  "Polybion Syrup": {
+    "sourceFile": "Polybion Syrup.jpeg",
+    "outputFile": "polybion-syrup.webp",
+    "kebabName": "polybion-syrup",
+    "storagePath": "real/polybion-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/polybion-syrup.webp"
+  },
+  "Practin Syrup": {
+    "sourceFile": "Practin Syrup.jpeg",
+    "outputFile": "practin-syrup.webp",
+    "kebabName": "practin-syrup",
+    "storagePath": "real/practin-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/practin-syrup.webp"
+  },
+  "Pudin Hara": {
+    "sourceFile": "Pudin Hara.jpeg",
+    "outputFile": "pudin-hara.webp",
+    "kebabName": "pudin-hara",
+    "storagePath": "real/pudin-hara.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/pudin-hara.webp"
+  },
+  "Pyrigesic": {
+    "sourceFile": "Pyrigesic.avif",
+    "outputFile": "pyrigesic.webp",
+    "kebabName": "pyrigesic",
+    "storagePath": "real/pyrigesic.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/pyrigesic.webp"
+  },
+  "Quadriderm RF Cream": {
+    "sourceFile": "Quadriderm RF Cream.webp",
+    "outputFile": "quadriderm-rf-cream.webp",
+    "kebabName": "quadriderm-rf-cream",
+    "storagePath": "real/quadriderm-rf-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/quadriderm-rf-cream.webp"
+  },
+  "Refresh Tears Eye Drops": {
+    "sourceFile": "Refresh Tears Eye Drops.webp",
+    "outputFile": "refresh-tears-eye-drops.webp",
+    "kebabName": "refresh-tears-eye-drops",
+    "storagePath": "real/refresh-tears-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/refresh-tears-eye-drops.webp"
+  },
+  "Revital H": {
+    "sourceFile": "Revital H.webp",
+    "outputFile": "revital-h.webp",
+    "kebabName": "revital-h",
+    "storagePath": "real/revital-h.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/revital-h.webp"
+  },
+  "Rosuvas": {
+    "sourceFile": "Rosuvas.jpeg",
+    "outputFile": "rosuvas.webp",
+    "kebabName": "rosuvas",
+    "storagePath": "real/rosuvas.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/rosuvas.webp"
+  },
+  "Saridon": {
+    "sourceFile": "Saridon.avif",
+    "outputFile": "saridon.webp",
+    "kebabName": "saridon",
+    "storagePath": "real/saridon.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/saridon.webp"
+  },
+  "Savlon Antiseptic Liquid": {
+    "sourceFile": "Savlon Antiseptic Liquid.jpeg",
+    "outputFile": "savlon-antiseptic-liquid.webp",
+    "kebabName": "savlon-antiseptic-liquid",
+    "storagePath": "real/savlon-antiseptic-liquid.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/savlon-antiseptic-liquid.webp"
+  },
+  "Shelcal 500": {
+    "sourceFile": "Shelcal 500.jpg",
+    "outputFile": "shelcal-500.webp",
+    "kebabName": "shelcal-500",
+    "storagePath": "real/shelcal-500.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/shelcal-500.webp"
+  },
+  "Sinarest": {
+    "sourceFile": "Sinarest.jpeg",
+    "outputFile": "sinarest.webp",
+    "kebabName": "sinarest",
+    "storagePath": "real/sinarest.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/sinarest.webp"
+  },
+  "Soframycin Skin Cream": {
+    "sourceFile": "Soframycin Skin Cream.webp",
+    "outputFile": "soframycin-skin-cream.webp",
+    "kebabName": "soframycin-skin-cream",
+    "storagePath": "real/soframycin-skin-cream.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/soframycin-skin-cream.webp"
+  },
+  "Storvas": {
+    "sourceFile": "Storvas.avif",
+    "outputFile": "storvas.webp",
+    "kebabName": "storvas",
+    "storagePath": "real/storvas.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/storvas.webp"
+  },
+  "Supradyn": {
+    "sourceFile": "Supradyn.jpeg",
+    "outputFile": "supradyn.webp",
+    "kebabName": "supradyn",
+    "storagePath": "real/supradyn.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/supradyn.webp"
+  },
+  "Susten 200": {
+    "sourceFile": "Susten 200.webp",
+    "outputFile": "susten-200.webp",
+    "kebabName": "susten-200",
+    "storagePath": "real/susten-200.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/susten-200.webp"
+  },
+  "T-Bact Ointment": {
+    "sourceFile": "T-Bact Ointment.jpg",
+    "outputFile": "t-bact-ointment.webp",
+    "kebabName": "t-bact-ointment",
+    "storagePath": "real/t-bact-ointment.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/t-bact-ointment.webp"
+  },
+  "Taxim-O": {
+    "sourceFile": "Taxim-O.webp",
+    "outputFile": "taxim-o.webp",
+    "kebabName": "taxim-o",
+    "storagePath": "real/taxim-o.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/taxim-o.webp"
+  },
+  "Teczine": {
+    "sourceFile": "Teczine.jpeg",
+    "outputFile": "teczine.webp",
+    "kebabName": "teczine",
+    "storagePath": "real/teczine.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/teczine.webp"
+  },
+  "Tobrex Eye Drops": {
+    "sourceFile": "Tobrex Eye Drops.jpeg",
+    "outputFile": "tobrex-eye-drops.webp",
+    "kebabName": "tobrex-eye-drops",
+    "storagePath": "real/tobrex-eye-drops.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/tobrex-eye-drops.webp"
+  },
+  "Unwanted 72": {
+    "sourceFile": "Unwanted 72.jpeg",
+    "outputFile": "unwanted-72.webp",
+    "kebabName": "unwanted-72",
+    "storagePath": "real/unwanted-72.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/unwanted-72.webp"
+  },
+  "Ventolin Inhaler": {
+    "sourceFile": "Ventolin Inhaler.webp",
+    "outputFile": "ventolin-inhaler.webp",
+    "kebabName": "ventolin-inhaler",
+    "storagePath": "real/ventolin-inhaler.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/ventolin-inhaler.webp"
+  },
+  "Vicks Action 500": {
+    "sourceFile": "Vicks Action 500.jpg",
+    "outputFile": "vicks-action-500.webp",
+    "kebabName": "vicks-action-500",
+    "storagePath": "real/vicks-action-500.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/vicks-action-500.webp"
+  },
+  "Volini Gel": {
+    "sourceFile": "Volini Gel.webp",
+    "outputFile": "volini-gel.webp",
+    "kebabName": "volini-gel",
+    "storagePath": "real/volini-gel.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/volini-gel.webp"
+  },
+  "Zerodol-P": {
+    "sourceFile": "Zerodol-P.jpeg",
+    "outputFile": "zerodol-p.webp",
+    "kebabName": "zerodol-p",
+    "storagePath": "real/zerodol-p.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/zerodol-p.webp"
+  },
+  "Zincovit Kid Syrup": {
+    "sourceFile": "Zincovit Kid Syrup.jpg",
+    "outputFile": "zincovit-kid-syrup.webp",
+    "kebabName": "zincovit-kid-syrup",
+    "storagePath": "real/zincovit-kid-syrup.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/zincovit-kid-syrup.webp"
+  },
+  "Zincovit": {
+    "sourceFile": "Zincovit.jpeg",
+    "outputFile": "zincovit.webp",
+    "kebabName": "zincovit",
+    "storagePath": "real/zincovit.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/zincovit.webp"
+  },
+  "ENO": {
+    "sourceFile": "eno.webp",
+    "outputFile": "eno.webp",
+    "kebabName": "eno",
+    "storagePath": "real/eno.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/eno.webp"
+  },
+  "Glycomet 500": {
+    "sourceFile": "glycomet-500mg-strip-of-10-tablets-box-front-1-1756904771-non-watermarked.webp",
+    "outputFile": "glycomet-500.webp",
+    "kebabName": "glycomet-500",
+    "storagePath": "real/glycomet-500.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/glycomet-500.webp"
+  },
+  "Augmentin 625 Duo": {
+    "sourceFile": "Augmentin 625.jpeg",
+    "outputFile": "augmentin-625-duo.webp",
+    "kebabName": "augmentin-625-duo",
+    "storagePath": "real/augmentin-625-duo.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/augmentin-625-duo.webp"
+  },
+  "Avil 25": {
+    "sourceFile": "Avil 25.jpg",
+    "outputFile": "avil-25.webp",
+    "kebabName": "avil-25",
+    "storagePath": "real/avil-25.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/avil-25.webp"
+  },
+  "Ciplox 500": {
+    "sourceFile": "Ciplox 500.webp",
+    "outputFile": "ciplox-500.webp",
+    "kebabName": "ciplox-500",
+    "storagePath": "real/ciplox-500.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/ciplox-500.webp"
+  },
+  "Dolo 650": {
+    "sourceFile": "Dolo 650.jpg",
+    "outputFile": "dolo-650.webp",
+    "kebabName": "dolo-650",
+    "storagePath": "real/dolo-650.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/dolo-650.webp"
+  },
+  "Ecosprin 75": {
+    "sourceFile": "Ecosprin 75.webp",
+    "outputFile": "ecosprin-75.webp",
+    "kebabName": "ecosprin-75",
+    "storagePath": "real/ecosprin-75.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/ecosprin-75.webp"
+  },
+  "Flexon": {
+    "sourceFile": ", Flexon.webp",
+    "outputFile": "flexon.webp",
+    "kebabName": "flexon",
+    "storagePath": "real/flexon.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/flexon.webp"
+  },
+  "Voveran": {
+    "sourceFile": " Voveran,.jpeg",
+    "outputFile": "voveran.webp",
+    "kebabName": "voveran",
+    "storagePath": "real/voveran.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/voveran.webp"
+  },
+  "Zifi 200": {
+    "sourceFile": " Zifi 200 .jpeg",
+    "outputFile": "zifi-200.webp",
+    "kebabName": "zifi-200",
+    "storagePath": "real/zifi-200.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/real/zifi-200.webp"
+  }
+}
