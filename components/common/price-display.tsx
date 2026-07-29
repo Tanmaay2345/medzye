@@ -19,12 +19,19 @@ export function PriceDisplay({
   }
 
   const discount = computeDiscount(price, mrp);
+  // `sm` is the medicine-card variant and matches Figma node 2923:6265
+  // exactly: Albert Sans Medium 16.38px / -0.3276px / #0b254e. The other
+  // sizes are untouched (detail page uses `lg`, pharmacy rows use `md`).
   const priceTextClass =
-    size === "lg" ? "text-xl font-semibold" : size === "sm" ? "text-sm font-semibold" : "text-base font-semibold";
+    size === "lg"
+      ? "text-xl font-semibold text-brand-gray-900"
+      : size === "sm"
+        ? "text-[16.38px] font-medium leading-normal tracking-[-0.3276px] text-brand-navy"
+        : "text-base font-semibold text-brand-gray-900";
 
   return (
     <span className={cn("inline-flex flex-wrap items-center gap-1.5", className)}>
-      <span className={cn(priceTextClass, "text-brand-gray-900")}>
+      <span className={priceTextClass}>
         {formatCurrency(price)}
       </span>
       {discount && (

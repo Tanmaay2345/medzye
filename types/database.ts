@@ -40,6 +40,33 @@ export type MedicinePrice = {
   last_updated: string | null;
 };
 
+/**
+ * One row per medicine, populated offline by
+ * scripts/seed/generate-medicine-details.ts and read-only at runtime. A row
+ * existing means generation succeeded and was validated — partial records are
+ * never stored — so every text field is non-empty.
+ *
+ * `warnings` and `storage_information` are typed nullable because they were
+ * added after the table (migration 20260728160000) and are nullable in the
+ * schema, even though the completeness constraint requires them on any row
+ * marked 'generated'.
+ */
+export type MedicineDetails = {
+  id: number;
+  medicine_id: number;
+  medicine_activity: string;
+  uses: string;
+  side_effects: string;
+  composition: string;
+  manufacturer_details: string;
+  warnings: string | null;
+  storage_information: string | null;
+  generation_status: "pending" | "generated" | "failed";
+  generated_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
 export type MedicineWithPrice = Medicine & {
   lowest_price: number | null;
   lowest_price_mrp: number | null;

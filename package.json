@@ -16,6 +16,8 @@
     "db:seed:standardize-real": "tsx scripts/seed/standardize-real-images.ts",
     "db:seed:upload-real": "tsx --env-file=.env.local scripts/seed/upload-real-images.ts",
     "db:seed:update-real": "tsx --env-file=.env.local scripts/seed/update-real-medicine-images.ts",
+    "db:seed:pharmacy-logos": "tsx --env-file=.env.local scripts/seed/seed-pharmacy-logos.ts",
+    "build:medicine-details": "tsx --env-file=.env.local scripts/seed/build-medicine-details.ts",
     "db:seed:all": "tsx --env-file=.env.local scripts/seed/run-all.ts"
   },
   "dependencies": {

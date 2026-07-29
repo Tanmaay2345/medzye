@@ -10,7 +10,9 @@ import { PurchasePanel } from "@/components/medicine/purchase-panel";
 import { MedicineTabs } from "@/components/medicine/medicine-tabs";
 import { ConsultDoctorBanner } from "@/components/medicine/consult-doctor-banner";
 import { getCategories } from "@/lib/queries/categories";
+import { getMedicineDetails } from "@/lib/queries/medicine-details";
 import { getMedicineById } from "@/lib/queries/medicines";
+import { IMAGE_BLUR_DATA_URL } from "@/utils/image-placeholder";
 
 export default async function MedicineDetailPage({
   params,
@@ -21,9 +23,13 @@ export default async function MedicineDetailPage({
   const id = Number(medicineId);
   if (!Number.isFinite(id)) notFound();
 
-  const [categories, medicine] = await Promise.all([
+  // Details are read in the same round as the medicine itself, so the tabs
+  // render complete on the first byte. A null result means the bulk
+  // generation script hasn't covered this medicine yet.
+  const [categories, medicine, details] = await Promise.all([
     getCategories(),
     getMedicineById(id),
+    getMedicineDetails(id),
   ]);
 
   if (!medicine) notFound();
@@ -44,6 +50,8 @@ export default async function MedicineDetailPage({
                 sizes="(min-width: 1024px) 471px, 100vw"
                 className="object-contain"
                 priority
+                placeholder="blur"
+                blurDataURL={IMAGE_BLUR_DATA_URL}
               />
             ) : (
               <span className="flex size-full items-center justify-center">
@@ -77,7 +85,7 @@ export default async function MedicineDetailPage({
 
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
           <div className="w-full lg:max-w-[559px]">
-            <MedicineTabs medicine={medicine} />
+            <MedicineTabs medicine={medicine} details={details} />
           </div>
           <div className="w-full lg:w-[462px] lg:shrink-0">
             <ConsultDoctorBanner />

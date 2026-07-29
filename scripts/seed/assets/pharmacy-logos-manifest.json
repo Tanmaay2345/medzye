@@ -1,0 +1,74 @@
+{
+  "Apollo Pharmacy": {
+    "sourceFile": "Apollo pharmacy.png",
+    "outputFile": "apollo-pharmacy.webp",
+    "storagePath": "brand-images/apollo-pharmacy.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/apollo-pharmacy.webp",
+    "pharmacyId": 1,
+    "pharmacyName": "Apollo Pharmacy"
+  },
+  "Care Pharmacy": {
+    "sourceFile": "CarePharmacy.png",
+    "outputFile": "care-pharmacy.webp",
+    "storagePath": "brand-images/care-pharmacy.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/care-pharmacy.webp",
+    "pharmacyId": 7,
+    "pharmacyName": "Care Pharmacy"
+  },
+  "MedPlus": {
+    "sourceFile": "MedPlus.png",
+    "outputFile": "medplus.webp",
+    "storagePath": "brand-images/medplus.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/medplus.webp",
+    "pharmacyId": 2,
+    "pharmacyName": "MedPlus"
+  },
+  "Netmeds": {
+    "sourceFile": "Net meds.png",
+    "outputFile": "netmeds.webp",
+    "storagePath": "brand-images/netmeds.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/netmeds.webp",
+    "pharmacyId": 4,
+    "pharmacyName": "Netmeds"
+  },
+  "PharmEasy": {
+    "sourceFile": "Pharmeasy.png",
+    "outputFile": "pharmeasy.webp",
+    "storagePath": "brand-images/pharmeasy.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/pharmeasy.webp",
+    "pharmacyId": 5,
+    "pharmacyName": "PharmEasy"
+  },
+  "Tata 1mg": {
+    "sourceFile": "Tata1mg.png",
+    "outputFile": "tata-1mg.webp",
+    "storagePath": "brand-images/tata-1mg.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/tata-1mg.webp",
+    "pharmacyId": 3,
+    "pharmacyName": "Tata 1mg"
+  },
+  "Truemeds": {
+    "sourceFile": "Truemeds.png",
+    "outputFile": "truemeds.webp",
+    "storagePath": "brand-images/truemeds.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/truemeds.webp",
+    "pharmacyId": 9,
+    "pharmacyName": "Truemeds"
+  },
+  "Local Pharmacy": {
+    "sourceFile": "local pharmacy.png",
+    "outputFile": "local-pharmacy.webp",
+    "storagePath": "brand-images/local-pharmacy.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/local-pharmacy.webp",
+    "pharmacyId": 8,
+    "pharmacyName": "Local Pharmacy"
+  },
+  "Wellness Forever": {
+    "sourceFile": "wellness forever.png",
+    "outputFile": "wellness-forever.webp",
+    "storagePath": "brand-images/wellness-forever.webp",
+    "publicUrl": "https://lzaxjqxmowpigpphwmnw.supabase.co/storage/v1/object/public/medicine-images/brand-images/wellness-forever.webp",
+    "pharmacyId": 6,
+    "pharmacyName": "Wellness Forever"
+  }
+}

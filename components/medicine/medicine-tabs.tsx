@@ -2,9 +2,8 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { EmptyState } from "@/components/common/empty-state";
-import type { MedicineWithPrice } from "@/types/database";
-
-const EMPTY_TABS = ["uses", "side-effects", "composition"] as const;
+import { DETAILS_UNAVAILABLE_MESSAGE } from "@/lib/queries/medicine-details";
+import type { MedicineDetails, MedicineWithPrice } from "@/types/database";
 
 const TAB_CONFIG = [
   { value: "activity", label: "Medicine Activity" },
@@ -14,7 +13,38 @@ const TAB_CONFIG = [
   { value: "manufacturer", label: "Manufacturer Details" },
 ];
 
-export function MedicineTabs({ medicine }: { medicine: MedicineWithPrice }) {
+function DetailText({ value }: { value: string }) {
+  return (
+    <p className="max-w-2xl whitespace-pre-line text-sm leading-relaxed text-brand-gray-500">
+      {value}
+    </p>
+  );
+}
+
+export function MedicineTabs({
+  medicine,
+  details = null,
+}: {
+  medicine: MedicineWithPrice;
+  /**
+   * The medicine's row from medicine_details, read on the server. Null means
+   * the bulk generation script hasn't covered this medicine yet — the tabs say
+   * so rather than trying to produce content on the fly.
+   */
+  details?: MedicineDetails | null;
+}) {
+  /**
+   * `fallback` is the medicine's own column, used when the generated content
+   * isn't there. It keeps Medicine Activity and Manufacturer Details behaving
+   * exactly as they did before medicine_details existed, so an ungenerated
+   * medicine degrades to its previous content instead of blanking.
+   */
+  const renderBody = (value: string | null | undefined, fallback?: string | null) => {
+    if (value) return <DetailText value={value} />;
+    if (fallback) return <DetailText value={fallback} />;
+    return <EmptyState title={DETAILS_UNAVAILABLE_MESSAGE} />;
+  };
+
   return (
     <Tabs defaultValue="activity" className="w-full gap-6">
       <TabsList
@@ -33,38 +63,19 @@ export function MedicineTabs({ medicine }: { medicine: MedicineWithPrice }) {
       </TabsList>
 
       <TabsContent value="activity">
-        {medicine.description ? (
-          <p className="max-w-2xl whitespace-pre-line text-sm leading-relaxed text-brand-gray-500">
-            {medicine.description}
-          </p>
-        ) : (
-          <EmptyState
-            title="No activity information available"
-            description="Details for this medicine haven't been added yet."
-          />
-        )}
+        {renderBody(details?.medicine_activity, medicine.description)}
       </TabsContent>
 
-      {EMPTY_TABS.map((value) => (
-        <TabsContent key={value} value={value}>
-          <EmptyState
-            title="Information not available"
-            description="This section hasn't been added for this medicine yet."
-          />
-        </TabsContent>
-      ))}
+      <TabsContent value="uses">{renderBody(details?.uses)}</TabsContent>
+
+      <TabsContent value="side-effects">{renderBody(details?.side_effects)}</TabsContent>
+
+      <TabsContent value="composition">
+        {renderBody(details?.composition, medicine.description)}
+      </TabsContent>
 
       <TabsContent value="manufacturer">
-        {medicine.manufacturer ? (
-          <p className="text-sm leading-relaxed text-brand-gray-500">
-            {medicine.manufacturer}
-          </p>
-        ) : (
-          <EmptyState
-            title="Manufacturer details not available"
-            description="This section hasn't been added for this medicine yet."
-          />
-        )}
+        {renderBody(details?.manufacturer_details, medicine.manufacturer)}
       </TabsContent>
     </Tabs>
   );

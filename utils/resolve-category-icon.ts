@@ -1,7 +1,9 @@
 import {
+  Activity,
   Cross,
   HeartPulse,
   Pill,
+  Stethoscope,
   Syringe,
   Thermometer,
   type LucideIcon,
@@ -16,11 +18,13 @@ const NAME_ICON_MAP: Record<string, LucideIcon> = {
 
 const ICON_KEY_MAP: Record<string, LucideIcon> = {
   thermometer: Thermometer,
+  stethoscope: Stethoscope,
   cross: Cross,
   "first-aid": Cross,
   "heart-pulse": HeartPulse,
   heartpulse: HeartPulse,
   syringe: Syringe,
+  activity: Activity,
   pill: Pill,
 };
 

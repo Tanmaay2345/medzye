@@ -44,3 +44,8 @@ next-env.d.ts
 # rejected/watermarked candidates) — the standardized output actually used by
 # the app lives in scripts/seed/assets/real/ and Supabase Storage instead
 Medicine\ Image\ /
+
+# raw local source logos used to seed pharmacy brand images (unprocessed);
+# the standardized output used by the app lives in scripts/seed/assets/brand/
+# and Supabase Storage instead
+Brand\ image\ /

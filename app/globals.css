@@ -59,6 +59,7 @@
   --color-brand-success-solid: var(--brand-success-solid);
   --color-brand-discount-bg: var(--brand-discount-bg);
   --color-brand-processing: var(--brand-processing);
+  --color-brand-processing-bar: var(--brand-processing-bar);
   --color-brand-gray-900: var(--brand-gray-900);
   --color-brand-gray-600: var(--brand-gray-600);
   --color-brand-gray-500: var(--brand-gray-500);
@@ -104,7 +105,10 @@
   --brand-success-fg: #166534;
   --brand-success-solid: #00af32;
   --brand-discount-bg: #d2f0d4;
+  /* Screen 5 uses two different greens: #009029 for the "Processing" label,
+     and a brighter #00c037 for the bars (Figma: rgba(0,192,55,α)). */
   --brand-processing: #009029;
+  --brand-processing-bar: #00c037;
   --brand-gray-900: #1a1a1a;
   --brand-gray-600: #666666;
   --brand-gray-500: #808080;
@@ -174,5 +178,55 @@
   }
   html {
     @apply font-sans;
+  }
+}
+/* ── Screen 5: processing indicator ──────────────────────────────────────
+   Figma (node 2886:3746) defines the composition but carries NO keyframe
+   data — get_motion_context returns {"nodes":[]} for both the frame and
+   Component 11, so there is no authored timing or easing to copy.
+
+   The motion below is therefore built strictly from values the design does
+   specify: each bar steps through the five designed widths in order
+   (26 → 17 → 31 → 65 → 36). Two properties follow from that:
+
+     - The row's total width never changes: 175px of bars + 4x8px gaps is
+       constant at every phase, so the block never reflows the screen around
+       it. (Component 11's own 17/19 padding is not reproduced here — see
+       booking-status.tsx for why.)
+     - With the staggered negative delays applied per bar, the very first
+       frame renders the five widths in their designed order — pixel
+       identical to the static Figma frame.
+
+   Width is animated rather than transform:scaleX because the bars sit in a
+   flex row: scaling would leave the layout boxes (and therefore the 8px
+   gaps) at their original size. Five small elements in a fixed-width
+   container keep the reflow cost contained. */
+@keyframes medyze-processing-scan {
+  0%,
+  100% {
+    width: 26px;
+  }
+  20% {
+    width: 17px;
+  }
+  40% {
+    width: 31px;
+  }
+  60% {
+    width: 65px;
+  }
+  80% {
+    width: 36px;
+  }
+}
+
+.medyze-processing-bar {
+  animation: medyze-processing-scan 1.5s ease-in-out infinite;
+}
+
+/* Falls back to the inline width on each bar, i.e. the static Figma frame. */
+@media (prefers-reduced-motion: reduce) {
+  .medyze-processing-bar {
+    animation: none;
   }
 }

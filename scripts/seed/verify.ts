@@ -5,6 +5,7 @@
 import { getCategories } from "../../lib/queries/categories";
 import { getDailyEssentials, getMedicinesByCategory, getMedicineById } from "../../lib/queries/medicines";
 import { getOffersForMedicine } from "../../lib/queries/pharmacies";
+import { buildMedicineRows } from "./data/medicines";
 
 let failures = 0;
 
@@ -39,7 +40,8 @@ async function main() {
       if (medicine.lowest_price != null) medicinesWithPrice++;
     }
   }
-  check(totalMedicines === 100, `Total medicines across categories is 100 (got ${totalMedicines})`);
+  const expectedCount = buildMedicineRows().length;
+  check(totalMedicines === expectedCount, `Total medicines across categories matches the seed catalog (${totalMedicines}/${expectedCount})`);
   check(medicinesWithImage === totalMedicines, `All medicines have a non-null image (${medicinesWithImage}/${totalMedicines})`);
   check(medicinesWithPrice === totalMedicines, `All medicines have a lowest_price (${medicinesWithPrice}/${totalMedicines})`);
 

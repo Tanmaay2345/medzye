@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { CategoryGrid } from "@/components/categories/category-grid";
+import { FeaturedCategoryCarousel } from "@/components/categories/featured-category-carousel";
 import { MedicineGrid } from "@/components/cards/medicine-grid";
 import { getCategories } from "@/lib/queries/categories";
 import { getDailyEssentials } from "@/lib/queries/medicines";
@@ -17,20 +17,22 @@ export default async function HomePage() {
     <div className="flex min-h-full flex-col">
       <Header />
 
-      <main className="mx-auto flex w-full max-w-[1196px] flex-1 flex-col gap-16 px-4 py-12 sm:px-6 lg:px-0">
-        <section aria-labelledby="shop-by-category-heading" className="flex flex-col gap-6">
-          <h2 id="shop-by-category-heading" className="text-2xl font-bold text-brand-gray-900">
-            Shop by Category
-          </h2>
-          <CategoryGrid categories={categories} />
-        </section>
+      <main className="mx-auto flex w-full max-w-[1196px] flex-1 flex-col gap-8 px-4 py-12 sm:px-6 lg:px-0">
+        <div className="flex flex-col gap-[72px]">
+          <section aria-labelledby="shop-by-category-heading" className="flex flex-col gap-6">
+            <h2 id="shop-by-category-heading" className="text-2xl font-bold text-[#1f2937]">
+              Shop by Category
+            </h2>
+            <FeaturedCategoryCarousel categories={categories} />
+          </section>
 
-        <section aria-labelledby="daily-essentials-heading" className="flex flex-col gap-6">
-          <h2 id="daily-essentials-heading" className="text-2xl font-bold text-brand-gray-900">
-            Buy Daily Essentials
-          </h2>
-          <MedicineGrid medicines={dailyEssentials} />
-        </section>
+          <section aria-labelledby="daily-essentials-heading" className="flex flex-col gap-6">
+            <h2 id="daily-essentials-heading" className="text-2xl font-bold text-brand-gray-900">
+              Buy Daily Essentials
+            </h2>
+            <MedicineGrid medicines={dailyEssentials} />
+          </section>
+        </div>
 
         <section aria-labelledby="otc-guidelines-heading" className="flex flex-col gap-8">
           <h2 id="otc-guidelines-heading" className="text-2xl font-bold text-brand-gray-900">

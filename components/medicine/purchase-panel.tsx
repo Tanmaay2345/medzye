@@ -7,7 +7,7 @@ import { QuantityStepper } from "./quantity-stepper";
 
 export function PurchasePanel({ disabled }: { disabled: boolean }) {
   const [quantity, setQuantity] = useState(1);
-  const { state, start, reset } = useBookingFlow();
+  const { state, start } = useBookingFlow();
 
   return (
     <>
@@ -22,7 +22,7 @@ export function PurchasePanel({ disabled }: { disabled: boolean }) {
           Proceed
         </button>
       </div>
-      <BookingFlowOverlay state={state} onDone={reset} />
+      <BookingFlowOverlay state={state} />
     </>
   );
 }

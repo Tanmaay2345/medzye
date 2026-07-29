@@ -14,6 +14,13 @@
 //     it would show the wrong product on that medicine's page.
 //
 // "missing" means no image file exists for that medicine at all.
+//
+// Cetzine, Azithral 500, and Cardace are intentionally ABSENT from this
+// list: after two rounds of sourcing attempts each still produced the wrong
+// product (see git history for the full mismatch reasons), they were
+// removed from the `medicines` table entirely rather than staying on the
+// dosage-form illustration indefinitely. There is no corresponding row in
+// scripts/seed/data/medicines.ts either.
 export type MatchStatus = "confirmed" | "flagged" | "missing";
 
 export type ImageMatch = {
@@ -32,7 +39,6 @@ export const REAL_IMAGE_MATCHES: ImageMatch[] = [
   { medicineName: "Asthalin Inhaler", filename: "Asthalin Inhaler.jpeg", status: "confirmed" },
   { medicineName: "Augmentin 625 Duo", filename: "Augmentin 625.jpeg", status: "confirmed" },
   { medicineName: "Avil 25", filename: "Avil 25.jpg", status: "confirmed" },
-  { medicineName: "Azithral 500", filename: "Azithral 500, .jpg", status: "flagged", reason: "mismatch (2nd attempt, still wrong): latest replacement box reads \"Fezirag-500\" (Stelon), not \"Azithral 500\" (Alkem) — yet another different registered brand for the same generic (azithromycin 500mg)" },
   { medicineName: "Band-Aid", filename: "Band-Aid.jpeg", status: "confirmed" },
   { medicineName: "Becosules Capsules", filename: "Becosules Capsules.webp", status: "confirmed" },
   { medicineName: "Benadryl Cough Syrup", filename: "Benadryl Cough Syrup.jpeg", status: "confirmed" },
@@ -43,8 +49,6 @@ export const REAL_IMAGE_MATCHES: ImageMatch[] = [
   { medicineName: "Calpol 250 Syrup", filename: "Calpol 250 Syrup.jpg", status: "confirmed" },
   { medicineName: "Calpol", filename: "Calpol.webp", status: "confirmed" },
   { medicineName: "Candid-B Cream", filename: "Candid-B Cream.webp", status: "confirmed" },
-  { medicineName: "Cardace", filename: "Cardace.jpg", status: "flagged", reason: "mismatch (2nd attempt, unchanged): the \"new\" file is byte-identical (same MD5) to the previously-rejected image — still \"Enalapril Maleate\" by Zafa Pharmaceutical Laboratories, Karachi, PAKISTAN, not Ramipril by Sanofi India" },
-  { medicineName: "Cetzine", filename: " Cetzine.jpeg", status: "flagged", reason: "mismatch (2nd attempt, still wrong): latest replacement is watermark-free but is \"Cetzine BM\" (Bilastine 20mg + Montelukast 10mg, manufactured by Akums Drugs & Pharmaceuticals, marketed by Dr. Reddy's) — a different combination drug from a different manufacturer than the catalog's plain Cetirizine/Glenmark entry" },
   { medicineName: "Ciplox 500", filename: "Ciplox 500.webp", status: "confirmed" },
   { medicineName: "Combiflam", filename: "Combiflam.webp", status: "confirmed" },
   { medicineName: "Concor", filename: "Concor.jpg", status: "confirmed" },
