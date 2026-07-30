@@ -157,11 +157,16 @@ export function PriceComparisonModal({
     </div>
   );
 
-  // Only rendered once a brand is picked — it fades/slides up rather than
-  // popping in, and lives outside the offer list so it reads as the sheet's
-  // fixed CTA instead of another row.
+  // Sits outside the scroll area as the last flex child of a height-capped
+  // column, which is what pins it to the bottom of the modal — no `sticky`
+  // needed, and it can never be scrolled away or clipped by the viewport.
+  // shrink-0 stops it collapsing when the list is tall.
   const footer = hasSelection ? (
-    <div className="flex animate-in justify-center px-8 pt-4 fade-in-0 slide-in-from-bottom-2 duration-200 ease-out">
+    // pt-4 matters when the list is mid-scroll: without it the CTA butts
+    // straight against a half-clipped offer row and reads as broken.
+    // bg-popover makes the footer an opaque band so scrolled content is
+    // clearly cut off behind it rather than bleeding into the button.
+    <div className="flex shrink-0 animate-in justify-center bg-popover px-8 pb-5 pt-4 fade-in-0 slide-in-from-bottom-2 duration-200 ease-out">
       <button
         type="button"
         onClick={handleContinue}
@@ -173,39 +178,62 @@ export function PriceComparisonModal({
     </div>
   ) : null;
 
-  // Space reclaimed from the tighter offer list is spent here: pb-10 (40px)
-  // below the CTA and gap-5 + the footer's pt-4 (36px) above it, so the
-  // button floats between the last card and the sheet edge instead of
-  // hugging the bottom.
+  /**
+   * Three-part column: a fixed head, a scrollable middle, a pinned footer.
+   *
+   * `min-h-0` on both this column and the scroll area is what makes it work —
+   * flex items default to `min-height: auto`, so without it the list refuses
+   * to shrink below its content height, the column grows past the modal's
+   * max-height, and the footer is pushed out of view. That is the bug.
+   *
+   * Padding is split rather than applied to a single wrapper: pt on the head,
+   * pb inside the scroll area (so the last card clears the edge when scrolled
+   * to the end), and pb-5 on the footer for the 20px below the CTA.
+   */
   const content = (
-    <div className="flex flex-col gap-5 pb-10 pt-8">
-      <div className="flex flex-col gap-4">
+    <div className="flex min-h-0 flex-1 flex-col">
+      <div className="flex shrink-0 flex-col gap-4 pt-8">
         {header}
         {summary}
       </div>
-      {list}
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pb-5 pt-5">
+        {list}
+      </div>
       {footer}
     </div>
   );
 
   return isDesktop ? (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      {/* sm:max-w-[764px] (not just max-w-) is required: DialogContent's own
-          base classes include `sm:max-w-sm`, and tailwind-merge keeps both
-          because the breakpoint modifiers differ — so an unprefixed
-          max-w-[764px] loses to it at >=640px. */}
-      <DialogContent showCloseButton={false} className="gap-0 rounded-[16px] p-0 sm:max-w-[764px]">
+      {/* `flex` deliberately overrides DialogContent's base `grid`: the layout
+          below needs a flex column to cap its height and let one child scroll.
+          max-h in dvh (not a pixel height) keeps 24px of breathing room top and
+          bottom at every viewport size — without it the popup is centred with
+          -translate-y-1/2 and simply grows off-screen at both ends on short
+          laptops, which is what clipped the Continue button.
+          overflow-hidden keeps the scrolling child inside the rounded corners.
+          sm:max-w-[764px] (not just max-w-) is required: DialogContent's base
+          classes include `sm:max-w-sm`, and tailwind-merge keeps both because
+          the breakpoint modifiers differ — an unprefixed max-w loses at >=640px. */}
+      <DialogContent
+        showCloseButton={false}
+        className="flex max-h-[calc(100dvh-3rem)] flex-col gap-0 overflow-hidden rounded-[16px] p-0 sm:max-w-[764px]"
+      >
         {content}
       </DialogContent>
     </Dialog>
   ) : (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      {/* pb-[env(safe-area-inset-bottom)] keeps the CTA clear of the home
+      {/* overflow-hidden replaces the old overflow-y-auto: scrolling now lives
+          on the offer list inside, so the sheet itself never scrolls and the
+          CTA stays pinned. dvh rather than vh so mobile browser chrome
+          collapsing doesn't push the footer under the fold.
+          pb-[env(safe-area-inset-bottom)] keeps the CTA clear of the home
           indicator / gesture bar on iOS rather than sitting under it. */}
       <SheetContent
         side="bottom"
         showCloseButton={false}
-        className="max-h-[90vh] gap-0 overflow-y-auto rounded-t-[16px] p-0 pb-[env(safe-area-inset-bottom)]"
+        className="max-h-[90dvh] gap-0 overflow-hidden rounded-t-[16px] p-0 pb-[env(safe-area-inset-bottom)]"
       >
         {content}
       </SheetContent>
