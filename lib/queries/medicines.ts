@@ -119,3 +119,36 @@ export async function searchMedicines(
   if (error) throw error;
   return attachLowestPrices(data ?? []);
 }
+
+/**
+ * Just id + name for every medicine, used to match text read off a photo.
+ *
+ * The whole catalogue is ~97 rows of short strings, so pulling it once and
+ * matching in the browser beats firing a query per OCR candidate word: one
+ * round trip, and the matcher can score every row instead of relying on
+ * whatever `ilike` happens to hit.
+ */
+export async function getMedicineNameIndex(): Promise<{ id: number; name: string }[]> {
+  const supabase = createClient();
+  const { data, error } = await supabase
+    .from("medicines")
+    .select("id, name")
+    .not("name", "is", null);
+
+  if (error) throw error;
+  return (data ?? []).map((row) => ({ id: row.id as number, name: row.name as string }));
+}
+
+/** Full records for a set of ids, returned in the order the ids were given. */
+export async function getMedicinesByIds(ids: number[]): Promise<MedicineWithPrice[]> {
+  if (ids.length === 0) return [];
+
+  const supabase = createClient();
+  const { data, error } = await supabase.from("medicines").select("*").in("id", ids);
+
+  if (error) throw error;
+
+  const byId = new Map((data ?? []).map((row) => [row.id as number, row as Medicine]));
+  const ordered = ids.map((id) => byId.get(id)).filter((row): row is Medicine => Boolean(row));
+  return attachLowestPrices(ordered);
+}

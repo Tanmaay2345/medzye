@@ -136,11 +136,11 @@ export function SearchBar() {
         )}
       </div>
       <Link
-        href="/upload-prescription"
+        href="/upload-medicine"
         className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-[8px] border border-brand-primary bg-brand-tint-light px-4 font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
       >
         <FileUp className="size-5" aria-hidden />
-        Upload Prescription
+        Upload Medicine
       </Link>
     </div>
   );

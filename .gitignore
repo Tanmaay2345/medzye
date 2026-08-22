@@ -49,3 +49,7 @@ Medicine\ Image\ /
 # the standardized output used by the app lives in scripts/seed/assets/brand/
 # and Supabase Storage instead
 Brand\ image\ /
+
+# tesseract.js language data, fetched at runtime from the CDN in the browser;
+# a Node run drops a 5MB copy in the project root
+*.traineddata
