@@ -12,27 +12,51 @@ import { ConsultDoctorBanner } from "@/components/medicine/consult-doctor-banner
 import { getCategories } from "@/lib/queries/categories";
 import { getMedicineDetails } from "@/lib/queries/medicine-details";
 import { getMedicineById } from "@/lib/queries/medicines";
+import { getOfferById } from "@/lib/queries/pharmacies";
 import { IMAGE_BLUR_DATA_URL } from "@/utils/image-placeholder";
 
 export default async function MedicineDetailPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ medicineId: string }>;
+  /** `?offer=` carries the pharmacy offer picked in the comparison modal. */
+  searchParams: Promise<{ offer?: string }>;
 }) {
-  const { medicineId } = await params;
+  const [{ medicineId }, { offer: offerParam }] = await Promise.all([params, searchParams]);
   const id = Number(medicineId);
   if (!Number.isFinite(id)) notFound();
+
+  // Anything non-numeric becomes NaN, which getOfferById rejects — so a
+  // hand-edited ?offer=abc falls back rather than throwing.
+  const offerId = offerParam == null ? null : Number(offerParam);
 
   // Details are read in the same round as the medicine itself, so the tabs
   // render complete on the first byte. A null result means the bulk
   // generation script hasn't covered this medicine yet.
-  const [categories, medicine, details] = await Promise.all([
+  const [categories, medicine, details, selectedOffer] = await Promise.all([
     getCategories(),
     getMedicineById(id),
     getMedicineDetails(id),
+    // Returns null unless the offer exists AND belongs to this medicine, so a
+    // mismatched id can never surface another medicine's pharmacy or price.
+    offerId == null ? Promise.resolve(null) : getOfferById(offerId, id),
   ]);
 
   if (!medicine) notFound();
+
+  // With a valid selection the page reflects the offer the user actually
+  // chose; without one it keeps the previous behaviour (lowest price across
+  // pharmacies).
+  //
+  // Note this is a ternary, not `selectedOffer?.price ?? lowest_price`:
+  // `medicine_prices.price` is nullable, so `??` would quietly fall through to
+  // a different pharmacy's price while the label still said "Selected from
+  // <this pharmacy>". Once an offer is selected its price is authoritative
+  // even when absent — PriceDisplay renders "Price unavailable", which is
+  // honest, rather than attributing someone else's number to this pharmacy.
+  const displayPrice = selectedOffer ? selectedOffer.price : medicine.lowest_price;
+  const displayMrp = selectedOffer ? selectedOffer.mrp ?? null : medicine.lowest_price_mrp;
 
   return (
     <div className="flex min-h-full flex-col">
@@ -65,7 +89,15 @@ export default async function MedicineDetailPage({
               <h1 className="text-[28px] font-semibold tracking-tight text-brand-gray-900">
                 {medicine.name}
               </h1>
-              <PriceDisplay price={medicine.lowest_price} mrp={medicine.lowest_price_mrp} size="lg" />
+              <PriceDisplay price={displayPrice} mrp={displayMrp} size="lg" />
+              {selectedOffer && (
+                <p className="text-sm text-brand-gray-500">
+                  Selected from{" "}
+                  <span className="font-medium text-brand-gray-900">
+                    {selectedOffer.pharmacy.name ?? "this pharmacy"}
+                  </span>
+                </p>
+              )}
             </div>
 
             {medicine.description && (
@@ -79,7 +111,7 @@ export default async function MedicineDetailPage({
 
             <DeliveryInfoCallout />
 
-            <PurchasePanel disabled={medicine.lowest_price == null} />
+            <PurchasePanel disabled={displayPrice == null} />
           </div>
         </div>
 

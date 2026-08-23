@@ -58,12 +58,18 @@ export function PriceComparisonModal({
       .finally(() => setIsLoading(false));
   }, [open, medicine.id]);
 
-  // Stage 3: picking a brand with ADD selects it, then the footer's
+  // Stage 3: picking a pharmacy offer with ADD selects it, then the footer's
   // "Continue" CTA (the primary action in the Figma) closes the sheet and
   // navigates on to the medicine detail page.
+  //
+  // The selected offer id rides along as a query param rather than component
+  // state or context: it has to survive a full navigation, a refresh and a
+  // shared link, and the detail page is a Server Component that renders before
+  // any client state would exist. `hasSelection` gates this button, so
+  // selectedOfferId is always set by the time it can be clicked.
   const handleContinue = () => {
     onOpenChange(false);
-    router.push(`/medicine/${medicine.id}`);
+    router.push(`/medicine/${medicine.id}?offer=${selectedOfferId}`);
   };
 
   const header = (
