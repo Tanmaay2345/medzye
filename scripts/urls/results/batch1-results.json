@@ -1,0 +1,1181 @@
+{
+  "run_id": "batch1-2026-09-01",
+  "generated_at": "2026-09-01T07:33:10.245368+00:00",
+  "batch": 1,
+  "medicine_ids": [
+    77,
+    3,
+    51,
+    4,
+    5,
+    26,
+    27,
+    35,
+    42,
+    43
+  ],
+  "invocations": 40,
+  "accepted": 27,
+  "results": [
+    {
+      "medicine_id": 77,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/paracip-650mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. 'Paracip-650 Tablet', Cipla Ltd, paracetamol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 77,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/paracip-650-tablet-otc144199",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "cipla-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer cipla-ltd, paracetamol.",
+        "notes": "1mg also lists /drugs/paracip-650mg-tablet-772671 marketed by Salud Care India -- a different company's similarly named product. Rejected in favour of the Cipla listing."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 77,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/paracip-650mg-tablet-10-s",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Cipla Ltd (Generics)"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/paracip-650mg-tablet-10s-lui7bd-8341027",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page; Cipla Ltd (Generics).",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/paracip-650mg-tablet-10s-lui7bd-8341027",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 77,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/paracip-650mg-tablet-6878",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA HEALTH LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. CIPLA HEALTH LIMITED, paracetamol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 3,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Apollo lists only 'Vicks Action Advanced 500' whose page shows Diphenhydramine in addition to paracetamol/phenylephrine/caffeine. Our record's composition has no diphenhydramine -- a different formulation. Plain 'Vicks Action 500' not found on Apollo.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 3,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "1mg lists only 'Vicks Action 500 Advanced' and 'Vicks Action 500 Extra', both showing Diphenhydramine. Composition conflict with our record; plain variant not found.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 3,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/vicks-action-500-tablet-10s-m3k27i-8601650",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Procter & Gamble"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Exact product name 'Vicks Action 500 Tablet 10's', manufacturer Procter & Gamble, and NO diphenhydramine present.",
+        "notes": "MEDIUM: the page does not display a composition list, so actives could not be independently confirmed. Brand name and manufacturer match exactly and the diphenhydramine-containing Advanced variant is excluded."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 3,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/vicks-action-500-mg-tablet-10-203022",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PROCTER & GAMBLE HYGIENE AND HEALTH CARE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Plain 'Vicks Action 500 Mg Tablet 10', P&G Hygiene and Health Care Ltd, paracetamol + caffeine, no diphenhydramine.",
+        "notes": "MEDIUM: phenylephrine not independently confirmed on page."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 51,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/shelcal-500mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Torrent Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Calcium carbonate + cholecalciferol (Vit D3), Torrent Pharmaceuticals Ltd.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 51,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/shelcal-500-calcium-vitamin-d3-tablet-for-bones-joints-muscles-care-supports-immunity-daily-mineral-blend-otc137210",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "torrent-pharmaceuticals-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer torrent-pharmaceuticals-ltd, Calcium + Vitamin D3.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 51,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/shelcal-500mg-tablet-15s-lui4h3-8285250",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Torrent Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Shelcal 500mg Tablet 15'S', Torrent Pharmaceuticals Ltd, calcium carbonate + cholecalciferol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 51,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/shelcal-500mg-strip-of-15-tablets-9033",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "TORRENT PHARMACEUTICALS LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. TORRENT PHARMACEUTICALS LTD, Vitamin D3 / cholecalciferol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 4,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/glycomet-500mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "USV Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Glycomet 500 Tablet', USV Pvt Ltd, metformin. Plain IR product, not the SR or GP variants.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 4,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "1mg lists Glycomet 500 SR, Glycomet 250, Glycomet-GP and a generic 'Glycomet Tablet', but no page confirmed as the plain immediate-release Glycomet 500. Not accepted rather than substituting the SR variant.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 4,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/glycomet-500mg-tablet-10-s",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Usv Private Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/glycomet-500mg-tablet-10s-luhatd-7992546",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page; Usv Private Ltd, metformin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/glycomet-500mg-tablet-10s-luhatd-7992546",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 4,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/glycomet-500mg-strip-of-10-tablets-49207",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "USV PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. USV PVT LTD, metformin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 5,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No Apollo product page for plain Ecosprin 75 located; Apollo results returned only Ecosprin-AV combination capsules, which contain atorvastatin in addition to aspirin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 5,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/ecosprin-75-tablet-40765",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "usv-private-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer usv-private-limited, aspirin. Exact manufacturer-string match with our record.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 5,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/ecosprin-75-tablet-14s-lufv83-7529175",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Usv Private Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ecosprin 75 Tablet 14's', Usv Private Ltd, aspirin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 5,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/ecosprin-75mg-strip-of-14-tablets-44952",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "USV PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. USV PVT LTD, aspirin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/calpol-250mg-oral-suspension-60ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Calpol-250 mg Oral Suspension' 60ml -- correct dosage form (suspension/syrup), GSK Pharmaceuticals Ltd, paracetamol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/calpol-250mg-tablet-706875",
+        "confidence": "LOW",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "1mg's Calpol 250mg page is a TABLET (glaxo-smithkline-pharmaceuticals-ltd). Our record is 'Calpol 250 Syrup'. Dosage-form conflict -- a tablet must not be substituted for a syrup.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No Netmeds product page for Calpol 250 oral suspension located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No PharmEasy product page for Calpol 250 oral suspension located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 27,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/allegra-120mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sanofi Consumer Healthcare"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Allegra 120 mg Tablet', Sanofi Consumer Healthcare, fexofenadine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 27,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/allegra-120mg-tablet-68763",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "sanofi-india-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer sanofi-india-ltd, fexofenadine. Exact manufacturer match.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 27,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/allegra-120mg-tablet-10s-lui6zf-8334576",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sanofi India Limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Sanofi India Limited, fexofenadine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 27,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/allegra-120mg-tablet-33719",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "SANOFI"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. SANOFI, fexofenadine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 35,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/amlong-5mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Micro Labs Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Amlong 5 Tablet', Micro Labs Ltd, amlodipine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 35,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/amlong-tablet-792551",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "micro-labs-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer micro-labs-ltd, amlodipine.",
+        "notes": "MEDIUM: page titled 'AMlong Tablet' without an explicit 5mg in the title, so the strength could not be independently confirmed against our 'Amlong 5' record."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 35,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/amlong-5mg-tablet-15-s",
+        "confidence": "LOW",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "URL is reachable (HTTP 200) but redirects to a Netmeds shell page with no product name, manufacturer or composition -- effectively the homepage, not a product page. Same failure class as an Apollo .html path landing on the homepage.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 35,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/amlong-5mg-strip-of-15-tablets-34447",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "MICRO LABS"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. MICRO LABS, amlodipine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No Apollo product page for Avil 25 located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No 1mg product page for Avil 25 located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/avil-25mg-tablet-15s-lufuca-7516722",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sanofi India Limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Avil 25mg Tablet 15'S', Sanofi India Limited, pheniramine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/avil-25mg-strip-of-15-tablets-36004",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "SANOFI"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. SANOFI, pheniramine.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/ciplox-500mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ciplox-500 Tablet', Cipla Ltd, ciprofloxacin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No 1mg product page for Ciplox 500 located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No Netmeds product page for Ciplox 500 located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No PharmEasy product page for Ciplox 500 located.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}
