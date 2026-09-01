@@ -1,0 +1,360 @@
+{
+  "run_id": "batch4-part3",
+  "generated_at": "2026-09-01T16:29:28.355901+00:00",
+  "medicine_ids": [
+    17,
+    18,
+    23
+  ],
+  "invocations": 12,
+  "results": [
+    {
+      "medicine_id": 17,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/crocin-advance-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Title is the unqualified 'Crocin Advance Tablet', GSK Pharmaceuticals Ltd, Paracetamol IP 500mg.",
+        "notes": "Crocin 500/650, Crocin 650 Advance, Crocin Quick, Crocin Pain Relief and Crocin Cold & Flu are different products and were rejected. Apollo lists an unqualified 'Crocin Advance Tablet' (the 500mg), matching our record; 'Crocin Advance 650' is distinctly named."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 17,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/crocin-advance-500mg-tablet-600468",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline India Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Advance 500mg Tablet', paracetamol. Marketer is GlaxoSmithKline India Pvt. Ltd.; the page's 'manufacturer' field reads Encore Healthcare, a contract site, and was not used for the comparison.",
+        "notes": "Crocin 500/650, Crocin 650 Advance, Crocin Quick, Crocin Pain Relief and Crocin Cold & Flu are different products and were rejected. Apollo lists an unqualified 'Crocin Advance Tablet' (the 500mg), matching our record; 'Crocin Advance 650' is distinctly named."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 17,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/crocin-advance-500mg-tablet-15s-lxelgf-8464639",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glaxosmithkline Consumer Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Advance 500mg Tablet 15'S', GSK Consumer Pvt Ltd, paracetamol.",
+        "notes": "Crocin 500/650, Crocin 650 Advance, Crocin Quick, Crocin Pain Relief and Crocin Cold & Flu are different products and were rejected. Apollo lists an unqualified 'Crocin Advance Tablet' (the 500mg), matching our record; 'Crocin Advance 650' is distinctly named."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 17,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/crocin-advance-500mg-strip-of-15-tablets-42306",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Advance Tablet', GLAXOSMITHKLINE, paracetamol 500mg.",
+        "notes": "Crocin 500/650, Crocin 650 Advance, Crocin Quick, Crocin Pain Relief and Crocin Cold & Flu are different products and were rejected. Apollo lists an unqualified 'Crocin Advance Tablet' (the 500mg), matching our record; 'Crocin Advance 650' is distinctly named."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 18,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/benadryl-cough-formula-syrup-150ml",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Jntl Consumer Health (India) Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Benadryl Cough Formula Syrup' 150ml; diphenhydramine 14.08mg + ammonium chloride 138mg + sodium citrate 57.03mg.",
+        "notes": "MEDIUM: market brand is 'Benadryl Cough Formula Syrup' vs our 'Benadryl Cough Syrup'. Apollo names the marketer JNTL Consumer Health (India) - the post-Kenvue successor to Johnson & Johnson's consumer arm - while Netmeds and PharmEasy still say Johnson & Johnson. Same product and brand owner lineage. Benadryl DR (dry cough), Benadryl CR, Benadryl Congestion Relief and Benadryl lozenges are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 18,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/benadryl-syrup-114690",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Benadryl Syrup'; diphenhydramine (14.08mg/5ml) + ammonium chloride (138mg/5ml) + sodium citrate (57.03mg/5ml) - matches the Apollo and Netmeds composition exactly.",
+        "notes": "MEDIUM: marketer not extractable from this page, so the manufacturer could not be independently confirmed. Benadryl DR (dry cough), Benadryl CR, Benadryl Congestion Relief and Benadryl lozenges are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 18,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/benadryl-cough-formula-syrup-150ml-lui7rd-8349396",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Johnson & Johnson Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Title reads 'Benadryl Cough Syrup' - an exact match for our record - marketer Johnson & Johnson Pvt Ltd.",
+        "notes": "Benadryl DR (dry cough), Benadryl CR, Benadryl Congestion Relief and Benadryl lozenges are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 18,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/benadryl-cough-formula-bottle-of-150ml-syrup-37060",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "JOHNSON & JOHNSON PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 150ml, JOHNSON & JOHNSON PRIVATE LIMITED, diphenhydramine + ammonium chloride + sodium citrate.",
+        "notes": "Benadryl DR (dry cough), Benadryl CR, Benadryl Congestion Relief and Benadryl lozenges are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 23,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/betnovate-n-cream-20gm",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Betnovate N Cream', GSK Pharmaceuticals Ltd, betamethasone + neomycin.",
+        "notes": "Betnovate (plain), Betnovate-C, Betnovate-GM, Betnovate-G, Betnovate-M and Betnovate-S are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 23,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/betnovate-n-cream-651249",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "glaxo-smithkline-pharmaceuticals-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer glaxo-smithkline-pharmaceuticals-ltd, betamethasone + neomycin.",
+        "notes": "Betnovate (plain), Betnovate-C, Betnovate-GM, Betnovate-G, Betnovate-M and Betnovate-S are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 23,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/betnovate-n-cream-20gm-lxelgj-8464659",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glaxosmithkline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Betnovate N Cream 20gm', GSK, betamethasone + neomycin.",
+        "notes": "Betnovate (plain), Betnovate-C, Betnovate-GM, Betnovate-G, Betnovate-M and Betnovate-S are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 23,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/betnovate-n-tube-of-15gm-cream-11575",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Betnovate N Cream', GLAXOSMITHKLINE, betamethasone valerate + neomycin sulphate.",
+        "notes": "Betnovate (plain), Betnovate-C, Betnovate-GM, Betnovate-G, Betnovate-M and Betnovate-S are different formulations and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "run_id": "batch4-part2",
+  "generated_at": "2026-09-01T13:53:35.920943+00:00",
+  "medicine_ids": [
+    11
+  ],
+  "invocations": 4,
+  "results": [
+    {
+      "medicine_id": 11,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/crocin-drops-15ml",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Oral Drop, 15 ml', GSK Pharmaceuticals Ltd, PARACETAMOL-100MG.",
+        "notes": "MEDIUM: the market brand string differs from our record ('Crocin Pediatric Drops'). Pharmacies list it as 'Crocin Oral Drop', 'Crocin Baby Paediatric Drops' and 'Crocin Peppermint Flavour Drops'. Accepted on composition and form -- paracetamol 100mg paediatric drops, 15ml, GSK -- per the ambiguity rule, but capped at MEDIUM because the brand string is not identical. Crocin 120/240 suspensions, Crocin Advance and Crocin 650 tablets are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 11,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/crocin-baby-paracetamol-paediatric-drops-flavour-peppermint-otc328524",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline India Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Baby Paracetamol Paediatric Drops', 15ml. schema.org marketer is GlaxoSmithKline India Pvt. Ltd.; the 'manufacturer' field reads Recipharm Pharmaservices, a contract manufacturing site, and was correctly not used for the comparison.",
+        "notes": "MEDIUM: the market brand string differs from our record ('Crocin Pediatric Drops'). Pharmacies list it as 'Crocin Oral Drop', 'Crocin Baby Paediatric Drops' and 'Crocin Peppermint Flavour Drops'. Accepted on composition and form -- paracetamol 100mg paediatric drops, 15ml, GSK -- per the ambiguity rule, but capped at MEDIUM because the brand string is not identical. Crocin 120/240 suspensions, Crocin Advance and Crocin 650 tablets are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 11,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/crocin-drops-15ml",
+        "confidence": "MEDIUM",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Glaxosmithkline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/crocin-peppermint-flavour-drops-15ml-lui4lq-8288053",
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page; 'Crocin Peppermint Flavour Drops 15ml', GSK.",
+        "notes": "MEDIUM: the market brand string differs from our record ('Crocin Pediatric Drops'). Pharmacies list it as 'Crocin Oral Drop', 'Crocin Baby Paediatric Drops' and 'Crocin Peppermint Flavour Drops'. Accepted on composition and form -- paracetamol 100mg paediatric drops, 15ml, GSK -- per the ambiguity rule, but capped at MEDIUM because the brand string is not identical. Crocin 120/240 suspensions, Crocin Advance and Crocin 650 tablets are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": "https://www.netmeds.com/product/crocin-peppermint-flavour-drops-15ml-lui4lq-8288053",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 11,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/crocin-baby-peppermint-flavour-bottle-of-15ml-drops-211269",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Crocin Baby Oral Drops, Peppermint Flavour', 15ml, GLAXOSMITHKLINE, paracetamol.",
+        "notes": "MEDIUM: the market brand string differs from our record ('Crocin Pediatric Drops'). Pharmacies list it as 'Crocin Oral Drop', 'Crocin Baby Paediatric Drops' and 'Crocin Peppermint Flavour Drops'. Accepted on composition and form -- paracetamol 100mg paediatric drops, 15ml, GSK -- per the ambiguity rule, but capped at MEDIUM because the brand string is not identical. Crocin 120/240 suspensions, Crocin Advance and Crocin 650 tablets are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

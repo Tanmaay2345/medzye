@@ -1,0 +1,478 @@
+{
+  "run_id": "batch4-rejections",
+  "generated_at": "2026-09-01T16:29:51.029334+00:00",
+  "note": "Rejected pharmacy pairs from batch 4. No URL is proposed for any of these. Nothing here may be stored.",
+  "medicine_ids": [
+    9,
+    15,
+    16,
+    22
+  ],
+  "invocations": 16,
+  "results": [
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. All four pharmacies name the marketer as Allergan India Pvt Ltd (Apollo: 'Allergan Healthcare India Pvt Ltd'); our catalogue says Abbott India, and no page mentions Abbott at all. Rejected rather than storing a URL under a manufacturer our record contradicts. Flagged for the manufacturer-correction backlog; not changed in this batch.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. All four pharmacies name the marketer as Allergan India Pvt Ltd (Apollo: 'Allergan Healthcare India Pvt Ltd'); our catalogue says Abbott India, and no page mentions Abbott at all. Rejected rather than storing a URL under a manufacturer our record contradicts. Flagged for the manufacturer-correction backlog; not changed in this batch.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. All four pharmacies name the marketer as Allergan India Pvt Ltd (Apollo: 'Allergan Healthcare India Pvt Ltd'); our catalogue says Abbott India, and no page mentions Abbott at all. Rejected rather than storing a URL under a manufacturer our record contradicts. Flagged for the manufacturer-correction backlog; not changed in this batch.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. All four pharmacies name the marketer as Allergan India Pvt Ltd (Apollo: 'Allergan Healthcare India Pvt Ltd'); our catalogue says Abbott India, and no page mentions Abbott at all. Rejected rather than storing a URL under a manufacturer our record contradicts. Flagged for the manufacturer-correction backlog; not changed in this batch.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 15,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Betadine ointment exists at 5% and 10% w/w; Apollo and PharmEasy list both side by side as separately named products, and our record carries no strength. Unlike Susten/Zerodol there is no unqualified base listing to fall back on, so selecting one would be guessing.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 15,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Betadine ointment exists at 5% and 10% w/w; Apollo and PharmEasy list both side by side as separately named products, and our record carries no strength. Unlike Susten/Zerodol there is no unqualified base listing to fall back on, so selecting one would be guessing.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 15,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Betadine ointment exists at 5% and 10% w/w; Apollo and PharmEasy list both side by side as separately named products, and our record carries no strength. Unlike Susten/Zerodol there is no unqualified base listing to fall back on, so selecting one would be guessing.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 15,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Betadine ointment exists at 5% and 10% w/w; Apollo and PharmEasy list both side by side as separately named products, and our record carries no strength. Unlike Susten/Zerodol there is no unqualified base listing to fall back on, so selecting one would be guessing.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 16,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Voveran ships as 50, 50 GE, DT 50, SR 75, SR 100 and SR 150 tablets; PharmEasy alone lists five of these. Our record carries no strength. Secondary flag: Apollo names the marketer Novartis India Ltd (matching our record) while 1mg names Dr. Reddy's Laboratories - an unresolved manufacturer question, documented not changed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 16,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Voveran ships as 50, 50 GE, DT 50, SR 75, SR 100 and SR 150 tablets; PharmEasy alone lists five of these. Our record carries no strength. Secondary flag: Apollo names the marketer Novartis India Ltd (matching our record) while 1mg names Dr. Reddy's Laboratories - an unresolved manufacturer question, documented not changed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 16,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Voveran ships as 50, 50 GE, DT 50, SR 75, SR 100 and SR 150 tablets; PharmEasy alone lists five of these. Our record carries no strength. Secondary flag: Apollo names the marketer Novartis India Ltd (matching our record) while 1mg names Dr. Reddy's Laboratories - an unresolved manufacturer question, documented not changed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 16,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Voveran ships as 50, 50 GE, DT 50, SR 75, SR 100 and SR 150 tablets; PharmEasy alone lists five of these. Our record carries no strength. Secondary flag: Apollo names the marketer Novartis India Ltd (matching our record) while 1mg names Dr. Reddy's Laboratories - an unresolved manufacturer question, documented not changed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 22,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "DOSAGE-FORM AMBIGUITY. Digene ships as both gel and chewable tablet, in mint/orange/mixed-fruit flavours and several pack sizes, with different compositions between forms (the gel adds sodium carboxymethylcellulose). Our own description says 'Antacid gel and tablet' and names no single form, so the catalogue itself cannot identify the product.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 22,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "DOSAGE-FORM AMBIGUITY. Digene ships as both gel and chewable tablet, in mint/orange/mixed-fruit flavours and several pack sizes, with different compositions between forms (the gel adds sodium carboxymethylcellulose). Our own description says 'Antacid gel and tablet' and names no single form, so the catalogue itself cannot identify the product.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 22,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "DOSAGE-FORM AMBIGUITY. Digene ships as both gel and chewable tablet, in mint/orange/mixed-fruit flavours and several pack sizes, with different compositions between forms (the gel adds sodium carboxymethylcellulose). Our own description says 'Antacid gel and tablet' and names no single form, so the catalogue itself cannot identify the product.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 22,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "DOSAGE-FORM AMBIGUITY. Digene ships as both gel and chewable tablet, in mint/orange/mixed-fruit flavours and several pack sizes, with different compositions between forms (the gel adds sodium carboxymethylcellulose). Our own description says 'Antacid gel and tablet' and names no single form, so the catalogue itself cannot identify the product.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "run_id": "batch4-part1",
+  "generated_at": "2026-09-01T13:49:47.252420+00:00",
+  "medicine_ids": [
+    6,
+    8
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 6,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/revital-h-capsule-30s",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Revital for Men ... Multivitamins, Calcium, Zinc & Natural Ginseng', Sun Pharmaceutical Industries Ltd, capsule.",
+        "notes": "Revital Woman is a separate tablet formulation and was rejected; our record specifies a capsule. Pack sizes 10/30/60 are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 6,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/revital-h-men-multivitamin-with-calcium-zinc-ginseng-for-immunity-strong-bones-energy-otc66303",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "sun-pharmaceutical-industries-ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.1mg.com/otc/revital-h-multivitamin-with-natural-ginseng-for-immunity-strong-bones-energy-otc66303",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the current slug for the same otc66303 product; marketer sun-pharmaceutical-industries-ltd, soft gelatin capsules.",
+        "notes": "Revital Woman is a separate tablet formulation and was rejected; our record specifies a capsule. Pack sizes 10/30/60 are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.1mg.com/otc/revital-h-multivitamin-with-natural-ginseng-for-immunity-strong-bones-energy-otc66303",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 6,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://netmeds.com/prescriptions/revital-h-capsule-30-s",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/revital-h-capsule-men-30s-lui48i-8280126",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 2 redirects to the canonical /product/ page; 'Revital H Capsule for Men 30's', Sun Pharmaceutical Industries Ltd.",
+        "notes": "Revital Woman is a separate tablet formulation and was rejected; our record specifies a capsule. Pack sizes 10/30/60 are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/revital-h-capsule-men-30s-lui48i-8280126",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 6,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/revital-h-health-supplement-capsules-bottle-of-30-23096",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "RANBAXY LABORATORIES (SUN PHARMA)"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Revital Men Complete Multivitamin, 30 capsules'. Marketer reads RANBAXY LABORATORIES (SUN PHARMA) - Ranbaxy is a Sun Pharma subsidiary, so the corporate group matches our 'Sun Pharma Consumer Healthcare'.",
+        "notes": "Revital Woman is a separate tablet formulation and was rejected; our record specifies a capsule. Pack sizes 10/30/60 are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 8,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/candid-b-cream-20gm",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glenmark Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Candid-B Cream', Glenmark Pharmaceuticals Ltd, clotrimazole + beclometasone.",
+        "notes": "Candid-B Lotion is a different dosage form and plain Candid (clotrimazole only) a different formulation; both rejected. Tube sizes 5-30g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 8,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/candid-b-cream-63687",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "glenmark-pharmaceuticals-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer glenmark-pharmaceuticals-ltd, beclometasone + clotrimazole.",
+        "notes": "Candid-B Lotion is a different dosage form and plain Candid (clotrimazole only) a different formulation; both rejected. Tube sizes 5-30g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 8,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/candid-b-cream-20gm-lui7uv-8350872",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glenmark Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Candid B Cream 20gm', Glenmark Pharmaceuticals Ltd.",
+        "notes": "Candid-B Lotion is a different dosage form and plain Candid (clotrimazole only) a different formulation; both rejected. Tube sizes 5-30g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 8,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/candid-b-cream-20gm-38913",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLENMARK PHARMACEUTICALS"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. GLENMARK PHARMACEUTICALS, beclomethasone + clotrimazole.",
+        "notes": "Candid-B Lotion is a different dosage form and plain Candid (clotrimazole only) a different formulation; both rejected. Tube sizes 5-30g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}
