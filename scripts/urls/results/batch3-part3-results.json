@@ -1,0 +1,243 @@
+{
+  "run_id": "batch3-part3-2026-09-01",
+  "generated_at": "2026-09-01T12:14:57.504159+00:00",
+  "medicine_ids": [
+    73,
+    76
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 73,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/norflox-tz-tablet",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Slug norflox-tz-tablet, title 'Norflox-TZ RF Tablet', Cipla Ltd, norfloxacin + tinidazole.",
+        "notes": "MEDIUM: every pharmacy now brands this product 'Norflox-TZ RF' while our catalogue record is plain 'Norflox-TZ'. Accepted on composition per the ambiguity rule -- norfloxacin 400mg + tinidazole 600mg and manufacturer Cipla match exactly, and Apollo's slug is literally norflox-tz-tablet -- but the brand string is not identical, so capped at MEDIUM. Norflox TZ LB (adds Lactobacillus) was rejected as a different formulation."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 73,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/norflox-tz-rf-tablet-510559",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "cipla-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer cipla-ltd, norfloxacin (400mg) + tinidazole (600mg).",
+        "notes": "MEDIUM: every pharmacy now brands this product 'Norflox-TZ RF' while our catalogue record is plain 'Norflox-TZ'. Accepted on composition per the ambiguity rule -- norfloxacin 400mg + tinidazole 600mg and manufacturer Cipla match exactly, and Apollo's slug is literally norflox-tz-tablet -- but the brand string is not identical, so capped at MEDIUM. Norflox TZ LB (adds Lactobacillus) was rejected as a different formulation."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 73,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/norflox-tz-rf-tablet-10s-lui6hp-8325273",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Norflox TZ RF Tablet 10'S', Cipla Ltd, norfloxacin + tinidazole.",
+        "notes": "MEDIUM: every pharmacy now brands this product 'Norflox-TZ RF' while our catalogue record is plain 'Norflox-TZ'. Accepted on composition per the ambiguity rule -- norfloxacin 400mg + tinidazole 600mg and manufacturer Cipla match exactly, and Apollo's slug is literally norflox-tz-tablet -- but the brand string is not identical, so capped at MEDIUM. Norflox TZ LB (adds Lactobacillus) was rejected as a different formulation."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 73,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/norflox-tz-rf-strip-of-10-tablets-206954",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. CIPLA LIMITED, norfloxacin + tinidazole.",
+        "notes": "MEDIUM: every pharmacy now brands this product 'Norflox-TZ RF' while our catalogue record is plain 'Norflox-TZ'. Accepted on composition per the ambiguity rule -- norfloxacin 400mg + tinidazole 600mg and manufacturer Cipla match exactly, and Apollo's slug is literally norflox-tz-tablet -- but the brand string is not identical, so capped at MEDIUM. Norflox TZ LB (adds Lactobacillus) was rejected as a different formulation."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 76,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/flexon-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Aristo Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Flexon Tablet', Aristo Pharmaceuticals Pvt Ltd, IBUPROFEN-400MG + PARACETAMOL-325MG - confirms the corrected catalogue manufacturer (was Reckitt Benckiser).",
+        "notes": "Flexon 650 (paracetamol only), Flexon MR (adds chlorzoxazone), Flexon Plus, Spasmo Flexon, Mega Flexon, Flexon Suspension and Flexon Cream are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 76,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/flexon-tablet-64529",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "aristo-pharmaceuticals-pvt-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer aristo-pharmaceuticals-pvt-ltd, ibuprofen (400mg) + paracetamol (325mg).",
+        "notes": "Flexon 650 (paracetamol only), Flexon MR (adds chlorzoxazone), Flexon Plus, Spasmo Flexon, Mega Flexon, Flexon Suspension and Flexon Cream are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 76,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/flexon-tablet-15s-lui6zf-8334932",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Aristo Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Flexon Tablet', Aristo Pharmaceuticals Pvt Ltd, ibuprofen + paracetamol.",
+        "notes": "Flexon 650 (paracetamol only), Flexon MR (adds chlorzoxazone), Flexon Plus, Spasmo Flexon, Mega Flexon, Flexon Suspension and Flexon Cream are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 76,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/flexon-strip-of-15-tablets-3689",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ARISTO PHARMACEUTICALS PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. ARISTO PHARMACEUTICALS PVT LTD, ibuprofen + paracetamol.",
+        "notes": "Flexon 650 (paracetamol only), Flexon MR (adds chlorzoxazone), Flexon Plus, Spasmo Flexon, Mega Flexon, Flexon Suspension and Flexon Cream are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

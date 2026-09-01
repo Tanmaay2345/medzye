@@ -1,0 +1,595 @@
+{
+  "run_id": "batch3-rejections-2026-09-01",
+  "generated_at": "2026-09-01T12:53:40.992756+00:00",
+  "note": "AMBIGUOUS outcomes from batch 3. No URL is proposed for any of these; the file records why each was rejected. Nothing here may be stored.",
+  "medicine_ids": [
+    50,
+    64,
+    65,
+    79,
+    97
+  ],
+  "invocations": 20,
+  "results": [
+    {
+      "medicine_id": 50,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Rosuvas is listed in 5/10/20/40mg at all four pharmacies and our catalogue record carries no strength. Additionally our composition ('Rosuvastatin + Cholecalciferol') describes Rosuvas D, contradicting the plain brand name. Cannot uniquely identify - rejected rather than guessing a strength.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 50,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Rosuvas is listed in 5/10/20/40mg at all four pharmacies and our catalogue record carries no strength. Additionally our composition ('Rosuvastatin + Cholecalciferol') describes Rosuvas D, contradicting the plain brand name. Cannot uniquely identify - rejected rather than guessing a strength.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 50,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Rosuvas is listed in 5/10/20/40mg at all four pharmacies and our catalogue record carries no strength. Additionally our composition ('Rosuvastatin + Cholecalciferol') describes Rosuvas D, contradicting the plain brand name. Cannot uniquely identify - rejected rather than guessing a strength.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 50,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Rosuvas is listed in 5/10/20/40mg at all four pharmacies and our catalogue record carries no strength. Additionally our composition ('Rosuvastatin + Cholecalciferol') describes Rosuvas D, contradicting the plain brand name. Cannot uniquely identify - rejected rather than guessing a strength.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met is listed in 50/500, 50/850 and 50/1000 at all four pharmacies; our record carries no strength. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met is listed in 50/500, 50/850 and 50/1000 at all four pharmacies; our record carries no strength. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met is listed in 50/500, 50/850 and 50/1000 at all four pharmacies; our record carries no strength. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met is listed in 50/500, 50/850 and 50/1000 at all four pharmacies; our record carries no strength. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas is listed in 10/20/40/80mg at all four pharmacies; our record carries no strength. Our composition ('Atorvastatin + Cholecalciferol') describes Storvas D, contradicting the plain brand name. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas is listed in 10/20/40/80mg at all four pharmacies; our record carries no strength. Our composition ('Atorvastatin + Cholecalciferol') describes Storvas D, contradicting the plain brand name. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas is listed in 10/20/40/80mg at all four pharmacies; our record carries no strength. Our composition ('Atorvastatin + Cholecalciferol') describes Storvas D, contradicting the plain brand name. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas is listed in 10/20/40/80mg at all four pharmacies; our record carries no strength. Our composition ('Atorvastatin + Cholecalciferol') describes Storvas D, contradicting the plain brand name. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Istamet is listed in 50/500, 50/1000, 100/1000 plus XR, D-IR/D-XR and G-IR variants; our record carries no strength. Separately, 1mg names the marketer as Sun Pharmaceutical Industries while our catalogue says MSD Pharmaceuticals (1mg notes Janumet is the MSD-branded equivalent) - an unresolved manufacturer question. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Istamet is listed in 50/500, 50/1000, 100/1000 plus XR, D-IR/D-XR and G-IR variants; our record carries no strength. Separately, 1mg names the marketer as Sun Pharmaceutical Industries while our catalogue says MSD Pharmaceuticals (1mg notes Janumet is the MSD-branded equivalent) - an unresolved manufacturer question. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Istamet is listed in 50/500, 50/1000, 100/1000 plus XR, D-IR/D-XR and G-IR variants; our record carries no strength. Separately, 1mg names the marketer as Sun Pharmaceutical Industries while our catalogue says MSD Pharmaceuticals (1mg notes Janumet is the MSD-branded equivalent) - an unresolved manufacturer question. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Istamet is listed in 50/500, 50/1000, 100/1000 plus XR, D-IR/D-XR and G-IR variants; our record carries no strength. Separately, 1mg names the marketer as Sun Pharmaceutical Industries while our catalogue says MSD Pharmaceuticals (1mg notes Janumet is the MSD-branded equivalent) - an unresolved manufacturer question. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Dabur Sat Isabgol is listed in 45/50/90/100/180/200/375g packs at all four pharmacies; our record carries no pack size. Separately, our composition lists 'Ispaghula husk + Fennel' while the product pages state 100% psyllium husk with no additives - a composition mismatch. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Dabur Sat Isabgol is listed in 45/50/90/100/180/200/375g packs at all four pharmacies; our record carries no pack size. Separately, our composition lists 'Ispaghula husk + Fennel' while the product pages state 100% psyllium husk with no additives - a composition mismatch. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Dabur Sat Isabgol is listed in 45/50/90/100/180/200/375g packs at all four pharmacies; our record carries no pack size. Separately, our composition lists 'Ispaghula husk + Fennel' while the product pages state 100% psyllium husk with no additives - a composition mismatch. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Dabur Sat Isabgol is listed in 45/50/90/100/180/200/375g packs at all four pharmacies; our record carries no pack size. Separately, our composition lists 'Ispaghula husk + Fennel' while the product pages state 100% psyllium husk with no additives - a composition mismatch. Cannot uniquely identify.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}

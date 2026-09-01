@@ -1,0 +1,126 @@
+{
+  "run_id": "batch3-part2-2026-09-01",
+  "generated_at": "2026-09-01T12:10:26.981780+00:00",
+  "medicine_ids": [
+    61
+  ],
+  "invocations": 4,
+  "results": [
+    {
+      "medicine_id": 61,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/zerodol-p-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Ipca Laboratories Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zerodol-P Tablet', Ipca Laboratories Ltd, aceclofenac 100mg + paracetamol 325mg.",
+        "notes": "Zerodol-SP / PT / MR / TC / PG / TH / Spas / Gel and plain Zerodol 100 are distinct products. 1mg also lists a separately-named 'Zerodol P 100mg/500mg'; our record matches the standard 100/325 product titled plainly 'Zerodol-P'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 61,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/zerodol-p-tablet-67304",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ipca-laboratories-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer ipca-laboratories-ltd, aceclofenac (100mg) + paracetamol (325mg).",
+        "notes": "Zerodol-SP / PT / MR / TC / PG / TH / Spas / Gel and plain Zerodol 100 are distinct products. 1mg also lists a separately-named 'Zerodol P 100mg/500mg'; our record matches the standard 100/325 product titled plainly 'Zerodol-P'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 61,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/zerodol-p-tablet-10s-lui2o9-8247668",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Ipca Laboratories Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zerodol P Tablet 10'S', Ipca Laboratories Ltd, aceclofenac 100mg + paracetamol 325mg.",
+        "notes": "Zerodol-SP / PT / MR / TC / PG / TH / Spas / Gel and plain Zerodol 100 are distinct products. 1mg also lists a separately-named 'Zerodol P 100mg/500mg'; our record matches the standard 100/325 product titled plainly 'Zerodol-P'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 61,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/zerodol-p-tablet-14791",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "IPCA LABORATORIES"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. IPCA LABORATORIES, aceclofenac + paracetamol.",
+        "notes": "Zerodol-SP / PT / MR / TC / PG / TH / Spas / Gel and plain Zerodol 100 are distinct products. 1mg also lists a separately-named 'Zerodol P 100mg/500mg'; our record matches the standard 100/325 product titled plainly 'Zerodol-P'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

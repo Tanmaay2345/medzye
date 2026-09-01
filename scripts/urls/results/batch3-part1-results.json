@@ -1,0 +1,243 @@
+{
+  "run_id": "batch3-part1-2026-09-01",
+  "generated_at": "2026-09-01T12:07:17.562278+00:00",
+  "medicine_ids": [
+    52,
+    57
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 52,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/cyclopam-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Indoco Remedies Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Cyclopam Tablet', Indoco Remedies Ltd, dicyclomine + paracetamol - matches the corrected catalogue manufacturer.",
+        "notes": "Cyclopam Plus / MF / Drops / Suspension / Injection are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 52,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/cyclopam-tablet-64028",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "indoco-remedies-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer indoco-remedies-ltd, dicyclomine + paracetamol.",
+        "notes": "Cyclopam Plus / MF / Drops / Suspension / Injection are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 52,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/cyclopam-tablet-10s-lui7mb-8346894",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Indoco Remedies Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Cyclopam Tablet 10'S', Indoco Remedies Ltd, dicyclomine + paracetamol.",
+        "notes": "Cyclopam Plus / MF / Drops / Suspension / Injection are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 52,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/cyclopam-strip-of-10-tablets-42474",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "INDOCO REMEDIES LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. INDOCO REMEDIES LTD, dicyclomine + paracetamol.",
+        "notes": "Cyclopam Plus / MF / Drops / Suspension / Injection are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 57,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/montair-lc-tablet-15s",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Montair-LC Tablet', Cipla Ltd, montelukast + levocetirizine (single strength 10mg/5mg).",
+        "notes": "Montek LC, Montecip LC, Montair LC Kid, Montair 10 and Montair FX/AB are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 57,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/montair-lc-tablet-565306",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "cipla-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Montair-LC Tablet', marketer cipla-ltd, levocetirizine + montelukast.",
+        "notes": "Montek LC, Montecip LC, Montair LC Kid, Montair 10 and Montair FX/AB are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 57,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/montair-lc-tablet-15s-lui1k6-8223458",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Montair-LC', Cipla Ltd, levocetirizine + montelukast.",
+        "notes": "Montek LC, Montecip LC, Montair LC Kid, Montair 10 and Montair FX/AB are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 57,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/montair-lc-tablet-15-s-233178",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. CIPLA LIMITED, montelukast + levocetirizine.",
+        "notes": "Montek LC, Montecip LC, Montair LC Kid, Montair 10 and Montair FX/AB are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}
