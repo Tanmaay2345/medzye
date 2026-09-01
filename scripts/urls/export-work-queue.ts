@@ -69,8 +69,29 @@ const DOSAGE_FORM_RE =
  * This is an evidence-derived list, not a general rule: it was built from
  * medicines already classified by hand. A new brand with the same problem would
  * NOT be caught automatically and must be added here deliberately.
+ *
+ * Batch 4 demonstrated exactly that gap. Betadine Ointment, Voveran and Digene
+ * are un-pinnable for the same reasons as the Batch 3 medicines, but were not on
+ * this list, so the score gave them +1 and selected them anyway. All three
+ * returned zero URLs and account for 12 of that batch's 16 rejections. They are
+ * added below -- deliberately, from observed evidence, exactly as the comment
+ * above requires.
+ *
+ * Being on this list is a SELECTION decision only. It does not delete the
+ * medicine, does not mark it invalid, and changes nothing in the medicines
+ * table. These rows become eligible again once the catalogue carries the
+ * variant-defining field each one needs.
  */
-const DEPRIORITIZED_IDS = new Set([34, 58, 59, 72, 74, 80, 85, 87, 89, 94, 30, 45]);
+const DEPRIORITIZED_IDS = new Set([
+  // Brand ships several strengths and our record carries none.
+  34, 58, 59, 72, 74, 80, 85, 87, 89, 94,
+  15, // Betadine Ointment -- 5% and 10% w/w listed side by side; no unqualified base listing
+  16, // Voveran -- 50 / 50 GE / DT 50 / SR 75 / SR 100 / SR 150
+  // Bulk commodity where pack size is identity-bearing.
+  30, 45,
+  // Dosage form itself is unresolvable from the catalogue.
+  22, // Digene -- gel AND chewable tablet, different compositions; our own description says "gel and tablet"
+]);
 
 /**
  * How likely we are to be able to identify this medicine's exact product on a
