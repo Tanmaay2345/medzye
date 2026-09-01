@@ -1,0 +1,243 @@
+{
+  "run_id": "batch5-part2",
+  "generated_at": "2026-09-01T17:05:40.977691+00:00",
+  "medicine_ids": [
+    31,
+    36
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 31,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/volini-gel-30g",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Volini Pain Relief Gel, 30 gm', Sun Pharmaceutical Industries Ltd; diclofenac + methyl salicylate + linseed oil + menthol.",
+        "notes": "Volini Maxx, Volini Joint Xpert, Volini Spray and Volini SR tablet are different products and were rejected. Tube sizes 6-100g are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 31,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/volini-pain-relief-gel-for-sprain-muscle-joint-neck-low-back-pain-bone-joint-muscle-care-otc313229",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "sun-pharmaceutical-industries-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Volini Pain Relief Gel', 30gm tube, marketer sun-pharmaceutical-industries-ltd.",
+        "notes": "Volini Maxx, Volini Joint Xpert, Volini Spray and Volini SR tablet are different products and were rejected. Tube sizes 6-100g are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 31,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/volini-gel-30gm-lui3ud-8272653",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Volini Gel 30gm', Sun Pharmaceutical Industries Ltd, diclofenac diethylamine.",
+        "notes": "Volini Maxx, Volini Joint Xpert, Volini Spray and Volini SR tablet are different products and were rejected. Tube sizes 6-100g are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 31,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/volini-pain-relief-gel---30-gm-22730",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "RANBAXY LABORATORIES (SUN PHARMA)"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Volini Pain Relief Gel 30 GM'. Marketer reads RANBAXY LABORATORIES (SUN PHARMA); Ranbaxy is a Sun Pharma subsidiary, matching our 'Sun Pharma Consumer Healthcare'.",
+        "notes": "Volini Maxx, Volini Joint Xpert, Volini Spray and Volini SR tablet are different products and were rejected. Tube sizes 6-100g are retail SKUs, not medicine identity."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 36,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/zincovit-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Apex Laboratories Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zincovit Tablet', Apex Laboratories Pvt Ltd, multivitamin/multimineral with grape seed extract.",
+        "notes": "Zincovit-CD, Zincovit W, Zincovit Forte, and the capsule/syrup/drops forms are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 36,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/zincovit-tablet-with-multivitamin-multimineral-grape-seed-extract-otc111998",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "apex-laboratories-pvt-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer apex-laboratories-pvt-ltd; vitamins B1/B2/B6/C/D3/E confirmed on page.",
+        "notes": "Zincovit-CD, Zincovit W, Zincovit Forte, and the capsule/syrup/drops forms are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 36,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/zincovit-tablet-15s-lui88c-8357997",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Apex Laboratories Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zincovit Tablet 15'S', Apex Laboratories Pvt Ltd.",
+        "notes": "Zincovit-CD, Zincovit W, Zincovit Forte, and the capsule/syrup/drops forms are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 36,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/zincovit-strip-of-15-tablets-green--3318",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "APEX LABORATORIES PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zincovit strip of 15 tablets', APEX LABORATORIES PRIVATE LIMITED.",
+        "notes": "Zincovit-CD, Zincovit W, Zincovit Forte, and the capsule/syrup/drops forms are different products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

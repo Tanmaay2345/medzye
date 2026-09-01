@@ -1,0 +1,391 @@
+{
+  "run_id": "batch5-rejections",
+  "generated_at": "2026-09-01T17:14:26.923670+00:00",
+  "note": "Rejected pairs from batch 5. No URL is proposed for any of these.",
+  "medicine_ids": [
+    9,
+    29,
+    32,
+    41
+  ],
+  "invocations": 13,
+  "results": [
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "PharmEasy names the marketer 'ABBIVIN PHARMACEUTICALS PRIVATE LIMITED' and the page mentions neither Allergan, AbbVie nor Abbott. Abbivin could not be verified as an Allergan/AbbVie entity from any independent source - AbbVie's confirmed Indian ophthalmic arm is AbbVie Therapeutics India, which is what 1mg shows. Rejected rather than assumed, per the reject-when-uncertain rule.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Foracort is listed as 100 / 200 / 400 / Forte / Junior / G plus Ciphaler, Synchrobreathe, Rotacap, Multihaler and Respules presentations; our record carries no strength. Same outcome as Batch 2. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Foracort is listed as 100 / 200 / 400 / Forte / Junior / G plus Ciphaler, Synchrobreathe, Rotacap, Multihaler and Respules presentations; our record carries no strength. Same outcome as Batch 2. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Foracort is listed as 100 / 200 / 400 / Forte / Junior / G plus Ciphaler, Synchrobreathe, Rotacap, Multihaler and Respules presentations; our record carries no strength. Same outcome as Batch 2. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Foracort is listed as 100 / 200 / 400 / Forte / Junior / G plus Ciphaler, Synchrobreathe, Rotacap, Multihaler and Respules presentations; our record carries no strength. Same outcome as Batch 2. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 32,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Calpol tablets are listed at 250mg, 500mg, 650mg and 1000mg at all four pharmacies, plus Calpol Plus and Calpol T combinations; our record is plain 'Calpol' with no strength. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 32,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Calpol tablets are listed at 250mg, 500mg, 650mg and 1000mg at all four pharmacies, plus Calpol Plus and Calpol T combinations; our record is plain 'Calpol' with no strength. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 32,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Calpol tablets are listed at 250mg, 500mg, 650mg and 1000mg at all four pharmacies, plus Calpol Plus and Calpol T combinations; our record is plain 'Calpol' with no strength. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 32,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "STRENGTH AMBIGUITY. Calpol tablets are listed at 250mg, 500mg, 650mg and 1000mg at all four pharmacies, plus Calpol Plus and Calpol T combinations; our record is plain 'Calpol' with no strength. Candidate for DEPRIORITIZED_IDS.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. Our record says Sun Pharmaceutical Industries. Apollo and PharmEasy both name Wockhardt Ltd; Netmeds names Dr. Reddy's Laboratories Ltd. No source names Sun Pharma. Rejected and reported for approval rather than corrected automatically.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. Our record says Sun Pharmaceutical Industries. Apollo and PharmEasy both name Wockhardt Ltd; Netmeds names Dr. Reddy's Laboratories Ltd. No source names Sun Pharma. Rejected and reported for approval rather than corrected automatically.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "MANUFACTURER CONFLICT. Our record says Sun Pharmaceutical Industries. Apollo and PharmEasy both name Wockhardt Ltd; Netmeds names Dr. Reddy's Laboratories Ltd. No source names Sun Pharma. Rejected and reported for approval rather than corrected automatically.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Only 'Practin EN Syrup' (cyproheptadine + tricholine citrate) and the Practin 4mg tablet were found on 1mg. Practin EN is a different formulation from our cyproheptadine-only record and was not substituted.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}

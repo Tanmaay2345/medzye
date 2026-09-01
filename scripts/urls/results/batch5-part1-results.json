@@ -1,0 +1,214 @@
+{
+  "run_id": "batch5-part1",
+  "generated_at": "2026-09-01T16:58:17.870833+00:00",
+  "medicine_ids": [
+    9,
+    24
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/refresh-tears-drops-10ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Allergan Healthcare India Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Refresh Tears Eye Drops', Allergan Healthcare India Pvt Ltd, carboxymethylcellulose 0.5%. Matches the corrected catalogue manufacturer.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/refresh-tears-eye-drop-140934",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "abbvie-therapeutics-india-private-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Refresh Tears Eye Drop'. Marketer is AbbVie Therapeutics India Private Limited - AbbVie acquired Allergan in May 2020 and this is its confirmed Indian ophthalmic entity, i.e. the successor to Allergan India rather than a different company.",
+        "notes": "MEDIUM: successor entity rather than an exact match to 'Allergan India'. Same brand-owner group; brand and composition confirmed."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 9,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/refresh-tears-eye-drops-10ml",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Allergan India Pvt Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/refresh-tears-eye-drops-10ml-lui3qt-8269600",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page; marketer Allergan India Pvt Ltd - an exact match for the corrected catalogue value.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/refresh-tears-eye-drops-10ml-lui3qt-8269600",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 24,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/moxicip-eye-drops-5ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Moxicip Eye Drops 5 ml', Cipla Ltd, moxifloxacin.",
+        "notes": "Moxicip BR / D / KT / LP are combination products and Moxicip Eye Ointment a different form; all rejected. Plain Moxicip 0.5% moxifloxacin matches our record."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 24,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/moxicip-eye-drop-19304",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "cipla-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer cipla-ltd, Moxifloxacin (0.5% w/v), 5ml.",
+        "notes": "Moxicip BR / D / KT / LP are combination products and Moxicip Eye Ointment a different form; all rejected. Plain Moxicip 0.5% moxifloxacin matches our record."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 24,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/moxicip-eye-drops-5ml-lui7bm-8341131",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Moxicip Eye Drops 5ml', Cipla Ltd, moxifloxacin.",
+        "notes": "Moxicip BR / D / KT / LP are combination products and Moxicip Eye Ointment a different form; all rejected. Plain Moxicip 0.5% moxifloxacin matches our record."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 24,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/moxicip-eye-drops-6201",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Moxicip 0.5 %W/V Eye Drop', CIPLA LIMITED, moxifloxacin.",
+        "notes": "Moxicip BR / D / KT / LP are combination products and Moxicip Eye Ointment a different form; all rejected. Plain Moxicip 0.5% moxifloxacin matches our record."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

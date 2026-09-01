@@ -1,0 +1,126 @@
+{
+  "run_id": "batch5-part4",
+  "generated_at": "2026-09-01T17:14:26.923670+00:00",
+  "medicine_ids": [
+    39
+  ],
+  "invocations": 4,
+  "results": [
+    {
+      "medicine_id": 39,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/genteal-eye-drops-10ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Alcon Laboratories Inc"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Genteal Eye Drops' 10ml, Alcon Laboratories, HYPROMELLOSE 0.3% w/v.",
+        "notes": "Genteal Gel is a different dosage form and was rejected. All four pharmacies name Alcon, matching our record; a search snippet showing 'Novartis India' was stale - the live page marketer field reads Alcon Laboratories India Pvt Ltd (Alcon was spun off from Novartis in 2019)."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 39,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/genteal-eye-drop-13653",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "alcon-laboratories"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer alcon-laboratories, hydroxypropylmethylcellulose 0.3% w/v, bottle of 10ml.",
+        "notes": "Genteal Gel is a different dosage form and was rejected. All four pharmacies name Alcon, matching our record; a search snippet showing 'Novartis India' was stale - the live page marketer field reads Alcon Laboratories India Pvt Ltd (Alcon was spun off from Novartis in 2019)."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 39,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/genteal-eye-drops-10ml-lui58p-8301713",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Alcon Laboratories India Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Genteal Eye Drops 10ml', marketer Alcon Laboratories India Pvt Ltd, hydroxypropyl methylcellulose.",
+        "notes": "Genteal Gel is a different dosage form and was rejected. All four pharmacies name Alcon, matching our record; a search snippet showing 'Novartis India' was stale - the live page marketer field reads Alcon Laboratories India Pvt Ltd (Alcon was spun off from Novartis in 2019)."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 39,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/genteal-bottle-of-10ml-eye-drops-48601",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ALCON LABORATORIES PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. ALCON LABORATORIES PVT LTD; hydroxypropyl methylcellulose present on page.",
+        "notes": "Genteal Gel is a different dosage form and was rejected. All four pharmacies name Alcon, matching our record; a search snippet showing 'Novartis India' was stale - the live page marketer field reads Alcon Laboratories India Pvt Ltd (Alcon was spun off from Novartis in 2019)."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

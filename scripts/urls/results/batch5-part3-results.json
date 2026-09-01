@@ -1,0 +1,243 @@
+{
+  "run_id": "batch5-part3",
+  "generated_at": "2026-09-01T17:10:06.981725+00:00",
+  "medicine_ids": [
+    37,
+    38
+  ],
+  "invocations": 8,
+  "results": [
+    {
+      "medicine_id": 37,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/gelusil-mps-mint-flav-chew-tablet-15s",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Gelusil MPS Mint Chewable Tablet', Pfizer Ltd; activated dimethicone + dried aluminium hydroxide + magnesium hydroxide + magnesium aluminium silicate.",
+        "notes": "MEDIUM: every pharmacy brands the tablet 'Gelusil MPS' while our record is plain 'Gelusil'. Accepted on form and composition per the ambiguity rule -- MPS chewable is the ONLY tablet presentation of Gelusil, and the antacid composition matches -- but the brand string is not identical. Gelusil Original/Xtra Cool/Raft liquids and Gelusil Plus were rejected as different products or forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 37,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/gelusil-mps-chewable-tablet-mint-otc554277",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "pfizer-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200 on retry, marketer pfizer-ltd. First request returned HTTP 408 (timeout); per the verifier contract a transient network failure is UNREACHABLE rather than INVALID, so it was retried and succeeded.",
+        "notes": "MEDIUM: every pharmacy brands the tablet 'Gelusil MPS' while our record is plain 'Gelusil'. Accepted on form and composition per the ambiguity rule -- MPS chewable is the ONLY tablet presentation of Gelusil, and the antacid composition matches -- but the brand string is not identical. Gelusil Original/Xtra Cool/Raft liquids and Gelusil Plus were rejected as different products or forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 37,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/gelusil-mps-original-mint-flavour-chewable-tablet-15s-lui6ki-8326975",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Gelusil MPS Original Mint Flavour Chewable Tablet 15's', Pfizer Ltd.",
+        "notes": "MEDIUM: every pharmacy brands the tablet 'Gelusil MPS' while our record is plain 'Gelusil'. Accepted on form and composition per the ambiguity rule -- MPS chewable is the ONLY tablet presentation of Gelusil, and the antacid composition matches -- but the brand string is not identical. Gelusil Original/Xtra Cool/Raft liquids and Gelusil Plus were rejected as different products or forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 37,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/gelusil-mps-original-mint-flavour-tablet-15-s-231695",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PFIZER LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. PFIZER LIMITED, Gelusil MPS chewable tablet strip of 15.",
+        "notes": "MEDIUM: every pharmacy brands the tablet 'Gelusil MPS' while our record is plain 'Gelusil'. Accepted on form and composition per the ambiguity rule -- MPS chewable is the ONLY tablet presentation of Gelusil, and the antacid composition matches -- but the brand string is not identical. Gelusil Original/Xtra Cool/Raft liquids and Gelusil Plus were rejected as different products or forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 38,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/soframycin-skin-cream-30gm",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ENCUBE ETHICALS LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Soframycin Multi-Purpose Antiseptic Cream' 30gm, ENCUBE ETHICALS LIMITED, framycetin - confirms the corrected catalogue manufacturer (was Sanofi India).",
+        "notes": "Soframycin Powder, Antiseptic Solution and Sofradex F are different products and were rejected. Tube sizes 20/30/100g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 38,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/soframycin-multi-purpose-antiseptic-cream-for-cuts-wounds-burns-skin-infections-289993",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "encube-ethicals-private-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer encube-ethicals-private-limited, Framycetin (1% w/w).",
+        "notes": "Soframycin Powder, Antiseptic Solution and Sofradex F are different products and were rejected. Tube sizes 20/30/100g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 38,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/soframycin-skin-cream-30gm-lui54i-8298324",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Encube Ethicals Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Soframycin Skin Cream 30gm', Encube Ethicals Pvt. Ltd., framycetin.",
+        "notes": "Soframycin Powder, Antiseptic Solution and Sofradex F are different products and were rejected. Tube sizes 20/30/100g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 38,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/soframycin-skin-cream-30gm-172697",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "ENCUBE ETHICALS LIMITED"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://pharmeasy.in/health-care/products/soframycin-skin-cream-30gm-172697",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the /health-care/ path for the same product id; ENCUBE ETHICALS LIMITED, framycetin.",
+        "notes": "Soframycin Powder, Antiseptic Solution and Sofradex F are different products and were rejected. Tube sizes 20/30/100g are retail SKUs."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://pharmeasy.in/health-care/products/soframycin-skin-cream-30gm-172697",
+        "accept": true
+      }
+    }
+  ]
+}
