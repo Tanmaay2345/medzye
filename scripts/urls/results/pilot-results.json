@@ -1,0 +1,714 @@
+{
+  "run_id": "pilot-2026-09-01",
+  "generated_at": "2026-09-01T04:33:21.171734+00:00",
+  "pipeline": "medicines -> finder skill -> product-url-verifier -> normalise -> validate -> supabase",
+  "note": "Finder and verifier outputs are plain-text labelled blocks per their skill contracts; this file is the normalised transcription. verification_status is set from the VERIFIER only; the finder's own confidence is provenance.",
+  "invocations": 20,
+  "found": 20,
+  "accepted": 20,
+  "results": [
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/dolo-650mg-tablet-15-s",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Dolo-650 Tablet",
+        "generic_name_found": "Paracetamol",
+        "strength_found": "650mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Micro Labs Ltd",
+        "pack_size_found": "15's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Page shows Micro Labs Ltd and PARACETAMOL-650MG.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/dolo-650-tablet-74467",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Dolo 650 Tablet",
+        "generic_name_found": "Paracetamol",
+        "strength_found": "650mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Micro Labs Ltd",
+        "pack_size_found": "Strip of 15"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Brand 'Dolo', Micro Labs Ltd, Paracetamol (650mg), strip of 15 tablets.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/dolo-650-tablet-15s-lui1wb-8231049",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Dolo 650 Tablet 15's",
+        "generic_name_found": "Paracetamol",
+        "strength_found": "650 mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": null,
+        "pack_size_found": "15's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Title 'Dolo 650 Tablet 15's', paracetamol 650mg confirmed on page.",
+        "notes": "Manufacturer not cleanly extractable from Netmeds markup; identity, salt, strength and form all confirmed."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/dolo-650mg-strip-of-15-tablets-44140",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Dolo 650 Tablet",
+        "generic_name_found": "Paracetamol",
+        "strength_found": "650mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Micro Labs Limited",
+        "pack_size_found": "Strip of 15"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Micro Labs Limited and Paracetamol confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 1,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/combiflam-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Combiflam Tablet",
+        "generic_name_found": "Ibuprofen + Paracetamol",
+        "strength_found": "400mg + 325mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": null,
+        "pack_size_found": "20's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Ibuprofen 400 + Paracetamol 325 confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 1,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/combiflam-tablet-325414",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Combiflam Tablet",
+        "generic_name_found": "Ibuprofen + Paracetamol",
+        "strength_found": "400mg + 325mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Sanofi Consumer Healthcare India Limited",
+        "pack_size_found": null
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Marketer sanofi-consumer-healthcare-india-limited matches Medyze manufacturer 'Sanofi India'.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 1,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/combiflam-tablet-20s-lui7zg-8353314",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Combiflam Tablet 20'S",
+        "generic_name_found": "Ibuprofen + Paracetamol",
+        "strength_found": "400 mg + 325 mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Sanofi India Limited",
+        "pack_size_found": "20's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Sanofi India Limited and Ibuprofen 400 + Paracetamol 325 confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 1,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/combiflam-strip-of-20-tablets-24074",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Combiflam Tablet",
+        "generic_name_found": "Ibuprofen + Paracetamol",
+        "strength_found": "400mg + 325mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Sanofi",
+        "pack_size_found": "Strip of 20"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Sanofi + both actives confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 13,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/augmentin-duo-625mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Augmentin 625 Duo Tablet",
+        "generic_name_found": "Amoxycillin + Clavulanic Acid",
+        "strength_found": "625mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": null,
+        "pack_size_found": "10's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Amoxycillin + Clavulanic Acid 625 confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 13,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/augmentin-625-duo-tablet-138629",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Augmentin 625 Duo Tablet",
+        "generic_name_found": "Amoxycillin + Clavulanic Acid",
+        "strength_found": "500mg + 125mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals Ltd",
+        "pack_size_found": null
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Marketer glaxo-smithkline-pharmaceuticals-ltd matches Medyze manufacturer 'GSK'.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 13,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/augmentin-625-duo-tablet-10s-lui7t5-8350103",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Augmentin 625 DUO Tablet",
+        "generic_name_found": "Amoxycillin + Clavulanic Acid",
+        "strength_found": "625MG",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "GlaxoSmithKline Pharmaceuticals",
+        "pack_size_found": "10's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. GSK and both actives confirmed on page.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 13,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/augmentin-duo-625mg-strip-of-10-tablets-11551",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Augmentin 625 Duo Tablet",
+        "generic_name_found": "Amoxycillin + Clavulanic Acid",
+        "strength_found": "500mg + 125mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "GlaxoSmithKline India",
+        "pack_size_found": "Strip of 10"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. GlaxoSmithKline India confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 14,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/asthalin-inhaler-200mg",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "product_name_found": "Asthalin 100 mcg Inhaler 200 Mdi",
+        "generic_name_found": "Salbutamol",
+        "strength_found": "100 mcg",
+        "dosage_form_found": "Inhaler",
+        "manufacturer_found": null,
+        "pack_size_found": "200 MDI"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Salbutamol 100mcg inhaler confirmed.",
+        "notes": "AMBIGUITY: Apollo also lists 'Asthalin Ecopack Inhaler' as a separate inhaler product. The Medyze record has no strength or pack size, so the variant cannot be pinned down. Downgraded to MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 14,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/asthalin-100mcg-inhaler-141944",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "ASTHAlin 100mcg Inhaler",
+        "generic_name_found": "Salbutamol",
+        "strength_found": "100mcg",
+        "dosage_form_found": "Inhaler",
+        "manufacturer_found": "Cipla Ltd",
+        "pack_size_found": null
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Marketer cipla-ltd matches Medyze manufacturer 'Cipla'; Salbutamol 100mcg. Single inhaler variant on this site.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 14,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/asthalin-inhaler-200md",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "product_name_found": "Asthalin Inhaler",
+        "generic_name_found": "Salbutamol",
+        "strength_found": "100 mcg",
+        "dosage_form_found": "Inhaler",
+        "manufacturer_found": "CIPLA LTD",
+        "pack_size_found": "200 MD"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/asthalin-inhaler-200md-lui25w-8236682",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect. /prescriptions/asthalin-inhaler-200md redirects to the canonical /product/ page, which shows CIPLA LTD and Salbutamol 100mcg \u2014 the correct product.",
+        "notes": "Redirect followed and destination confirmed to be the same product. Stored as REDIRECT_VERIFIED with final_url recorded."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/asthalin-inhaler-200md-lui25w-8236682",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 14,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/asthalin-100mcg-inhaler-35648",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Asthalin 100mcg Inhaler",
+        "generic_name_found": "Salbutamol",
+        "strength_found": "100mcg",
+        "dosage_form_found": "Inhaler",
+        "manufacturer_found": "Cipla Limited",
+        "pack_size_found": null
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. CIPLA LIMITED and Salbutamol confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/amlokind-at-5-50-tablets-15-s",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Amlokind-AT Tablets",
+        "generic_name_found": "Amlodipine + Atenolol",
+        "strength_found": "5mg + 50mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": null,
+        "pack_size_found": "15's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. Title 'Amlokind-AT Tablets', Amlodipine + Atenolol confirmed.",
+        "notes": "Apollo also lists a 30's pack. Pack size is absent from the Medyze record so it cannot mismatch; brand, salts, strength and form all confirmed."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/amlokind-at-tablet-648536",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Amlokind-AT Tablet",
+        "generic_name_found": "Amlodipine + Atenolol",
+        "strength_found": "5mg + 50mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Mankind Pharma Ltd",
+        "pack_size_found": "15 tablets"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Marketer mankind-pharma-ltd matches Medyze manufacturer 'Mankind Pharma'.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/amlokind-at-tablet-15s-lufv5h-7531187",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "AMLOKIND AT Tablet 15's",
+        "generic_name_found": "Amlodipine + Atenolol",
+        "strength_found": "5mg + 50mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": null,
+        "pack_size_found": "15's"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. Title 'AMLOKIND AT Tablet 15's', Amlodipine + Atenolol confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/amlokind-at-50mg-strip-of-10-tablets-34436",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "product_name_found": "Amlokind-AT Tablet",
+        "generic_name_found": "Amlodipine + Atenolol",
+        "strength_found": "5mg + 50mg",
+        "dosage_form_found": "Tablet",
+        "manufacturer_found": "Mankind Pharmaceuticals Ltd",
+        "pack_size_found": "Strip of 10"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects, canonical self-referencing. MANKIND PHARMACEUTICALS confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "url": "https://www.apollopharmacy.in/dolo-650mg-tablet-15-s.html",
+      "medicine_id": 2,
+      "pharmacy_id": 1,
+      "verifier_status": "INVALID",
+      "reason": "HTTP 200 but redirects to the Apollo homepage \u2014 not a product page. Never stored."
+    },
+    {
+      "url": "https://www.apollopharmacy.in/medicine/amlokind-at-tablet",
+      "medicine_id": 20,
+      "pharmacy_id": 1,
+      "verifier_status": "INVALID",
+      "reason": "Slug contains 'amlokind-at' but the page title is 'Amlodac AT 5 mg/50 mg Tablet' \u2014 a different brand. Rejected on page content, not slug. Never stored."
+    },
+    {
+      "url": "https://www.netmeds.com/product/combiflam-plus-650-tablet-10s-m2ifee-8563727",
+      "medicine_id": 1,
+      "pharmacy_id": 4,
+      "verifier_status": "INVALID",
+      "reason": "Combiflam Plus 650 is paracetamol+caffeine, not ibuprofen+paracetamol. Different formulation. Never stored."
+    }
+  ]
+}

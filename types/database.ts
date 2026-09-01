@@ -75,3 +75,47 @@ export type MedicineWithPrice = Medicine & {
 export type PharmacyOffer = MedicinePrice & {
   pharmacy: Pharmacy;
 };
+
+/**
+ * A managed outbound URL to a pharmacy's page for a medicine.
+ *
+ * Written offline by scripts/urls/*, never by the app. RLS restricts public
+ * SELECT to VERIFIED / REDIRECT_VERIFIED rows, so any row the browser can read
+ * is already safe to serve — but `verification_status` is still typed with the
+ * full set because the offline scripts run with the service-role key and do
+ * see the rest.
+ *
+ * `match_confidence` comes from the VERIFIER, not the finder: the finder's own
+ * confidence is provenance only and never decides acceptance.
+ */
+export type MedicineProductUrl = {
+  id: number;
+  medicine_id: number;
+  pharmacy_id: number;
+  url_type: "DIRECT_PRODUCT" | "SEARCH";
+  url: string;
+  final_url: string | null;
+  verification_status:
+    | "PENDING"
+    | "VERIFIED"
+    | "REDIRECT_VERIFIED"
+    | "INVALID"
+    | "UNREACHABLE"
+    | "NOT_FOUND"
+    | "AMBIGUOUS"
+    | "TEMPLATE_UNVERIFIED";
+  match_confidence: number | null;
+  last_verified_at: string | null;
+  source_skill: string | null;
+  verification_notes: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+/** A verified URL joined to the pharmacy it points at, for the detail page. */
+export type ResolvedProductUrl = {
+  url: string;
+  url_type: MedicineProductUrl["url_type"];
+  verification_status: MedicineProductUrl["verification_status"];
+  pharmacy: Pharmacy;
+};

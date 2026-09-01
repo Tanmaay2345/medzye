@@ -13,6 +13,7 @@ import { getCategories } from "@/lib/queries/categories";
 import { getMedicineDetails } from "@/lib/queries/medicine-details";
 import { getMedicineById } from "@/lib/queries/medicines";
 import { getOfferById } from "@/lib/queries/pharmacies";
+import { getProductUrl } from "@/lib/queries/product-urls";
 import { IMAGE_BLUR_DATA_URL } from "@/utils/image-placeholder";
 
 export default async function MedicineDetailPage({
@@ -57,6 +58,15 @@ export default async function MedicineDetailPage({
   // honest, rather than attributing someone else's number to this pharmacy.
   const displayPrice = selectedOffer ? selectedOffer.price : medicine.lowest_price;
   const displayMrp = selectedOffer ? selectedOffer.mrp ?? null : medicine.lowest_price_mrp;
+
+  // The managed URL is looked up for the pharmacy the user actually chose, so
+  // "Buy at X" always sends them to the same pharmacy whose price is on screen.
+  // Without a selection there is no pharmacy to send them to, so this stays
+  // null and the panel keeps its existing behaviour.
+  const productUrl =
+    selectedOffer && selectedOffer.pharmacy_id != null
+      ? await getProductUrl(id, selectedOffer.pharmacy_id)
+      : null;
 
   return (
     <div className="flex min-h-full flex-col">
@@ -111,7 +121,14 @@ export default async function MedicineDetailPage({
 
             <DeliveryInfoCallout />
 
-            <PurchasePanel disabled={displayPrice == null} />
+            <PurchasePanel
+              disabled={displayPrice == null}
+              purchase={
+                productUrl
+                  ? { url: productUrl.url, pharmacyName: productUrl.pharmacy.name }
+                  : null
+              }
+            />
           </div>
         </div>
 

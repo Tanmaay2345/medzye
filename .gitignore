@@ -53,3 +53,6 @@ Brand\ image\ /
 # tesseract.js language data, fetched at runtime from the CDN in the browser;
 # a Node run drops a 5MB copy in the project root
 *.traineddata
+
+# Regenerated on every discovery run (timestamped) — the evidence record is pilot-results.json
+scripts/urls/results/work-queue.json
