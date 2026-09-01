@@ -1,0 +1,269 @@
+{
+  "run_id": "batch1-recovery-2026-09-01",
+  "generated_at": "2026-09-01T07:44:32.503474+00:00",
+  "note": "Recovery of 9 Batch-1 NOT_FOUND pairs re-run with one pharmacy-specific search per (medicine, pharmacy) pair, as originally specified. No code, matching logic, acceptance gate or confidence floor was changed.",
+  "invocations": 9,
+  "results": [
+    {
+      "medicine_id": 5,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/ecosprin-75mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "USV Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, 0 redirects. 'Ecosprin 75 Tablet', USV Pvt Ltd, aspirin.",
+        "notes": "Batch 1 combined query surfaced only Ecosprin-AV (aspirin+atorvastatin) and Ecosprin-C combinations; the plain product exists."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/avil-25-tablet-69629",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "sanofi-consumer-healthcare-india-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Avil 25 Tablet', marketer sanofi-consumer-healthcare-india-limited, pheniramine.",
+        "notes": "Slug is avil-25-tablet (no 'mg') - the combined query did not surface it."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/ciplox-500-tablet-56693",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "cipla-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'cipLOX 500 Tablet', marketer cipla-ltd, ciprofloxacin 500mg, strip of 10.",
+        "notes": "Slug is ciplox-500-tablet (no 'mg'); decoys Ciplox-OZ/TZ, Cinplox, Ciflox, Ciplex crowded the combined query."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/ciplox-500mg-tablet-10s-lufuqf-7523402",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ciplox 500mg Tablet 10's', Cipla Ltd, ciprofloxacin.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 43,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/ciplox-500mg-tablet-40647",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ciplox 500 Tablet', CIPLA LIMITED, ciprofloxacin.",
+        "notes": "Decoys rejected: Ciplox OD 500, Ciplox-TZ, Ciplox 250, Ciploxine 500."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/calpol-250-strawberry-flavour-suspension-60ml-lui5ru-8312553",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glaxosmithkline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Calpol 250 Strawberry Flavour Suspension 60ml', GSK Pharmaceuticals Ltd, paracetamol. Correct strength (250) and dosage form (suspension).",
+        "notes": "Flavour is not an identity attribute in our schema; strength, form, salt and manufacturer all confirmed. Decoys rejected: Calpol 125, Calpol 120mg, Calpol Plus, Calpol 250mg TABLET."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 26,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/calpol-250mg-susp-60ml-221350",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Calpol 250 MG/5ML Suspension (60)', GLAXOSMITHKLINE, paracetamol. Correct strength and dosage form.",
+        "notes": "Chose the plain suspension listing over the flavour-qualified one, as our record specifies no flavour. 120ml and tablet variants rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 42,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/avil-25mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sanofi Consumer Healthcare"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Avil 25 Tablet', Sanofi Consumer Healthcare, pheniramine.",
+        "notes": "Conventional slug; simply not surfaced by the combined query. Avil 50 and Avil injection rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 4,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/glycomet-tablet-18033",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "usv-private-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer usv-private-limited; composition confirmed by structured read as Metformin (500mg), strip of 10.",
+        "notes": "MEDIUM: page is titled only 'Glycomet Tablet' - the strength appears in the composition, not the name - and the page does not state IR vs SR. Accepted on composition rather than title, per the diagnostic finding. Glycomet 500 SR / GP / 250 / Trio all rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}
