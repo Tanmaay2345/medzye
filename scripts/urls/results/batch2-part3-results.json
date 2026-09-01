@@ -1,0 +1,126 @@
+{
+  "run_id": "batch2-part3-2026-09-01",
+  "generated_at": "2026-09-01T11:42:27.356052+00:00",
+  "medicine_ids": [
+    21
+  ],
+  "invocations": 4,
+  "results": [
+    {
+      "medicine_id": 21,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/becosules-capsule",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Becosules Capsule', Pfizer Ltd, B-complex + ascorbic acid.",
+        "notes": "Becosules Z / Plus / Performance / Women / Syrup are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 21,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/becosules-capsule-with-b-complex-vitamin-c-for-mouth-ulcers-otc114687",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "pfizer-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer pfizer-ltd, B-complex + vitamin C.",
+        "notes": "Becosules Z / Plus / Performance / Women / Syrup are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 21,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/becosules-capsule-20s-lui7c4-8341300",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Becosules Capsule 20'S', Pfizer Ltd, thiamine/riboflavin/nicotinamide/pyridoxine/ascorbic acid.",
+        "notes": "Becosules Z / Plus / Performance / Women / Syrup are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 21,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/becosules-strip-of-20-capsules-36989",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PFIZER LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. PFIZER LIMITED, B-complex + ascorbic acid.",
+        "notes": "Becosules Z / Plus / Performance / Women / Syrup are distinct variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "run_id": "batch2-part2-2026-09-01",
+  "generated_at": "2026-09-01T11:40:02.222289+00:00",
+  "medicine_ids": [
+    10,
+    19
+  ],
+  "invocations": 5,
+  "results": [
+    {
+      "medicine_id": 10,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/meftal-spas-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Blue Cross Laboratories Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Meftal-Spas Tablet', Blue Cross Laboratories Pvt Ltd, dicyclomine + mefenamic acid.",
+        "notes": "Meftal-Spas DS is a different strength and was rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 10,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/meftal-spas-tablet-71856",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "blue-cross-laboratories-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer blue-cross-laboratories-ltd, dicyclomine + mefenamic acid.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 10,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/meftal-spas-tablet-10s-lui57u-8299370",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Blue Cross Laboratories Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Meftal Spas Tablet 10'S', Blue Cross Laboratories Ltd, both actives confirmed.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 10,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/meftal-spas-tablet-5071",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "BLUE CROSS LABORATORIES PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. BLUE CROSS LABORATORIES PRIVATE LIMITED, dicyclomine + mefenamic acid.",
+        "notes": "Meftal-Spas DS / suspension / drops / injection variants rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 19,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/glucophage-500mg-strip-of-10-tablets-192417",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "MERCK LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Glucophage 500 MG Tablet (10)', MERCK LIMITED - an exact match for our catalogue manufacturer - metformin 500mg tablet.",
+        "notes": "MEDIUM: our medicine_details composition for this row reads 'Metformin + Insulin, regular, human'. Insulin is not orally bioavailable and does not appear on the page; it is an RxNorm ingredient-mapping artifact in our own seed data (affects only ids 19 and 49). Matched on brand + metformin + manufacturer; full composition could not be confirmed, so capped at MEDIUM rather than HIGH. medicine_details was NOT modified."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

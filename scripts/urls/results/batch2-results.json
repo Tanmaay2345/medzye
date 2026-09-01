@@ -1,0 +1,360 @@
+{
+  "run_id": "batch2-part1-2026-09-01",
+  "generated_at": "2026-09-01T11:33:31.894990+00:00",
+  "medicine_ids": [
+    81,
+    88,
+    100
+  ],
+  "invocations": 12,
+  "results": [
+    {
+      "medicine_id": 81,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/evion-400-softgel-capsule-20-s",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Procter & Gamble Health Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Evion 400 (20 Capsules)', Procter & Gamble Health Ltd. Confirms the corrected manufacturer (was Merck Limited).",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 81,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/evion-400mg-capsule-powerful-antioxidant-to-repair-protect-cells-for-muscle-health-otc846523",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "procter-gamble-health-ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.1mg.com/otc/evion-400mg-capsule-helps-repair-protect-muscles-otc846523",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the current slug for the same otc846523 product; marketer procter-gamble-health-ltd.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.1mg.com/otc/evion-400mg-capsule-helps-repair-protect-muscles-otc846523",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 81,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/evion-400mg-capsule-10s-lufuth-7523331",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PROCTER & GAMBLE HEALTH LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Evion 400mg Capsule 10'S', PROCTER & GAMBLE HEALTH LTD, tocopheryl acetate.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 81,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/evion-400mg-strip-of-20-capsule-3110481",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PROCTER & GAMBLE HEALTH LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. PROCTER & GAMBLE HEALTH LIMITED, Vitamin E 400mg.",
+        "notes": "Evion Forte, Evion LC, Evioz, Evinal and E-Gen rejected as different products."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 88,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/zifi-200mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "FDC Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zifi 200 Tablet', FDC Ltd, cefixime 200mg.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 88,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/zifi-200-tablet-51344",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "fdc-limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer fdc-limited, cefixime.",
+        "notes": "Zifi CV / O / AZ / X / Turbo / Lbx are combination products and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 88,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/zifi-200mg-tablet-10s-lui2y4-8252984",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Fdc Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Zifi 200mg Tablet 10'S', Fdc Ltd, cefixime.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 88,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/zifi-200mg-tablet-10311",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "FDC LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. FDC LIMITED, cefixime.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 100,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/susten-200mg-capsule",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Susten 200 Capsule', Sun Pharmaceutical Industries Ltd, progesterone.",
+        "notes": "Susten SR 200, Susten VT 200, Susten 400 and Susten 200 Injection are distinctly named variants and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 100,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/susten-200-soft-gelatin-capsule-6672",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "sun-pharmaceutical-industries-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer sun-pharmaceutical-industries-ltd, Progesterone (Natural Micronized) 200mg.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 100,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/susten-200mg-capsule-10-s",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/susten-200mg-capsule-10s-lui6zj-8335164",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page. Netmeds marketername is Sun Pharmaceutical Industries Ltd, matching our record.",
+        "notes": "Netmeds schema.org 'manufacturer' reads 'Akums Drugs & Pharmaceuticals Ltd.' -- the contract manufacturing site, not the brand owner. Compared against marketername instead; reading the schema.org field would have produced a false manufacturer conflict."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/susten-200mg-capsule-10s-lui6zj-8335164",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 100,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/susten-200mg-strip-of-10-capsules-25244",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "SUN PHARMA"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. SUN PHARMA, progesterone 200mg capsule.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

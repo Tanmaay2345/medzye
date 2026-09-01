@@ -1,0 +1,571 @@
+{
+  "run_id": "batch2-final-2026-09-01",
+  "generated_at": "2026-09-01T11:50:43.807349+00:00",
+  "medicine_ids": [
+    81,
+    88,
+    100,
+    10,
+    19,
+    21,
+    29,
+    33,
+    44,
+    49
+  ],
+  "invocations": 40,
+  "note": "Batch 2 run with one pharmacy-specific search per (medicine, pharmacy) pair. This file records the final 7 accepted URLs plus every rejection; the 21 URLs for m81/m88/m100/m10/m19/m21 were imported in earlier parts.",
+  "results": [
+    {
+      "medicine_id": 33,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/ascoril-ls-expectorant-100ml-syrup",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glenmark Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ascoril LS Expectorant' 100ml syrup, Glenmark Pharmaceuticals Ltd, ambroxol + levosalbutamol confirmed.",
+        "notes": "MEDIUM: page also lists guaifenesin, which our medicine_details composition omits (RxNorm mapping dropped the third active). Brand identity exact; capped at MEDIUM. Ascoril LS Junior / Plus / Drops / SF rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 33,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/ascoril-ls-syrup-63412",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "glenmark-pharmaceuticals-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Product name 'Ascoril LS Syrup' is an exact match for our record; marketer glenmark-pharmaceuticals-ltd.",
+        "notes": "MEDIUM: guaifenesin present on page but absent from our composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 33,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/ascoril-ls-expectorant-100ml-lui2ur-8251156",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glenmark Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Ascoril LS Syrup', Glenmark Pharmaceuticals Ltd, ambroxol + levosalbutamol.",
+        "notes": "MEDIUM: guaifenesin present on page but absent from our composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 33,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/ascoril-ls-expectorant-100ml-35526",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLENMARK PHARMACEUTICALS"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. GLENMARK PHARMACEUTICALS, ambroxol + levosalbutamol + guaifenesin.",
+        "notes": "MEDIUM: guaifenesin present on page but absent from our composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 44,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/duolin-respules-2-5ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Duolin Respules 5 x 2.5 ml', Cipla Ltd, ipratropium 500mcg + levosalbutamol 1.25mg.",
+        "notes": "First fetch returned curl code 000 (transient); re-fetched twice and both returned HTTP 200 with identical content."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 44,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/duolin-500mcg-1-25mg-respule-5x2-5ml",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Cipla Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/duolin-500mcg125mg-respule-5x25ml-lxx4jg-8476747",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page. 'Duolin 500mcg/1.25mg Respule 5X2.5ml', Cipla Ltd, ipratropium + levosalbutamol.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/duolin-500mcg125mg-respule-5x25ml-lxx4jg-8476747",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 44,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/duolin-1-25mg-500mcg-packet-of-2-5ml-1-5-respules-44586",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CIPLA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Duolin Respules 5x2.5ml' 1.25mg/500mcg, CIPLA LIMITED.",
+        "notes": "Duolin LD (0.63mg) and Duolin 3 (3ml) are different strengths and were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 44,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "1mg lists DUOlin LD Respules (0.63mg), DUOlin 3 Respules (3ml), DUOlin Inhaler and DUOlin Rotacaps, but no plain 2.5ml / 1.25mg Duolin Respules page was located. Accepting LD would substitute a different strength.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 19,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Apollo carries Glyciphage, Gluformin and Metform but no Glucophage-branded page. Glucophage appears not to be marketed in India under that brand at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 19,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "1mg carries Glyciphage and Carbophage (the Merck-family metformin brands in India) but no Glucophage page.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 19,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Netmeds carries Glycomet, Glyciphage and Metform but no Glucophage page.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Foracort exists as 200 and 400 inhalers (plus Ciphaler/Synchrobreathe/Rotacap/Respule devices) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 49,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Amaryl exists as 1mg/2mg/3mg/4mg (plus M, MP, MV, P combinations) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Foracort exists as 200 and 400 inhalers (plus Ciphaler/Synchrobreathe/Rotacap/Respule devices) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 49,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Amaryl exists as 1mg/2mg/3mg/4mg (plus M, MP, MV, P combinations) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Foracort exists as 200 and 400 inhalers (plus Ciphaler/Synchrobreathe/Rotacap/Respule devices) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 49,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Amaryl exists as 1mg/2mg/3mg/4mg (plus M, MP, MV, P combinations) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 29,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Foracort exists as 200 and 400 inhalers (plus Ciphaler/Synchrobreathe/Rotacap/Respule devices) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 49,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "NO_MATCH",
+        "url_status": "NOT_FOUND",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Our catalogue record carries no strength, and medicine_details gives none either. The pharmacy lists multiple distinct strengths, so the correct variant cannot be determined from our data. Rejected rather than guessing a strength. Amaryl exists as 1mg/2mg/3mg/4mg (plus M, MP, MV, P combinations) at this pharmacy.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}
