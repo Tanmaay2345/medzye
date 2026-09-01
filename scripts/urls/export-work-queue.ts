@@ -87,6 +87,10 @@ const DEPRIORITIZED_IDS = new Set([
   34, 58, 59, 72, 74, 80, 85, 87, 89, 94,
   15, // Betadine Ointment -- 5% and 10% w/w listed side by side; no unqualified base listing
   16, // Voveran -- 50 / 50 GE / DT 50 / SR 75 / SR 100 / SR 150
+  29, // Foracort Inhaler -- 100 / 200 / 400 / Forte / Junior / G, across Ciphaler,
+      // Synchrobreathe, Rotacap, Multihaler and Respules. Rejected 4/4 in BOTH
+      // batch 2 and batch 5 before being listed here.
+  32, // Calpol -- 250 / 500 / 650 / 1000mg tablets at all four pharmacies
   // Bulk commodity where pack size is identity-bearing.
   30, 45,
   // Dosage form itself is unresolvable from the catalogue.
