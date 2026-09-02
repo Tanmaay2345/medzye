@@ -63,9 +63,26 @@ export default async function MedicineDetailPage({
   // "Buy at X" always sends them to the same pharmacy whose price is on screen.
   // Without a selection there is no pharmacy to send them to, so this stays
   // null and the panel keeps its existing behaviour.
-  const productUrl =
+  const resolvedUrl =
     selectedOffer && selectedOffer.pharmacy_id != null
       ? await getProductUrl(id, selectedOffer.pharmacy_id)
+      : null;
+
+  // Re-assert what the query already filtered on, against the selection the
+  // user actually made.
+  //
+  // getProductUrl filters by medicine_id and pharmacy_id, so this can only
+  // fail if that query changes. But the failure it guards against is the worst
+  // one this page can produce — showing "Selected from Apollo" while sending
+  // the user to Netmeds, or to another medicine's product page — and it is
+  // silent when it happens. Cheap to check here, invisible if it ever breaks
+  // upstream. A mismatch degrades to the no-URL path rather than linking
+  // somewhere the user did not choose.
+  const productUrl =
+    resolvedUrl &&
+    resolvedUrl.medicine_id === id &&
+    resolvedUrl.pharmacy.id === selectedOffer?.pharmacy_id
+      ? resolvedUrl
       : null;
 
   return (
@@ -123,9 +140,13 @@ export default async function MedicineDetailPage({
 
             <PurchasePanel
               disabled={displayPrice == null}
+              // The label comes from the SELECTED offer, not from the URL row,
+              // so "Selected from X" above and "Buy at X" here are the same
+              // string from the same source and cannot drift apart. The guard
+              // above has already established they are the same pharmacy.
               purchase={
-                productUrl
-                  ? { url: productUrl.url, pharmacyName: productUrl.pharmacy.name }
+                productUrl && selectedOffer
+                  ? { url: productUrl.url, pharmacyName: selectedOffer.pharmacy.name }
                   : null
               }
             />
