@@ -1,0 +1,97 @@
+{
+  "run_id": "batch6-part2",
+  "generated_at": "2026-09-02T02:46:03.152753+00:00",
+  "medicine_ids": [
+    48
+  ],
+  "invocations": 3,
+  "results": [
+    {
+      "medicine_id": 48,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/grilinctus-syrup-115263",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "franco-indian-pharmaceuticals-pvt-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Plain 'Grilinctus Syrup', marketer franco-indian-pharmaceuticals-pvt-ltd; chlorpheniramine + guaifenesin confirmed on page.",
+        "notes": "MEDIUM: our description reads 'antihistamine and cough suppressant for dry cough', which describes Grilinctus-DX (chlorpheniramine + dextromethorphan), while our NAME is plain 'Grilinctus Syrup' -- the four-ingredient product (ammonium chloride + chlorpheniramine + dextromethorphan + guaifenesin). Matched on brand name, which is the primary identifier, since our composition field is empty; capped at MEDIUM because the description points elsewhere. Grilinctus DX / LS / BM / P / CD / L and New Grilinctus were all rejected as different formulations."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 48,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/grilinctus-syrup-100ml-ly8way-8479090",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Franco Indian Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'GRILINCTUS Syrup 100ml', Franco Indian Pharmaceuticals Pvt Ltd; four-ingredient composition stated.",
+        "notes": "MEDIUM: our description reads 'antihistamine and cough suppressant for dry cough', which describes Grilinctus-DX (chlorpheniramine + dextromethorphan), while our NAME is plain 'Grilinctus Syrup' -- the four-ingredient product (ammonium chloride + chlorpheniramine + dextromethorphan + guaifenesin). Matched on brand name, which is the primary identifier, since our composition field is empty; capped at MEDIUM because the description points elsewhere. Grilinctus DX / LS / BM / P / CD / L and New Grilinctus were all rejected as different formulations."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 48,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/grilinctus-syrup-100ml-49465",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "FRANCO INDIAN PHARMACEUTICALS PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. FRANCO INDIAN PHARMACEUTICALS PVT LTD; ammonium chloride + chlorpheniramine + dextromethorphan + guaifenesin.",
+        "notes": "MEDIUM: our description reads 'antihistamine and cough suppressant for dry cough', which describes Grilinctus-DX (chlorpheniramine + dextromethorphan), while our NAME is plain 'Grilinctus Syrup' -- the four-ingredient product (ammonium chloride + chlorpheniramine + dextromethorphan + guaifenesin). Matched on brand name, which is the primary identifier, since our composition field is empty; capped at MEDIUM because the description points elsewhere. Grilinctus DX / LS / BM / P / CD / L and New Grilinctus were all rejected as different formulations."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "run_id": "batch6-rejections",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "note": "Rejected pairs from batch 6. No URL is proposed for any of these. Medicines 46 and 53 are manufacturer conflicts and 54 and 56 are catalogue-quality issues; all four are flagged for separate investigation and none was corrected in this batch.",
+  "medicine_ids": [
+    41,
+    46,
+    48,
+    49,
+    50,
+    53,
+    54,
+    56
+  ],
+  "invocations": 22,
+  "results": [
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Wockhardt Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Catalogue manufacturer for medicine 41 was corrected to \"Dr. Reddy's Laboratories\" on verified evidence (commit 828faf7). This page still names Wockhardt, the pre-divestment marketer, so it does not match the corrected catalogue value. Rejected rather than accepted against a stale marketer field.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "WOCKHARDT LIMITED"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Catalogue manufacturer for medicine 41 was corrected to \"Dr. Reddy's Laboratories\" on verified evidence (commit 828faf7). This page still names Wockhardt, the pre-divestment marketer, so it does not match the corrected catalogue value. Rejected rather than accepted against a stale marketer field.",
+        "notes": ""
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Tata 1mg lists only Practin EN (cyproheptadine + tricholine + sorbitol), a different formulation. Plain Practin Syrup is not offered.",
+        "notes": "Practin EN rejected as a different product, not a pack-size variant."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 46,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Bayer Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'Bayer Pharmaceuticals Pvt Ltd', which does not match catalogue 'Piramal Consumer Products'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records \"Piramal Consumer Products\". Apollo and Netmeds both name Bayer; PharmEasy names Piramal Healthcare Limited; 1mg exposes no marketer field at all. The sources disagree with each other, so no value is trustworthy enough to match against and none is trustworthy enough to correct the catalogue with. Per the standing rule, a URL is not accepted on a disputed manufacturer, and the manufacturer is not changed on pharmacy majority."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 46,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Bayer Pharmaceuticals Private Limited"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'Bayer Pharmaceuticals Private Limited', which does not match catalogue 'Piramal Consumer Products'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records \"Piramal Consumer Products\". Apollo and Netmeds both name Bayer; PharmEasy names Piramal Healthcare Limited; 1mg exposes no marketer field at all. The sources disagree with each other, so no value is trustworthy enough to match against and none is trustworthy enough to correct the catalogue with. Per the standing rule, a URL is not accepted on a disputed manufacturer, and the manufacturer is not changed on pharmacy majority."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 46,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PIRAMAL HEALTHCARE LIMITED"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'PIRAMAL HEALTHCARE LIMITED'. This is a different Piramal entity from the catalogue's 'Piramal Consumer Products', and it contradicts the Bayer attribution on Apollo and Netmeds.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records \"Piramal Consumer Products\". Apollo and Netmeds both name Bayer; PharmEasy names Piramal Healthcare Limited; 1mg exposes no marketer field at all. The sources disagree with each other, so no value is trustworthy enough to match against and none is trustworthy enough to correct the catalogue with. Per the standing rule, a URL is not accepted on a disputed manufacturer, and the manufacturer is not changed on pharmacy majority."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 46,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Marketer field is absent from the live 1mg page, so the manufacturer could not be confirmed against the catalogue at all.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records \"Piramal Consumer Products\". Apollo and Netmeds both name Bayer; PharmEasy names Piramal Healthcare Limited; 1mg exposes no marketer field at all. The sources disagree with each other, so no value is trustworthy enough to match against and none is trustworthy enough to correct the catalogue with. Per the standing rule, a URL is not accepted on a disputed manufacturer, and the manufacturer is not changed on pharmacy majority."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 48,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "The Apollo candidate /medicine/grilinctus-syrup-100ml returned HTTP 404. No servable Apollo product page for plain Grilinctus Syrup was found.",
+        "notes": "Not stored. The other three pharmacies were accepted for this medicine."
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 49,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Apollo lists Amaryl 1mg, 2mg and 3mg plus the Amaryl M / MP / MV / P combination families. Our catalogue record is plain 'Amaryl' with no strength, so no single product page can be matched without guessing.",
+        "notes": "One confirming Apollo search only. The full four-pharmacy cycle for this medicine was already run in Batch 2 with the same outcome; it was not repeated. Re-selected by the ranker despite two prior full rejections -- recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 50,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Apollo lists Rosuvas 5mg, 10mg, 20mg and 40mg plus the Rosuvas B / F / CV families, marketer Sun Pharmaceutical Industries. Our catalogue record is plain 'Rosuvas' with no strength.",
+        "notes": "One confirming Apollo search only. The full four-pharmacy cycle was already run in Batch 3 with the same outcome; it was not repeated. Re-selected by the ranker despite a prior full rejection -- recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 53,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Fulford India Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'Fulford India Ltd', which does not match catalogue 'Zydus Healthcare'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records 'Zydus Healthcare'. All four pharmacies contradict it and agree with each other: Apollo and 1mg name Fulford India Ltd, Netmeds and PharmEasy name Abbott Healthcare Pvt Ltd. Zydus appears on none of them. Unlike Saridon the pharmacies are consistent here, which makes the catalogue value the likely error, but the correction is deliberately left to a separate investigation rather than made mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 53,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "fulford-india-ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'fulford-india-ltd', which does not match catalogue 'Zydus Healthcare'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records 'Zydus Healthcare'. All four pharmacies contradict it and agree with each other: Apollo and 1mg name Fulford India Ltd, Netmeds and PharmEasy name Abbott Healthcare Pvt Ltd. Zydus appears on none of them. Unlike Saridon the pharmacies are consistent here, which makes the catalogue value the likely error, but the correction is deliberately left to a separate investigation rather than made mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 53,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Abbott Healthcare Pvt Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'Abbott Healthcare Pvt Ltd', which does not match catalogue 'Zydus Healthcare'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records 'Zydus Healthcare'. All four pharmacies contradict it and agree with each other: Apollo and 1mg name Fulford India Ltd, Netmeds and PharmEasy name Abbott Healthcare Pvt Ltd. Zydus appears on none of them. Unlike Saridon the pharmacies are consistent here, which makes the catalogue value the likely error, but the correction is deliberately left to a separate investigation rather than made mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 53,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ABBOTT HEALTHCARE PVT LTD"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'ABBOTT HEALTHCARE PVT LTD', which does not match catalogue 'Zydus Healthcare'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected in this batch. Our catalogue records 'Zydus Healthcare'. All four pharmacies contradict it and agree with each other: Apollo and 1mg name Fulford India Ltd, Netmeds and PharmEasy name Abbott Healthcare Pvt Ltd. Zydus appears on none of them. Unlike Saridon the pharmacies are consistent here, which makes the catalogue value the likely error, but the correction is deliberately left to a separate investigation rather than made mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 54,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named exactly 'I-Kul Eye Drops' is listed. The listed I-Kul family products are 'Andre I-Kul' / 'Andre I-Kul NF' and 'I-Kul Plus' / 'New I-Kul Plus', which are different brands with different compositions, and none is attributed to FDC Limited.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. Our record pairs the name 'I-Kul Eye Drops' with manufacturer 'FDC Limited'. No pharmacy offers a plain 'I-Kul Eye Drops', and no I-Kul product on any of the four is attributed to FDC. The real brands are 'Andre I-Kul' (verified live on 1mg as Intas Pharmaceuticals Ltd, phenylephrine + naphazoline + menthol + camphor) and the separately formulated 'I-Kul Plus' / 'New I-Kul Plus'. Matching our record to either would be a guess on both the brand name and the manufacturer."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 54,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named exactly 'I-Kul Eye Drops' is listed. The listed I-Kul family products are 'Andre I-Kul' / 'Andre I-Kul NF' and 'I-Kul Plus' / 'New I-Kul Plus', which are different brands with different compositions, and none is attributed to FDC Limited.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. Our record pairs the name 'I-Kul Eye Drops' with manufacturer 'FDC Limited'. No pharmacy offers a plain 'I-Kul Eye Drops', and no I-Kul product on any of the four is attributed to FDC. The real brands are 'Andre I-Kul' (verified live on 1mg as Intas Pharmaceuticals Ltd, phenylephrine + naphazoline + menthol + camphor) and the separately formulated 'I-Kul Plus' / 'New I-Kul Plus'. Matching our record to either would be a guess on both the brand name and the manufacturer."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 54,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named exactly 'I-Kul Eye Drops' is listed. The listed I-Kul family products are 'Andre I-Kul' / 'Andre I-Kul NF' and 'I-Kul Plus' / 'New I-Kul Plus', which are different brands with different compositions, and none is attributed to FDC Limited.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. Our record pairs the name 'I-Kul Eye Drops' with manufacturer 'FDC Limited'. No pharmacy offers a plain 'I-Kul Eye Drops', and no I-Kul product on any of the four is attributed to FDC. The real brands are 'Andre I-Kul' (verified live on 1mg as Intas Pharmaceuticals Ltd, phenylephrine + naphazoline + menthol + camphor) and the separately formulated 'I-Kul Plus' / 'New I-Kul Plus'. Matching our record to either would be a guess on both the brand name and the manufacturer."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 54,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named exactly 'I-Kul Eye Drops' is listed. The listed I-Kul family products are 'Andre I-Kul' / 'Andre I-Kul NF' and 'I-Kul Plus' / 'New I-Kul Plus', which are different brands with different compositions, and none is attributed to FDC Limited.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. Our record pairs the name 'I-Kul Eye Drops' with manufacturer 'FDC Limited'. No pharmacy offers a plain 'I-Kul Eye Drops', and no I-Kul product on any of the four is attributed to FDC. The real brands are 'Andre I-Kul' (verified live on 1mg as Intas Pharmaceuticals Ltd, phenylephrine + naphazoline + menthol + camphor) and the separately formulated 'I-Kul Plus' / 'New I-Kul Plus'. Matching our record to either would be a guess on both the brand name and the manufacturer."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 56,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named 'Zincovit Kid' is listed. Only plain Zincovit Syrup and the CL / SF / Forte / Active variants are offered, all by Apex Laboratories.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. No 'Zincovit Kid' product exists on any of the four pharmacies. The Zincovit syrup family is plain Zincovit Syrup, Zincovit CL, Zincovit SF, Zincovit Forte and Zincovit Active (Orange/Apple), all Apex Laboratories. Collapsing 'Zincovit Kid Syrup' onto plain 'Zincovit Syrup' would be a variant guess: 'Kid' matches no listed SKU, and the syrup family has five members with different compositions. A separate catalogue row, medicine 36 'Zincovit', already exists and is mapped to the Zincovit tablet pages, so 56 is additionally at risk of being a duplicate or mis-specified entry for the same brand -- another reason to resolve it as a catalogue question rather than by picking a URL."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 56,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named 'Zincovit Kid' is listed. Only plain Zincovit Syrup and the CL / SF / Forte / Active variants are offered, all by Apex Laboratories.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. No 'Zincovit Kid' product exists on any of the four pharmacies. The Zincovit syrup family is plain Zincovit Syrup, Zincovit CL, Zincovit SF, Zincovit Forte and Zincovit Active (Orange/Apple), all Apex Laboratories. Collapsing 'Zincovit Kid Syrup' onto plain 'Zincovit Syrup' would be a variant guess: 'Kid' matches no listed SKU, and the syrup family has five members with different compositions. A separate catalogue row, medicine 36 'Zincovit', already exists and is mapped to the Zincovit tablet pages, so 56 is additionally at risk of being a duplicate or mis-specified entry for the same brand -- another reason to resolve it as a catalogue question rather than by picking a URL."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 56,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named 'Zincovit Kid' is listed. Only plain Zincovit Syrup and the CL / SF / Forte / Active variants are offered, all by Apex Laboratories.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. No 'Zincovit Kid' product exists on any of the four pharmacies. The Zincovit syrup family is plain Zincovit Syrup, Zincovit CL, Zincovit SF, Zincovit Forte and Zincovit Active (Orange/Apple), all Apex Laboratories. Collapsing 'Zincovit Kid Syrup' onto plain 'Zincovit Syrup' would be a variant guess: 'Kid' matches no listed SKU, and the syrup family has five members with different compositions. A separate catalogue row, medicine 36 'Zincovit', already exists and is mapped to the Zincovit tablet pages, so 56 is additionally at risk of being a duplicate or mis-specified entry for the same brand -- another reason to resolve it as a catalogue question rather than by picking a URL."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 56,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No product named 'Zincovit Kid' is listed. Only plain Zincovit Syrup and the CL / SF / Forte / Active variants are offered, all by Apex Laboratories.",
+        "notes": "CATALOGUE QUALITY ISSUE flagged for separate investigation, NOT corrected in this batch. No 'Zincovit Kid' product exists on any of the four pharmacies. The Zincovit syrup family is plain Zincovit Syrup, Zincovit CL, Zincovit SF, Zincovit Forte and Zincovit Active (Orange/Apple), all Apex Laboratories. Collapsing 'Zincovit Kid Syrup' onto plain 'Zincovit Syrup' would be a variant guess: 'Kid' matches no listed SKU, and the syrup family has five members with different compositions. A separate catalogue row, medicine 36 'Zincovit', already exists and is mapped to the Zincovit tablet pages, so 56 is additionally at risk of being a duplicate or mis-specified entry for the same brand -- another reason to resolve it as a catalogue question rather than by picking a URL."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}

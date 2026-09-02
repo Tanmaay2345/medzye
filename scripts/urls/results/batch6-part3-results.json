@@ -1,0 +1,126 @@
+{
+  "run_id": "batch6-part3",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "medicine_ids": [
+    55
+  ],
+  "invocations": 4,
+  "results": [
+    {
+      "medicine_id": 55,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/himalaya-evecare-syrup-200ml",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "The Himalaya Drug Company"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live title 'Buy Himalaya Evecare Syrup, 200 ml | 19 Minutes Delivery | Apollo Pharmacy'. Page manufacturer field reads 'The Himalaya Drug Company'.",
+        "notes": "MEDIUM, not HIGH: our catalogue manufacturer is 'Himalaya Wellness Company' but this page states 'The Himalaya Drug Company'. Same corporate entity under its former/legal name -- an entity-granularity variant, the same situation as medicine 47 (Themis). Capped at MEDIUM rather than treated as an exact match. Brand name matches exactly. Evecare Forte Liquid, Evecare Capsule and Evecare Forte Tablet were rejected as different products/forms. The 'salts: Menthol' token extracted from this page is a page-template artifact, not the product composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 55,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/himalaya-evecare-syrup-otc120828",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "himalaya-wellness-company"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live title 'Himalaya Evecare Syrup: Buy bottle of 200.0 ml Syrup at best price in India | 1mg'. Marketer slug 'himalaya-wellness-company' -- exact match to catalogue manufacturer 'Himalaya Wellness Company'.",
+        "notes": "200 ml bottle chosen to match the Apollo/Netmeds/PharmEasy 200 ml listings. The 400 ml SKU (otc121199) is the same product in a different pack size; pack size is not a medicine-level identifier. Evecare Forte Liquid, Capsule and Tablet rejected as different products/forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 55,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/himalaya-evecare-syrup-200-ml-lui3mp-8267024",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Himalaya Wellness Company"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live title 'Buy Himalaya Evecare Syrup 200 ml Online at Discounted Price | Netmeds'. Manufacturer/marketer field reads 'Himalaya Wellness Company' -- exact match to catalogue.",
+        "notes": "Canonical /product/ URL preferred over the /prescriptions/evecare-syrup-200ml alias. Evecare Forte Liquid and Evecare Capsule rejected as different products/forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 55,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/himalaya-evecare-syp-200ml-46261",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "HIMALAYA WELLNESS COMPANY"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live title 'Buy HIMALAYA EVECARE | BOTTLE 200 ML SYRUP Online & Get Upto 60% OFF at PharmEasy'. Manufacturer field reads 'HIMALAYA WELLNESS COMPANY' -- exact match to catalogue, case aside.",
+        "notes": "This is a /health-care/products/ path rather than /online-medicine-order/ because Evecare is listed as an OTC wellness product on PharmEasy; robots.txt disallows only /search, so this path is permitted. The 'salts: Vitamin D3' token extracted from this page is a known artifact of the PharmEasy /health-care/ page template (it also appeared on the unrelated Quadriderm RF page) and is not the product composition. Evecare Forte Liquid and Evecare Capsules rejected as different products/forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

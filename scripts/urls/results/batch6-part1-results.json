@@ -1,0 +1,156 @@
+{
+  "run_id": "batch6-part1",
+  "generated_at": "2026-09-02T02:43:28.733006+00:00",
+  "medicine_ids": [
+    41,
+    47
+  ],
+  "invocations": 5,
+  "results": [
+    {
+      "medicine_id": 41,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/practin-syrup-200ml",
+        "confidence": "HIGH",
+        "url_status": "REDIRECTED",
+        "manufacturer_found": "Dr. Reddy's Laboratories Ltd"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": "https://www.netmeds.com/product/practin-syrup-200ml-luftyj-7503525",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 after 1 redirect to the canonical /product/ page. Marketer 'Dr. Reddy's Laboratories Ltd' - an exact match for the corrected catalogue value, and the only pharmacy already reflecting the June 2020 transfer from Wockhardt.",
+        "notes": "Apollo and PharmEasy still display Wockhardt Ltd, the pre-2020 owner, and were rejected on manufacturer mismatch. 1mg lists only Practin EN (cyproheptadine + tricholine citrate), a different formulation."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.netmeds.com/product/practin-syrup-200ml-luftyj-7503525",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 47,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/metacin-tablet",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Themis Pharmaceuticals Prop Chemosyn Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Plain 'Metacin Tablet', paracetamol 500mg. Metacin 650 is distinctly named and excluded.",
+        "notes": "MEDIUM: entity granularity. Our record says 'Themis Medicare' (the listed company, per the earlier audit) while every pharmacy schema.org field reads 'Themis Pharmaceuticals Prop Chemosyn Ltd' - a related Themis marketing entity. Apollo also maintains a 'Themis Medicare Ltd' manufacturer page for these products. Same brand-owner family, so accepted, but the string is not identical. Metacin 650, Metacin Exs, and the syrup/suspension/drops/suppository/injection forms were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 47,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/metacin-tablet-152092",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "themis-pharmaceuticals-prop-chemosyn-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. Marketer themis-pharmaceuticals-prop-chemosyn-ltd, Paracetamol (500mg), strip of 15.",
+        "notes": "MEDIUM: entity granularity. Our record says 'Themis Medicare' (the listed company, per the earlier audit) while every pharmacy schema.org field reads 'Themis Pharmaceuticals Prop Chemosyn Ltd' - a related Themis marketing entity. Apollo also maintains a 'Themis Medicare Ltd' manufacturer page for these products. Same brand-owner family, so accepted, but the string is not identical. Metacin 650, Metacin Exs, and the syrup/suspension/drops/suppository/injection forms were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 47,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/metacin-500mg-tablet-10s-lz8343-8497466",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Themis Pharmaceutical Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. 'Metacin 500mg Tablet 10'S', Themis Pharmaceutical Ltd, paracetamol.",
+        "notes": "MEDIUM: entity granularity. Our record says 'Themis Medicare' (the listed company, per the earlier audit) while every pharmacy schema.org field reads 'Themis Pharmaceuticals Prop Chemosyn Ltd' - a related Themis marketing entity. Apollo also maintains a 'Themis Medicare Ltd' manufacturer page for these products. Same brand-owner family, so accepted, but the string is not identical. Metacin 650, Metacin Exs, and the syrup/suspension/drops/suppository/injection forms were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 47,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/metacin-500mg-strip-of-15-tablets-26675",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "THEMIS PHARMACEUTICALS PROP CHEMOSYN LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. THEMIS PHARMACEUTICALS PROP CHEMOSYN LTD, paracetamol 500mg.",
+        "notes": "MEDIUM: entity granularity. Our record says 'Themis Medicare' (the listed company, per the earlier audit) while every pharmacy schema.org field reads 'Themis Pharmaceuticals Prop Chemosyn Ltd' - a related Themis marketing entity. Apollo also maintains a 'Themis Medicare Ltd' manufacturer page for these products. Same brand-owner family, so accepted, but the string is not identical. Metacin 650, Metacin Exs, and the syrup/suspension/drops/suppository/injection forms were rejected."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}
