@@ -91,10 +91,30 @@ const DEPRIORITIZED_IDS = new Set([
       // Synchrobreathe, Rotacap, Multihaler and Respules. Rejected 4/4 in BOTH
       // batch 2 and batch 5 before being listed here.
   32, // Calpol -- 250 / 500 / 650 / 1000mg tablets at all four pharmacies
+  49, // Amaryl -- 1 / 2 / 3mg plus the M / MP / MV / P combination families.
+      // Rejected 4/4 in batch 2 and re-confirmed in batch 6.
+  50, // Rosuvas -- 5 / 10 / 20 / 40mg plus B / F / CV. Rejected 4/4 in batch 3
+      // and re-confirmed in batch 6.
   // Bulk commodity where pack size is identity-bearing.
   30, 45,
   // Dosage form itself is unresolvable from the catalogue.
   22, // Digene -- gel AND chewable tablet, different compositions; our own description says "gel and tablet"
+  // Unresolved manufacturer conflict. Held out until the conflict is investigated
+  // separately; a URL must not be accepted against a manufacturer we cannot trust.
+  46, // Saridon -- Apollo and Netmeds name Bayer, PharmEasy names Piramal Healthcare
+      // Limited, 1mg exposes no marketer, our record says Piramal Consumer Products.
+      // The sources contradict each other, so none is good enough to match on.
+  53, // Quadriderm RF Cream -- all four pharmacies contradict our "Zydus Healthcare"
+      // and agree with each other (Fulford India Ltd / Abbott Healthcare Pvt Ltd).
+      // Catalogue is the likely error, but the correction is a separate decision.
+  // Catalogue/product identity problem: no confident exact product match exists.
+  54, // I-Kul Eye Drops -- no plain "I-Kul Eye Drops" is listed anywhere and no I-Kul
+      // product is attributed to FDC Limited. The real brands are Andre I-Kul (Intas)
+      // and the separately formulated I-Kul Plus / New I-Kul Plus. Both the name and
+      // the manufacturer would have to be guessed.
+  56, // Zincovit Kid Syrup -- no "Zincovit Kid" product exists; the family is plain
+      // Zincovit plus CL / SF / Forte / Active. Medicine 36 "Zincovit" already exists
+      // and is mapped to the tablet pages, so 56 may be a duplicate or mis-specified row.
 ]);
 
 /**
