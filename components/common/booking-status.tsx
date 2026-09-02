@@ -47,17 +47,33 @@ function ScanBars() {
   );
 }
 
-export function BookingStatus({ state }: { state: "processing" | "confirmed" }) {
+/**
+ * `label` overrides the text under the bars without touching the visual. It
+ * exists so another flow can reuse this exact treatment — same bars, same
+ * greens, same type — rather than growing a second processing screen. When it
+ * is omitted the booking wording is unchanged.
+ */
+export function BookingStatus({
+  state,
+  label,
+}: {
+  state: "processing" | "confirmed";
+  label?: string;
+}) {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       <ScanBars />
       <p
         role="status"
         aria-live="polite"
-        className="text-[32px] font-bold text-brand-processing"
+        // max-w/text-center matter only for a longer caller-supplied label:
+        // the booking strings are short and already centred by the flex
+        // parent, so this changes nothing for them, but it stops a longer one
+        // running off the edge on a narrow phone.
+        className="max-w-[min(90vw,32rem)] text-center text-[32px] font-bold text-brand-processing"
         style={{ fontFamily: "var(--font-lexend-deca)" }}
       >
-        {state === "processing" ? "Processing" : "Booking Confirmed"}
+        {label ?? (state === "processing" ? "Processing" : "Booking Confirmed")}
       </p>
       {state === "confirmed" && (
         <span className="flex size-[54px] items-center justify-center rounded-full bg-brand-success-solid">

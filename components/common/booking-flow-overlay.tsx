@@ -9,12 +9,19 @@ import { BookingStatus } from "./booking-status";
  * so an extra confirmation click would only stand between the user and a
  * finished purchase.
  */
-export function BookingFlowOverlay({ state }: { state: BookingFlowState }) {
+export function BookingFlowOverlay({
+  state,
+  label,
+}: {
+  state: BookingFlowState;
+  /** Passed straight through to BookingStatus; see there for why. */
+  label?: string;
+}) {
   if (state === "idle") return null;
 
   return (
     <div className="fixed inset-0 z-100 flex flex-col items-center justify-center gap-8 bg-white">
-      <BookingStatus state={state} />
+      <BookingStatus state={state} label={label} />
     </div>
   );
 }
