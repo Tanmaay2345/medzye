@@ -1,44 +1,235 @@
 {
   "note": "Adversarial payload. Every record here MUST be rejected by import-url-results.ts. Nothing in this file may ever reach Supabase.",
   "results": [
-    {"medicine_id":2,"pharmacy_id":3,"pharmacy_name":"Tata 1mg","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"tata-1mg-product-url-finder","status":"FOUND","product_url":"https://www.1mg.com/drugs/this-medicine-does-not-exist-99999999"},
-     "verifier":{"status":"NOT_FOUND","final_url":null,"product_page":"NO","match_confidence":"LOW","redirect":"NO","evidence":"HTTP 404 confirmed by probe."},
-     "resolved":{"verification_status":"NOT_FOUND","match_confidence":0.4,"final_url":null,"accept":false}},
-
-    {"medicine_id":20,"pharmacy_id":1,"pharmacy_name":"Apollo Pharmacy","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"apollo-product-url-finder","status":"FOUND","product_url":"https://www.apollopharmacy.in/medicine/amlokind-at-tablet"},
-     "verifier":{"status":"INVALID","final_url":null,"product_page":"YES","match_confidence":"HIGH","redirect":"NO","evidence":"Page title is 'Amlodac AT 5 mg/50 mg Tablet' — different brand from Amlokind-AT."},
-     "resolved":{"verification_status":"INVALID","match_confidence":0.95,"final_url":null,"accept":false}},
-
-    {"medicine_id":1,"pharmacy_id":3,"pharmacy_name":"Tata 1mg","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"tata-1mg-product-url-finder","status":"FOUND","product_url":"https://evil-pharmacy-lookalike.example.com/drugs/combiflam-325414"},
-     "verifier":{"status":"VALID","final_url":null,"product_page":"YES","match_confidence":"HIGH","redirect":"NO","evidence":"FORGED: claims VALID but the host is not Tata 1mg."},
-     "resolved":{"verification_status":"VERIFIED","match_confidence":0.95,"final_url":null,"accept":true}},
-
-    {"medicine_id":13,"pharmacy_id":4,"pharmacy_name":"Netmeds","url_type":"SEARCH",
-     "finder":{"source_skill":"netmeds-product-url-finder","status":"FOUND","product_url":"https://www.netmeds.com/search/augmentin-625"},
-     "verifier":{"status":"VALID","final_url":null,"product_page":"YES","match_confidence":"HIGH","redirect":"NO","evidence":"FORGED: a SEARCH url claiming VERIFIED."},
-     "resolved":{"verification_status":"VERIFIED","match_confidence":0.95,"final_url":null,"accept":true}},
-
-    {"medicine_id":14,"pharmacy_id":4,"pharmacy_name":"Netmeds","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"netmeds-product-url-finder","status":"FOUND","product_url":"https://www.netmeds.com/prescriptions/asthalin-inhaler-200md"},
-     "verifier":{"status":"REDIRECT_VALID","final_url":null,"product_page":"YES","match_confidence":"HIGH","redirect":"YES","evidence":"FORGED: REDIRECT_VERIFIED with no final_url."},
-     "resolved":{"verification_status":"REDIRECT_VERIFIED","match_confidence":0.95,"final_url":null,"accept":true}},
-
-    {"medicine_id":20,"pharmacy_id":5,"pharmacy_name":"PharmEasy","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"pharmeasy-product-url-finder","status":"FOUND","product_url":"https://pharmeasy.in/online-medicine-order/amlokind-at-tablet-18585"},
-     "verifier":{"status":"AMBIGUOUS","final_url":null,"product_page":"UNKNOWN","match_confidence":"LOW","redirect":"NO","evidence":"Insufficient evidence to confirm the variant."},
-     "resolved":{"verification_status":"AMBIGUOUS","match_confidence":0.4,"final_url":null,"accept":false}},
-
-    {"medicine_id":99,"pharmacy_id":7,"pharmacy_name":"Care Pharmacy","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"apollo-product-url-finder","status":"NO_MATCH","product_url":null},
-     "verifier":{"status":"NOT_FOUND","final_url":null,"product_page":"NO","match_confidence":"LOW","redirect":"NO","evidence":"Care Pharmacy is a fictional seed row with no website; no finder skill exists for it."},
-     "resolved":{"verification_status":"NOT_FOUND","match_confidence":0.4,"final_url":null,"accept":false}},
-
-    {"medicine_id":2,"pharmacy_id":1,"pharmacy_name":"Apollo Pharmacy","url_type":"DIRECT_PRODUCT",
-     "finder":{"source_skill":"apollo-product-url-finder","status":"FOUND","product_url":"http://www.apollopharmacy.in/otc/dolo-650mg-tablet-15-s"},
-     "verifier":{"status":"VALID","final_url":null,"product_page":"YES","match_confidence":"HIGH","redirect":"NO","evidence":"FORGED: plain http, not https."},
-     "resolved":{"verification_status":"VERIFIED","match_confidence":0.95,"final_url":null,"accept":true}}
-  ]
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/this-medicine-does-not-exist-99999999"
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "HTTP 404 confirmed by probe."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/amlokind-at-tablet"
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "Page title is 'Amlodac AT 5 mg/50 mg Tablet' \u2014 different brand from Amlokind-AT."
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 1,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://evil-pharmacy-lookalike.example.com/drugs/combiflam-325414"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "FORGED: claims VALID but the host is not Tata 1mg."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 13,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "SEARCH",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/search/augmentin-625"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "FORGED: a SEARCH url claiming VERIFIED."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 14,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/prescriptions/asthalin-inhaler-200md"
+      },
+      "verifier": {
+        "status": "REDIRECT_VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "FORGED: REDIRECT_VERIFIED with no final_url."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 20,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/amlokind-at-tablet-18585"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Insufficient evidence to confirm the variant."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 99,
+      "pharmacy_id": 7,
+      "pharmacy_name": "Care Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "NO",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Care Pharmacy is a fictional seed row with no website; no finder skill exists for it."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "http://www.apollopharmacy.in/otc/dolo-650mg-tablet-15-s"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "FORGED: plain http, not https."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 2,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/dolo-650mg-tablet-15-s",
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Micro Labs Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Real, reachable Apollo product page for Dolo 650 -- every gate except confidence deliberately passes.",
+        "notes": "FORGED: confidence 0.55 is below the 0.70 floor. This case exists to exercise the CONFIDENCE_FLOOR gate in ISOLATION: host, https, product_page, status, url_type and final_url are all valid, so it can only be rejected by the floor. Without it the other eight cases would still pass if the floor were removed."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.55,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ],
+  "invocations": 9
 }

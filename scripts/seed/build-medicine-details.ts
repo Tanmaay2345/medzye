@@ -97,6 +97,16 @@ type ReviewEntry = { name: string; id: number; reason: string; recommendation: s
  *
  * `calcium`, `iron` and `zinc` are deliberately NOT listed: in this catalogue
  * they are genuine active ingredients (e.g. Shelcal).
+ *
+ * `cholesterol`, `insulin` and `fiber`/`fibre` are the same trap as "sugar",
+ * one step further: they name what the drug ACTS ON, not what is in it. A
+ * description like "lower cholesterol" or "improves insulin sensitivity" is
+ * about the target, yet both words are real RxNorm ingredient concepts
+ * (cholesterol 2438, insulin 253182, fiber 70727). Left unlisted they produced
+ * "Atorvastatin + Cholesterol" and "Metformin + Insulin, regular, human".
+ * Verified safe for this catalogue: every one of the six descriptions
+ * mentioning them uses them as a target or a descriptive noun, never as an
+ * active, and Isabgol's real active (ispaghula husk) is matched separately.
  */
 const STOPWORDS = new Set(
   `a about acne acts advanced against aid alcohol allergic allergies allergy also and antacid antibiotic
@@ -112,7 +122,8 @@ const STOPWORDS = new Set(
    oral pack pain paste powder prevent protects rashes reactions relief relieve relieves rich
    runny sanitizer scalp severe shampoo skin solution soothes sore spray sprains stomach strength
    stress strip sugar sugars supplement support supports suspension symptoms syrup tablet tablets
-   throat to tonic topical treat treats used uses vitamin vitamins wash water with wounds`
+   throat to tonic topical treat treats used uses vitamin vitamins wash water with wounds
+   cholesterol insulin fiber fibre`
     .split(/\s+/)
     .filter(Boolean)
 );
