@@ -13,10 +13,21 @@
  * Usage:
  *   npx tsx --env-file=.env.local scripts/urls/export-work-queue.ts --ids 2,1,13,14,20
  *   npx tsx --env-file=.env.local scripts/urls/export-work-queue.ts --limit 5
- *   npx tsx --env-file=.env.local scripts/urls/export-work-queue.ts --rank 10
+ *   npx tsx --env-file=.env.local scripts/urls/export-work-queue.ts --rank
+ *   npx tsx --env-file=.env.local scripts/urls/export-work-queue.ts --rank 15
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
+
+/**
+ * How many medicines one investigation batch covers. Raised from 10 to 15 before
+ * Batch 8. This is a CEILING on batch size, not a target: if fewer eligible
+ * medicines survive scoring, the queue is short and that is the correct result.
+ * It changes only how much work is queued -- the verification standard, the
+ * four-pharmacy process and the acceptance rules in import-url-results.ts are
+ * untouched by it.
+ */
+const DEFAULT_BATCH_SIZE = 15;
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -180,7 +191,12 @@ function parseArgs() {
     limit: Number(get("--limit") ?? 5),
     // --rank N ranks every not-yet-attempted medicine by selectionScore and
     // takes the top N with a non-negative score. --ids and --limit are unchanged.
-    rank: get("--rank") ? Number(get("--rank")) : null,
+    // Bare --rank uses DEFAULT_BATCH_SIZE. If fewer than N candidates survive
+    // scoring, every remaining eligible medicine is taken and no filler is
+    // invented -- N is a ceiling, never a quota.
+    rank: args.includes("--rank")
+      ? Number(get("--rank") ?? DEFAULT_BATCH_SIZE) || DEFAULT_BATCH_SIZE
+      : null,
   };
 }
 

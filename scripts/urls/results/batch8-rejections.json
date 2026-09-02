@@ -1,0 +1,976 @@
+{
+  "run_id": "batch8-rejections",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "note": "Rejected pairs from batch 8. No URL is proposed for any of these. Medicines 78, 83, 96 and 25 are manufacturer conflicts and 97 and 98 are product-identity issues, all flagged for separate investigation; 79 and 92 are strength ambiguities. No medicine record was changed.",
+  "medicine_ids": [
+    25,
+    40,
+    78,
+    79,
+    83,
+    92,
+    96,
+    97,
+    98
+  ],
+  "invocations": 33,
+  "results": [
+    {
+      "medicine_id": 78,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Reckitt Benckiser India Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'Reckitt Benckiser India Ltd'. This does not match catalogue 'Piramal Consumer Products'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Piramal Consumer Products'. Every pharmacy that exposes a marketer names Reckitt Benckiser instead, and they agree with each other. Same shape as Quadriderm RF (53): consistent sources contradicting the catalogue, which makes our record the likely error -- but the correction is a separate decision. Note a possible pattern: medicine 46 (Saridon) is also recorded as 'Piramal Consumer Products' and also failed its manufacturer check, so rows carrying that value may warrant a grouped review."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 78,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "reckitt-benckiser"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page marketer slug 'reckitt-benckiser'. This does not match catalogue 'Piramal Consumer Products'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Piramal Consumer Products'. Every pharmacy that exposes a marketer names Reckitt Benckiser instead, and they agree with each other. Same shape as Quadriderm RF (53): consistent sources contradicting the catalogue, which makes our record the likely error -- but the correction is a separate decision. Note a possible pattern: medicine 46 (Saridon) is also recorded as 'Piramal Consumer Products' and also failed its manufacturer check, so rows carrying that value may warrant a grouped review."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 78,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "RECKITT BENCKISER HEALTHCARE INDIA PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'RECKITT BENCKISER HEALTHCARE INDIA PRIVATE LIMITED'. This does not match catalogue 'Piramal Consumer Products'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Piramal Consumer Products'. Every pharmacy that exposes a marketer names Reckitt Benckiser instead, and they agree with each other. Same shape as Quadriderm RF (53): consistent sources contradicting the catalogue, which makes our record the likely error -- but the correction is a separate decision. Note a possible pattern: medicine 46 (Saridon) is also recorded as 'Piramal Consumer Products' and also failed its manufacturer check, so rows carrying that value may warrant a grouped review."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 78,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "The Netmeds candidate returned HTTP 200 but served a generic 'NetMeds | India Ki Pharmacy' shell with no product title and no manufacturer field, so it is not a usable product page.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Piramal Consumer Products'. Every pharmacy that exposes a marketer names Reckitt Benckiser instead, and they agree with each other. Same shape as Quadriderm RF (53): consistent sources contradicting the catalogue, which makes our record the likely error -- but the correction is a separate decision. Note a possible pattern: medicine 46 (Saridon) is also recorded as 'Piramal Consumer Products' and also failed its manufacturer check, so rows carrying that value may warrant a grouped review."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Multiple Istamet strengths and extended-release/combination families are listed; our record is unqualified 'Istamet'.",
+        "notes": "STRENGTH AMBIGUITY. Istamet ships as 50/500, 50/1000 and 100/1000mg, plus the XR, XR 500, XR CP, D-IR, D-XR and G-IR families, and our record carries no strength. Same class as Galvus Met (64), Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Multiple Istamet strengths and extended-release/combination families are listed; our record is unqualified 'Istamet'.",
+        "notes": "STRENGTH AMBIGUITY. Istamet ships as 50/500, 50/1000 and 100/1000mg, plus the XR, XR 500, XR CP, D-IR, D-XR and G-IR families, and our record carries no strength. Same class as Galvus Met (64), Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Multiple Istamet strengths and extended-release/combination families are listed; our record is unqualified 'Istamet'.",
+        "notes": "STRENGTH AMBIGUITY. Istamet ships as 50/500, 50/1000 and 100/1000mg, plus the XR, XR 500, XR CP, D-IR, D-XR and G-IR families, and our record carries no strength. Same class as Galvus Met (64), Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 79,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Multiple Istamet strengths and extended-release/combination families are listed; our record is unqualified 'Istamet'.",
+        "notes": "STRENGTH AMBIGUITY. Istamet ships as 50/500, 50/1000 and 100/1000mg, plus the XR, XR 500, XR CP, D-IR, D-XR and G-IR families, and our record carries no strength. Same class as Galvus Met (64), Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 83,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Consumer Healthcare Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'GlaxoSmithKline Consumer Healthcare Ltd', which does not match catalogue 'Glenmark Pharmaceuticals'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Glenmark Pharmaceuticals'. All four live pages name GlaxoSmithKline and agree with each other. Glenmark's own mupirocin brand is Supirocin, which suggests our record may have crossed the two brands, but that is a catalogue decision to be made separately, not mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 83,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "glaxo-smithkline-pharmaceuticals-ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'glaxo-smithkline-pharmaceuticals-ltd', which does not match catalogue 'Glenmark Pharmaceuticals'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Glenmark Pharmaceuticals'. All four live pages name GlaxoSmithKline and agree with each other. Glenmark's own mupirocin brand is Supirocin, which suggests our record may have crossed the two brands, but that is a catalogue decision to be made separately, not mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 83,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glaxosmithkline Pharmaceuticals Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'Glaxosmithkline Pharmaceuticals Ltd', which does not match catalogue 'Glenmark Pharmaceuticals'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Glenmark Pharmaceuticals'. All four live pages name GlaxoSmithKline and agree with each other. Glenmark's own mupirocin brand is Supirocin, which suggests our record may have crossed the two brands, but that is a catalogue decision to be made separately, not mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 83,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'GLAXOSMITHKLINE', which does not match catalogue 'Glenmark Pharmaceuticals'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Glenmark Pharmaceuticals'. All four live pages name GlaxoSmithKline and agree with each other. Glenmark's own mupirocin brand is Supirocin, which suggests our record may have crossed the two brands, but that is a catalogue decision to be made separately, not mid-batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 92,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pyrigesic 500 / 650 / 1000mg tablets are all listed; our record is unqualified 'Pyrigesic'.",
+        "notes": "STRENGTH AMBIGUITY. Pyrigesic tablets ship at 500, 650 and 1000mg and our record carries no strength; the brand also spans syrup, drops, 120mg and 250mg suspensions, gel and injection, plus the A / SP / T / MR combination families. Our description does fix the dosage form as tablet, but not the strength. Same class as Calpol (32). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 92,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pyrigesic 500 / 650 / 1000mg tablets are all listed; our record is unqualified 'Pyrigesic'.",
+        "notes": "STRENGTH AMBIGUITY. Pyrigesic tablets ship at 500, 650 and 1000mg and our record carries no strength; the brand also spans syrup, drops, 120mg and 250mg suspensions, gel and injection, plus the A / SP / T / MR combination families. Our description does fix the dosage form as tablet, but not the strength. Same class as Calpol (32). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 92,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pyrigesic 500 / 650 / 1000mg tablets are all listed; our record is unqualified 'Pyrigesic'.",
+        "notes": "STRENGTH AMBIGUITY. Pyrigesic tablets ship at 500, 650 and 1000mg and our record carries no strength; the brand also spans syrup, drops, 120mg and 250mg suspensions, gel and injection, plus the A / SP / T / MR combination families. Our description does fix the dosage form as tablet, but not the strength. Same class as Calpol (32). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 92,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pyrigesic 500 / 650 / 1000mg tablets are all listed; our record is unqualified 'Pyrigesic'.",
+        "notes": "STRENGTH AMBIGUITY. Pyrigesic tablets ship at 500, 650 and 1000mg and our record carries no strength; the brand also spans syrup, drops, 120mg and 250mg suspensions, gel and injection, plus the A / SP / T / MR combination families. Our description does fix the dosage form as tablet, but not the strength. Same class as Calpol (32). Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 96,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Bayer Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'Bayer Pharmaceuticals Pvt Ltd'. Apollo and 1mg say Bayer while Netmeds and PharmEasy say Piramal.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected -- and the sources contradict EACH OTHER, so majority voting was deliberately not applied. Apollo and 1mg name Bayer Pharmaceuticals Pvt Ltd, matching our catalogue value 'Bayer'; Netmeds and PharmEasy name Piramal Pharma Limited and PIRAMAL ENTERPRISES LIMITED. This is a 2-2 split. It is the same Bayer-versus-Piramal disagreement seen on Saridon (46), which is already deprioritised for it, so the two are very likely one brand-ownership transfer that different pharmacies have recorded at different times. Until that is established from an independent source, no URL is accepted and the catalogue is not changed."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 96,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "bayer-pharmaceuticals-pvt-ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'bayer-pharmaceuticals-pvt-ltd'. Apollo and 1mg say Bayer while Netmeds and PharmEasy say Piramal.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected -- and the sources contradict EACH OTHER, so majority voting was deliberately not applied. Apollo and 1mg name Bayer Pharmaceuticals Pvt Ltd, matching our catalogue value 'Bayer'; Netmeds and PharmEasy name Piramal Pharma Limited and PIRAMAL ENTERPRISES LIMITED. This is a 2-2 split. It is the same Bayer-versus-Piramal disagreement seen on Saridon (46), which is already deprioritised for it, so the two are very likely one brand-ownership transfer that different pharmacies have recorded at different times. Until that is established from an independent source, no URL is accepted and the catalogue is not changed."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 96,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Piramal Pharma Limited"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'Piramal Pharma Limited'. Apollo and 1mg say Bayer while Netmeds and PharmEasy say Piramal.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected -- and the sources contradict EACH OTHER, so majority voting was deliberately not applied. Apollo and 1mg name Bayer Pharmaceuticals Pvt Ltd, matching our catalogue value 'Bayer'; Netmeds and PharmEasy name Piramal Pharma Limited and PIRAMAL ENTERPRISES LIMITED. This is a 2-2 split. It is the same Bayer-versus-Piramal disagreement seen on Saridon (46), which is already deprioritised for it, so the two are very likely one brand-ownership transfer that different pharmacies have recorded at different times. Until that is established from an independent source, no URL is accepted and the catalogue is not changed."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 96,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PIRAMAL ENTERPRISES LIMITED"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page names 'PIRAMAL ENTERPRISES LIMITED'. Apollo and 1mg say Bayer while Netmeds and PharmEasy say Piramal.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected -- and the sources contradict EACH OTHER, so majority voting was deliberately not applied. Apollo and 1mg name Bayer Pharmaceuticals Pvt Ltd, matching our catalogue value 'Bayer'; Netmeds and PharmEasy name Piramal Pharma Limited and PIRAMAL ENTERPRISES LIMITED. This is a 2-2 split. It is the same Bayer-versus-Piramal disagreement seen on Saridon (46), which is already deprioritised for it, so the two are very likely one brand-ownership transfer that different pharmacies have recorded at different times. Until that is established from an independent source, no URL is accepted and the catalogue is not changed."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Isabgol' product exists; the Dabur listings are 'Dabur Sat Isabgol' and 'Dabur Nature Care Isabgol', and other brands (Baidyanath, Organic India, Bharat) sell the same commodity.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY. Our catalogue name 'Isabgol' is a commodity name, not a brand, and Dabur markets at least two distinct isabgol products -- Dabur Sat Isabgol and Dabur Nature Care Isabgol (double action) -- neither of which is an unqualified 'Isabgol'. Our description fits both. The product is also a bulk commodity sold from 45g to 375g where pack size is identity-bearing, which is exactly why medicines 30 and 45 are already deprioritised. Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Ispaghula husk + Fiber'; 'Fiber' is not an ingredient and medicine 97 is one of the five rows affected by the known composition-artifact bug whose fix is deferred."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Isabgol' product exists; the Dabur listings are 'Dabur Sat Isabgol' and 'Dabur Nature Care Isabgol', and other brands (Baidyanath, Organic India, Bharat) sell the same commodity.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY. Our catalogue name 'Isabgol' is a commodity name, not a brand, and Dabur markets at least two distinct isabgol products -- Dabur Sat Isabgol and Dabur Nature Care Isabgol (double action) -- neither of which is an unqualified 'Isabgol'. Our description fits both. The product is also a bulk commodity sold from 45g to 375g where pack size is identity-bearing, which is exactly why medicines 30 and 45 are already deprioritised. Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Ispaghula husk + Fiber'; 'Fiber' is not an ingredient and medicine 97 is one of the five rows affected by the known composition-artifact bug whose fix is deferred."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Isabgol' product exists; the Dabur listings are 'Dabur Sat Isabgol' and 'Dabur Nature Care Isabgol', and other brands (Baidyanath, Organic India, Bharat) sell the same commodity.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY. Our catalogue name 'Isabgol' is a commodity name, not a brand, and Dabur markets at least two distinct isabgol products -- Dabur Sat Isabgol and Dabur Nature Care Isabgol (double action) -- neither of which is an unqualified 'Isabgol'. Our description fits both. The product is also a bulk commodity sold from 45g to 375g where pack size is identity-bearing, which is exactly why medicines 30 and 45 are already deprioritised. Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Ispaghula husk + Fiber'; 'Fiber' is not an ingredient and medicine 97 is one of the five rows affected by the known composition-artifact bug whose fix is deferred."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 97,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Isabgol' product exists; the Dabur listings are 'Dabur Sat Isabgol' and 'Dabur Nature Care Isabgol', and other brands (Baidyanath, Organic India, Bharat) sell the same commodity.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY. Our catalogue name 'Isabgol' is a commodity name, not a brand, and Dabur markets at least two distinct isabgol products -- Dabur Sat Isabgol and Dabur Nature Care Isabgol (double action) -- neither of which is an unqualified 'Isabgol'. Our description fits both. The product is also a bulk commodity sold from 45g to 375g where pack size is identity-bearing, which is exactly why medicines 30 and 45 are already deprioritised. Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Ispaghula husk + Fiber'; 'Fiber' is not an ingredient and medicine 97 is one of the five rows affected by the known composition-artifact bug whose fix is deferred."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 98,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "The page reached via the plain slug is titled 'Itch Guard+ Cream 12 gm' and terbinafine is named on it.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Two different products share the name: plain Itch Guard (clotrimazole 1%) and Itch Guard Plus (terbinafine with cooling menthol). Our record holds no composition and cannot choose. The Apollo page reached via the plain slug /otc/itch-guard-cream-15gm is titled 'Itch Guard+ Cream 12 gm', i.e. the slug says plain and the page serves Plus; Netmeds' plain Itchguard page states clotrimazole. This is the same shape as Panderm Plus (68). The 1mg plain-product URL additionally returned HTTP 404."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 98,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "INVALID",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "The 1mg plain Itch Guard product URL returned HTTP 404; no servable plain product page was found.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Two different products share the name: plain Itch Guard (clotrimazole 1%) and Itch Guard Plus (terbinafine with cooling menthol). Our record holds no composition and cannot choose. The Apollo page reached via the plain slug /otc/itch-guard-cream-15gm is titled 'Itch Guard+ Cream 12 gm', i.e. the slug says plain and the page serves Plus; Netmeds' plain Itchguard page states clotrimazole. This is the same shape as Panderm Plus (68). The 1mg plain-product URL additionally returned HTTP 404."
+      },
+      "resolved": {
+        "verification_status": "INVALID",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 98,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Netmeds' plain 'Itchguard Cream 5gm' page (reached via a redirect to /product/) states clotrimazole, a different active from Apollo's terbinafine.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Two different products share the name: plain Itch Guard (clotrimazole 1%) and Itch Guard Plus (terbinafine with cooling menthol). Our record holds no composition and cannot choose. The Apollo page reached via the plain slug /otc/itch-guard-cream-15gm is titled 'Itch Guard+ Cream 12 gm', i.e. the slug says plain and the page serves Plus; Netmeds' plain Itchguard page states clotrimazole. This is the same shape as Panderm Plus (68). The 1mg plain-product URL additionally returned HTTP 404."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 98,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "PharmEasy lists both 'ITCHGUARD ANTI FUNGAL CREAM' and 'ITCHGUARD PLUS ... COOLING MENTHOL' under the same brand name.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Two different products share the name: plain Itch Guard (clotrimazole 1%) and Itch Guard Plus (terbinafine with cooling menthol). Our record holds no composition and cannot choose. The Apollo page reached via the plain slug /otc/itch-guard-cream-15gm is titled 'Itch Guard+ Cream 12 gm', i.e. the slug says plain and the page serves Plus; Netmeds' plain Itchguard page states clotrimazole. This is the same shape as Panderm Plus (68). The 1mg plain-product URL additionally returned HTTP 404."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 25,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Piramal Pharma Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'Piramal Pharma Ltd', which does not match catalogue 'Mankind Pharma'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Mankind Pharma'. All four live pages name a Piramal entity and agree with each other. Mankind's own emergency contraceptive brand is Unwanted 72 (medicine 40, accepted this batch with Mankind confirmed), so our record for i-pill may have been crossed with it -- but that is a catalogue decision to be made separately. Note the same 'Piramal' cluster as medicines 46 and 78."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 25,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "piramal-enterprises-ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'piramal-enterprises-ltd', which does not match catalogue 'Mankind Pharma'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Mankind Pharma'. All four live pages name a Piramal entity and agree with each other. Mankind's own emergency contraceptive brand is Unwanted 72 (medicine 40, accepted this batch with Mankind confirmed), so our record for i-pill may have been crossed with it -- but that is a catalogue decision to be made separately. Note the same 'Piramal' cluster as medicines 46 and 78."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 25,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Piramal Pharma Limited"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'Piramal Pharma Limited', which does not match catalogue 'Mankind Pharma'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Mankind Pharma'. All four live pages name a Piramal entity and agree with each other. Mankind's own emergency contraceptive brand is Unwanted 72 (medicine 40, accepted this batch with Mankind confirmed), so our record for i-pill may have been crossed with it -- but that is a catalogue decision to be made separately. Note the same 'Piramal' cluster as medicines 46 and 78."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 25,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PIRAMAL HEALTHCARE LIMITED"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page (HTTP 200) names 'PIRAMAL HEALTHCARE LIMITED', which does not match catalogue 'Mankind Pharma'.",
+        "notes": "MANUFACTURER CONFLICT flagged for separate investigation, NOT corrected. Our catalogue records 'Mankind Pharma'. All four live pages name a Piramal entity and agree with each other. Mankind's own emergency contraceptive brand is Unwanted 72 (medicine 40, accepted this batch with Mankind confirmed), so our record for i-pill may have been crossed with it -- but that is a catalogue decision to be made separately. Note the same 'Piramal' cluster as medicines 46 and 78."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 40,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Mankind Pharma Pvt Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "The Apollo page redirects to /otc/unwanted-72-0-75mg-tablet and is titled simply 'Unwanted-72 Tablet'. The URL slug identifies the 0.75mg SKU but the page displays no strength anywhere, while 1mg, Netmeds and PharmEasy all state 1.5mg. Manufacturer 'Mankind Pharma Pvt Ltd' matches, but the strength could not be confirmed and our record carries none.",
+        "notes": "Rejected rather than guessed: PharmEasy separately lists an 'UNWANTED 72 0.75MG TAB', so 0.75mg is a real distinct SKU and not merely a stale slug. The other three pharmacies were accepted for this medicine."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}

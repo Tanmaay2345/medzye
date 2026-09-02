@@ -1,0 +1,799 @@
+{
+  "run_id": "batch8-accepted",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "medicine_ids": [
+    7,
+    40,
+    84,
+    86,
+    91,
+    93,
+    99
+  ],
+  "invocations": 27,
+  "results": [
+    {
+      "medicine_id": 84,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/tobrex-drops-5ml",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Alcon Laboratories Inc"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is plain Tobrex tobramycin 0.3% eye drops; manufacturer field reads 'Alcon Laboratories Inc'.",
+        "notes": "Tobrex 2X (different concentration), Tobrex Eye Ointment (different dosage form) and Tobradex (tobramycin + dexamethasone) were rejected as different products. Accepted pages are the plain tobramycin 0.3% w/v 5ml drops. Entity-granularity note: our catalogue says 'Alcon Laboratories (India)'; only Netmeds states that exact entity, while Apollo names the US parent 'Alcon Laboratories Inc' and 1mg/PharmEasy give unqualified Alcon entities."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 84,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/tobrex-eye-drop-143702",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "alcon-laboratories"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is plain Tobrex tobramycin 0.3% eye drops; manufacturer field reads 'alcon-laboratories'.",
+        "notes": "Tobrex 2X (different concentration), Tobrex Eye Ointment (different dosage form) and Tobradex (tobramycin + dexamethasone) were rejected as different products. Accepted pages are the plain tobramycin 0.3% w/v 5ml drops. Entity-granularity note: our catalogue says 'Alcon Laboratories (India)'; only Netmeds states that exact entity, while Apollo names the US parent 'Alcon Laboratories Inc' and 1mg/PharmEasy give unqualified Alcon entities."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 84,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/tobrex-eye-drops-5ml-m1ph8p-8511636",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Alcon Laboratories India Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is plain Tobrex tobramycin 0.3% eye drops; manufacturer field reads 'Alcon Laboratories India Pvt Ltd'.",
+        "notes": "Tobrex 2X (different concentration), Tobrex Eye Ointment (different dosage form) and Tobradex (tobramycin + dexamethasone) were rejected as different products. Accepted pages are the plain tobramycin 0.3% w/v 5ml drops. Entity-granularity note: our catalogue says 'Alcon Laboratories (India)'; only Netmeds states that exact entity, while Apollo names the US parent 'Alcon Laboratories Inc' and 1mg/PharmEasy give unqualified Alcon entities."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 84,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/tobrex-eye-drops-2000",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ALCON LABORATORIES PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is plain Tobrex tobramycin 0.3% eye drops; manufacturer field reads 'ALCON LABORATORIES PVT LTD'.",
+        "notes": "Tobrex 2X (different concentration), Tobrex Eye Ointment (different dosage form) and Tobradex (tobramycin + dexamethasone) were rejected as different products. Accepted pages are the plain tobramycin 0.3% w/v 5ml drops. Entity-granularity note: our catalogue says 'Alcon Laboratories (India)'; only Netmeds states that exact entity, while Apollo names the US parent 'Alcon Laboratories Inc' and 1mg/PharmEasy give unqualified Alcon entities."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 86,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/cremaffin-mixed-fruit-225ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Abbott India Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Cremaffin 225ml; manufacturer 'Abbott India Ltd'.",
+        "notes": "Cremaffin Plus (adds sodium picosulfate) and Cremaffin Fresh (tablet) were rejected as different compositions and dosage forms. All accepted pages are the plain liquid paraffin + milk of magnesia 225ml product. Flavour (mint vs mixed fruit vs unflavoured listing) differs between pharmacies but the composition does not; like pack size, flavour is not treated as a medicine-level identifier."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 86,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/cremaffin-constipation-relief-with-liquid-paraffin-for-stomach-care-otc701575",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "abbott"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Cremaffin 225ml; manufacturer 'abbott'.",
+        "notes": "Cremaffin Plus (adds sodium picosulfate) and Cremaffin Fresh (tablet) were rejected as different compositions and dosage forms. All accepted pages are the plain liquid paraffin + milk of magnesia 225ml product. Flavour (mint vs mixed fruit vs unflavoured listing) differs between pharmacies but the composition does not; like pack size, flavour is not treated as a medicine-level identifier. MEDIUM because 1mg's manufacturer field reads only 'abbott', a lower granularity than our 'Abbott India'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 86,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/cremaffin-plain-sugar-free-syrup-225ml-mfulw9-12288467",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Abbott India Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Cremaffin 225ml; manufacturer 'Abbott India Ltd'.",
+        "notes": "Cremaffin Plus (adds sodium picosulfate) and Cremaffin Fresh (tablet) were rejected as different compositions and dosage forms. All accepted pages are the plain liquid paraffin + milk of magnesia 225ml product. Flavour (mint vs mixed fruit vs unflavoured listing) differs between pharmacies but the composition does not; like pack size, flavour is not treated as a medicine-level identifier."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 86,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/cremaffin-constipation-relief-syrup-mixed-fruit-225ml-190721",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "ABBOTT INDIA LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Cremaffin 225ml; manufacturer 'ABBOTT INDIA LTD'.",
+        "notes": "Cremaffin Plus (adds sodium picosulfate) and Cremaffin Fresh (tablet) were rejected as different compositions and dosage forms. All accepted pages are the plain liquid paraffin + milk of magnesia 225ml product. Flavour (mint vs mixed fruit vs unflavoured listing) differs between pharmacies but the composition does not; like pack size, flavour is not treated as a medicine-level identifier."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 91,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/moov-spray-80ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Reckitt Benckiser India Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Moov Pain Relief Spray, 80 gm'; manufacturer 'Reckitt Benckiser India Ltd'.",
+        "notes": "Composition confirmed identical on the accepted pages (wintergreen, turpentine, eucalyptus/nilgiri, mint, cinnamon), 80g. Moov Strong Diclofenac (an NSAID, different composition), Moov Cool Therapy and the Moov ointments/creams/gels were rejected. The brand is titled differently per pharmacy -- 'Pain Relief Spray', 'Pain Relief Specialist', 'Instant Pain Relief', '100% Ayurvedic' -- which is a branding refresh of one product, not distinct SKUs; only Apollo's title matches our catalogue name verbatim, so the other three are capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 91,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/moov-100-ayurvedic-pain-relief-spray-for-back-pain-joint-pain-knee-pain-muscle-pain-otc299355",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Reckitt Benckiser (India) Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. schema.org 'manufacturer' names 'A)Accra Pac (India) Pvt. Ltd.', a contract packing site; the MARKETER field on the same page reads 'Reckitt Benckiser (India) Pvt. Ltd.' and the brand field reads 'Moov'.",
+        "notes": "Marketer field matched, not the schema.org manufacturer field -- same contract-manufacturer pattern as Burnol/Akums. Composition confirmed identical on the accepted pages (wintergreen, turpentine, eucalyptus/nilgiri, mint, cinnamon), 80g. Moov Strong Diclofenac (an NSAID, different composition), Moov Cool Therapy and the Moov ointments/creams/gels were rejected. The brand is titled differently per pharmacy -- 'Pain Relief Spray', 'Pain Relief Specialist', 'Instant Pain Relief', '100% Ayurvedic' -- which is a branding refresh of one product, not distinct SKUs; only Apollo's title matches our catalogue name verbatim, so the other three are capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 91,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/non-prescriptions/moov-spray-pain-relief-specialist-80g",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Reckitt Benckiser Healthcare India Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": "https://www.netmeds.com/product/moov-spray-pain-relief-specialist-80-gm-lufusv-7532105",
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "YES",
+        "evidence": "HTTP 200 with one redirect to the canonical /product/ URL. Manufacturer 'Reckitt Benckiser Healthcare India Pvt Ltd'.",
+        "notes": "Composition confirmed identical on the accepted pages (wintergreen, turpentine, eucalyptus/nilgiri, mint, cinnamon), 80g. Moov Strong Diclofenac (an NSAID, different composition), Moov Cool Therapy and the Moov ointments/creams/gels were rejected. The brand is titled differently per pharmacy -- 'Pain Relief Spray', 'Pain Relief Specialist', 'Instant Pain Relief', '100% Ayurvedic' -- which is a branding refresh of one product, not distinct SKUs; only Apollo's title matches our catalogue name verbatim, so the other three are capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": "https://www.netmeds.com/product/moov-spray-pain-relief-specialist-80-gm-lufusv-7532105",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 91,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/moov-pain-relief-spray-bottle-of-80-g-21706",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "RECKITT BENCKISER (INDIA) PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Composition confirmed on page; manufacturer 'RECKITT BENCKISER (INDIA) PRIVATE LIMITED'.",
+        "notes": "Composition confirmed identical on the accepted pages (wintergreen, turpentine, eucalyptus/nilgiri, mint, cinnamon), 80g. Moov Strong Diclofenac (an NSAID, different composition), Moov Cool Therapy and the Moov ointments/creams/gels were rejected. The brand is titled differently per pharmacy -- 'Pain Relief Spray', 'Pain Relief Specialist', 'Instant Pain Relief', '100% Ayurvedic' -- which is a branding refresh of one product, not distinct SKUs; only Apollo's title matches our catalogue name verbatim, so the other three are capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 93,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/dabur-honitus-herbal-cough-remedy-100ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Honey-based Honitus base syrup 100ml; manufacturer 'Dabur India Ltd' -- match to catalogue 'Dabur India'.",
+        "notes": "All accepted pages are the honey-based ayurvedic base syrup (tulsi, mulethi, banaphsa), 100ml, matching our description 'with honey and herbal ingredients'. Honitus Sugar Free, Honitus Adulsa (different herb), Honitus Mixed Fruit, Madhuvaani (paste), Hot Sip (granules) and the cough drops were all rejected as explicitly qualified variants or different dosage forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 93,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/dabur-honitus-honey-based-ayurvedic-cough-syrup-fast-relief-from-cough-cold-sore-throat-non-drowsy-otc113472",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "dabur-india-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Honey-based Honitus base syrup 100ml; manufacturer 'dabur-india-ltd' -- match to catalogue 'Dabur India'.",
+        "notes": "All accepted pages are the honey-based ayurvedic base syrup (tulsi, mulethi, banaphsa), 100ml, matching our description 'with honey and herbal ingredients'. Honitus Sugar Free, Honitus Adulsa (different herb), Honitus Mixed Fruit, Madhuvaani (paste), Hot Sip (granules) and the cough drops were all rejected as explicitly qualified variants or different dosage forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 93,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/dabur-honitus-herbal-cough-remedy-syrup-100-ml-lufuql-7520706",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Honey-based Honitus base syrup 100ml; manufacturer 'Dabur India Ltd' -- match to catalogue 'Dabur India'.",
+        "notes": "All accepted pages are the honey-based ayurvedic base syrup (tulsi, mulethi, banaphsa), 100ml, matching our description 'with honey and herbal ingredients'. Honitus Sugar Free, Honitus Adulsa (different herb), Honitus Mixed Fruit, Madhuvaani (paste), Hot Sip (granules) and the cough drops were all rejected as explicitly qualified variants or different dosage forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 93,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/dabur-honitus-cough-syrup-bottle-of-100-ml-172067",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "DABUR INDIA LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Honey-based Honitus base syrup 100ml; manufacturer 'DABUR INDIA LIMITED' -- match to catalogue 'Dabur India'.",
+        "notes": "All accepted pages are the honey-based ayurvedic base syrup (tulsi, mulethi, banaphsa), 100ml, matching our description 'with honey and herbal ingredients'. Honitus Sugar Free, Honitus Adulsa (different herb), Honitus Mixed Fruit, Madhuvaani (paste), Hot Sip (granules) and the cough drops were all rejected as explicitly qualified variants or different dosage forms."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 99,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/milflox-drops-5ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Milflox moxifloxacin 0.5% 5ml; manufacturer 'Sun Pharmaceutical Industries Ltd'.",
+        "notes": "Milflox Plus (ketorolac), Milflox DF (difluprednate), Milflox DM (dexamethasone) and Milflodex were rejected as different compositions. Accepted pages are the plain moxifloxacin 0.5% 5ml drops."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 99,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/milflox-0.5-eye-drop-19329",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "sun-pharmaceutical-industries-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Milflox moxifloxacin 0.5% 5ml; manufacturer 'sun-pharmaceutical-industries-ltd'.",
+        "notes": "Milflox Plus (ketorolac), Milflox DF (difluprednate), Milflox DM (dexamethasone) and Milflodex were rejected as different compositions. Accepted pages are the plain moxifloxacin 0.5% 5ml drops."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 99,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/milflox-eye-drops-5ml-lui6ia-8325600",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Sun Pharmaceutical Industries Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Milflox moxifloxacin 0.5% 5ml; manufacturer 'Sun Pharmaceutical Industries Ltd'.",
+        "notes": "Milflox Plus (ketorolac), Milflox DF (difluprednate), Milflox DM (dexamethasone) and Milflodex were rejected as different compositions. Accepted pages are the plain moxifloxacin 0.5% 5ml drops."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 99,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/milflox-0-5-eye-drops-5ml-25057",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "SUN PHARMA"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Plain Milflox moxifloxacin 0.5% 5ml; manufacturer 'SUN PHARMA'.",
+        "notes": "Milflox Plus (ketorolac), Milflox DF (difluprednate), Milflox DM (dexamethasone) and Milflodex were rejected as different compositions. Accepted pages are the plain moxifloxacin 0.5% 5ml drops. MEDIUM: PharmEasy's manufacturer field reads only 'SUN PHARMA', and PharmEasy uniquely also lists a Milflox 0.3% SKU under the same base name, so the base name is not self-disambiguating on this pharmacy alone; 0.5% was chosen because it is what the other three serve as the base."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 7,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/eno-regular-bottle-100g",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Consumer Healthcare Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. 'ENO Fruit Salt Regular Flavour Powder, 100 gm'; manufacturer matches catalogue 'GSK Consumer Healthcare'.",
+        "notes": "Regular flavour chosen consistently at all four; ENO Lemon, Orange and Cola share the same actives (sodium bicarbonate + citric acid + sodium carbonate) and differ only in flavouring, while ENO Real Jeera/Ajwain/Kala Namak is a different composition and was rejected. Entity note, not a conflict: Apollo states 'GlaxoSmithKline Consumer Healthcare Ltd', matching our catalogue, while 1mg, Netmeds and PharmEasy state the sibling entity 'GlaxoSmithKline Asia Pvt Ltd'. All four are GlaxoSmithKline entities and no page names a different company, so this is granularity rather than a contradiction."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 7,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/eno-powder-provides-fast-relief-from-acidity-flavour-regular-otc370723",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GlaxoSmithKline Asia Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200. schema.org 'manufacturer' names 'A)Southern Drugs & Pharmaceuticals', a contract site; the MARKETER field reads 'GlaxoSmithKline Asia Pvt. Ltd.'.",
+        "notes": "Marketer field matched, not the schema.org manufacturer field. Regular flavour chosen consistently at all four; ENO Lemon, Orange and Cola share the same actives (sodium bicarbonate + citric acid + sodium carbonate) and differ only in flavouring, while ENO Real Jeera/Ajwain/Kala Namak is a different composition and was rejected. Entity note, not a conflict: Apollo states 'GlaxoSmithKline Consumer Healthcare Ltd', matching our catalogue, while 1mg, Netmeds and PharmEasy state the sibling entity 'GlaxoSmithKline Asia Pvt Ltd'. All four are GlaxoSmithKline entities and no page names a different company, so this is granularity rather than a contradiction."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 7,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/eno-fruit-salt-powder-regular-flavour-100-gm-lui4eb-8283773",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Glaxosmithkline Asia Pvt. Ltd."
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. 'Eno Fruit Salt Powder - Regular Flavour 100 gm'; manufacturer 'Glaxosmithkline Asia Pvt. Ltd.'.",
+        "notes": "Regular flavour chosen consistently at all four; ENO Lemon, Orange and Cola share the same actives (sodium bicarbonate + citric acid + sodium carbonate) and differ only in flavouring, while ENO Real Jeera/Ajwain/Kala Namak is a different composition and was rejected. Entity note, not a conflict: Apollo states 'GlaxoSmithKline Consumer Healthcare Ltd', matching our catalogue, while 1mg, Netmeds and PharmEasy state the sibling entity 'GlaxoSmithKline Asia Pvt Ltd'. All four are GlaxoSmithKline entities and no page names a different company, so this is granularity rather than a contradiction."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 7,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/eno-fruit-salt-regular-antacid-sachets-container-of-100-g-171922",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "GLAXOSMITHKLINE ASIA PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. 'ENO | FRUIT SALT | REGULAR | BOTTLE 100 GM'; manufacturer 'GLAXOSMITHKLINE ASIA PRIVATE LIMITED'.",
+        "notes": "Regular flavour chosen consistently at all four; ENO Lemon, Orange and Cola share the same actives (sodium bicarbonate + citric acid + sodium carbonate) and differ only in flavouring, while ENO Real Jeera/Ajwain/Kala Namak is a different composition and was rejected. Entity note, not a conflict: Apollo states 'GlaxoSmithKline Consumer Healthcare Ltd', matching our catalogue, while 1mg, Netmeds and PharmEasy state the sibling entity 'GlaxoSmithKline Asia Pvt Ltd'. All four are GlaxoSmithKline entities and no page names a different company, so this is granularity rather than a contradiction."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 40,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/unwanted-72-levonorgestrel-emergency-contraceptive-tablet-191883",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "mankind-pharma-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Levonorgestrel 1.5mg confirmed on page; marketer 'mankind-pharma-ltd' -- exact match to catalogue 'Mankind Pharma'.",
+        "notes": "Levonorgestrel 1.5mg single-tablet product, confirmed on-page at all three accepted pharmacies. The Apollo listing was REJECTED, not accepted: its URL slug identifies the 0.75mg SKU while the page displays no strength at all, and our record carries no strength, so the strength could not be confirmed. Unwanted Kit, Unwanted 21 Days and plain Unwanted are different products."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 40,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/unwanted-72-tablet-1s-lxzi68-8477861",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Mankind Pharma Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. 'UNWANTED 72 Tablet 1's', 1.5mg confirmed on page; manufacturer 'Mankind Pharma Pvt Ltd'.",
+        "notes": "Levonorgestrel 1.5mg single-tablet product, confirmed on-page at all three accepted pharmacies. The Apollo listing was REJECTED, not accepted: its URL slug identifies the 0.75mg SKU while the page displays no strength at all, and our record carries no strength, so the strength could not be confirmed. Unwanted Kit, Unwanted 21 Days and plain Unwanted are different products."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 40,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/unwanted-72-strip-of-1-tablet-179163",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "MANKIND CONSUMER PRODUCTS PRIVATE LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Strip of 1 tablet, 1.5mg confirmed on page; manufacturer 'MANKIND CONSUMER PRODUCTS PRIVATE LIMITED'.",
+        "notes": "MEDIUM: PharmEasy names the sibling entity 'Mankind Consumer Products' rather than 'Mankind Pharma', and PharmEasy separately lists an 'UNWANTED 72 0.75MG TAB' SKU. Levonorgestrel 1.5mg single-tablet product, confirmed on-page at all three accepted pharmacies. The Apollo listing was REJECTED, not accepted: its URL slug identifies the 0.75mg SKU while the page displays no strength at all, and our record carries no strength, so the strength could not be confirmed. Unwanted Kit, Unwanted 21 Days and plain Unwanted are different products."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}
