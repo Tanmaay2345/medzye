@@ -15,13 +15,10 @@ import { EmptyState } from "@/components/common/empty-state";
 import { PharmacyPriceRow } from "@/components/cards/pharmacy-price-row";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { getOffersForMedicine } from "@/lib/queries/pharmacies";
+import { getVerifiedUrlPharmacyIds } from "@/lib/queries/product-urls";
+import { visibleOffers } from "@/lib/visible-offers";
 import { IMAGE_BLUR_DATA_URL } from "@/utils/image-placeholder";
 import type { MedicineWithPrice, PharmacyOffer } from "@/types/database";
-
-// The Figma sheet shows exactly 4 brand options. Extra offers stay in the
-// data (getOffersForMedicine still returns everything) — this only limits
-// what this sheet renders.
-const VISIBLE_OFFER_COUNT = 4;
 
 const TRUST_BADGES = [
   { label: "Same composition", icon: "/images/trust-badge-same-composition.svg" },
@@ -49,12 +46,23 @@ export function PriceComparisonModal({
   const [selectedOfferId, setSelectedOfferId] = useState<number | null>(null);
   const hasSelection = selectedOfferId != null;
 
+  const [verifiedPharmacyIds, setVerifiedPharmacyIds] = useState<Set<number>>(new Set());
+
+  // Both reads land together: resolving them separately would render the
+  // capped list first and then reflow as the verified ids arrived, moving rows
+  // under a user who may already be reaching for one.
   useEffect(() => {
     if (!open) return;
     setSelectedOfferId(null);
     setIsLoading(true);
-    getOffersForMedicine(medicine.id)
-      .then(setOffers)
+    Promise.all([
+      getOffersForMedicine(medicine.id),
+      getVerifiedUrlPharmacyIds(medicine.id),
+    ])
+      .then(([nextOffers, nextVerified]) => {
+        setOffers(nextOffers);
+        setVerifiedPharmacyIds(nextVerified);
+      })
       .finally(() => setIsLoading(false));
   }, [open, medicine.id]);
 
@@ -152,7 +160,7 @@ export function PriceComparisonModal({
         />
       )}
       {!isLoading &&
-        offers.slice(0, VISIBLE_OFFER_COUNT).map((offer) => (
+        visibleOffers(offers, verifiedPharmacyIds).map((offer) => (
           <PharmacyPriceRow
             key={offer.id}
             offer={offer}

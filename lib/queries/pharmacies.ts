@@ -7,7 +7,13 @@ export async function getOffersForMedicine(medicineId: number): Promise<Pharmacy
     .from("medicine_prices")
     .select("*, pharmacy:pharmacies(*)")
     .eq("medicine_id", medicineId)
-    .order("price", { ascending: true });
+    // id breaks price ties. Without it two offers at the same price can come
+    // back in either order, so which one lands inside a capped list — and
+    // therefore which pharmacy the user is offered — could differ between two
+    // renders of the same medicine. Ordering is part of the selection contract
+    // here, not just presentation.
+    .order("price", { ascending: true })
+    .order("id", { ascending: true });
 
   if (error) throw error;
 
