@@ -95,10 +95,17 @@ const DEPRIORITIZED_IDS = new Set([
       // Rejected 4/4 in batch 2 and re-confirmed in batch 6.
   50, // Rosuvas -- 5 / 10 / 20 / 40mg plus B / F / CV. Rejected 4/4 in batch 3
       // and re-confirmed in batch 6.
+  64, // Galvus Met -- 50/500, 50/850 and 50/1000mg at all four pharmacies.
+      // Rejected 4/4 in batch 7.
+  65, // Storvas -- 5 / 10 / 20 / 40 / 80mg plus the D / EZ / CV / CP / Trio
+      // combination families. Rejected 4/4 in batch 7.
   // Bulk commodity where pack size is identity-bearing.
   30, 45,
   // Dosage form itself is unresolvable from the catalogue.
   22, // Digene -- gel AND chewable tablet, different compositions; our own description says "gel and tablet"
+  62, // Febrex Plus -- tablet, syrup, AF syrup, DS suspension, drops and AF drops,
+      // with different compositions and strengths. Our name carries no form and our
+      // own description says "syrup AND tablet". Same shape as Digene above.
   // Unresolved manufacturer conflict. Held out until the conflict is investigated
   // separately; a URL must not be accepted against a manufacturer we cannot trust.
   46, // Saridon -- Apollo and Netmeds name Bayer, PharmEasy names Piramal Healthcare
@@ -115,6 +122,17 @@ const DEPRIORITIZED_IDS = new Set([
   56, // Zincovit Kid Syrup -- no "Zincovit Kid" product exists; the family is plain
       // Zincovit plus CL / SF / Forte / Active. Medicine 36 "Zincovit" already exists
       // and is mapped to the tablet pages, so 56 may be a duplicate or mis-specified row.
+  68, // Panderm Plus Cream -- our name distinguishes neither "Panderm +" from
+      // "Panderm ++" nor the compositions behind them, and we hold no composition.
+      // Apollo, 1mg and Netmeds serve the ++ product (clobetasol + miconazole +
+      // neomycin), but PharmEasy serves TWO products both titled "Panderm Plus
+      // Cream", both Macleods, one of them clobetasol + ofloxacin + ornidazole +
+      // terbinafine. Sources conflict on composition, so the identity is unresolved.
+  71, // Polybion Syrup -- 1mg, Netmeds and PharmEasy no longer list a plain Polybion
+      // Syrup at all, only LC / Active / SF / Osto, each a different composition.
+      // Apollo still lists one but names the pre-acquisition marketer "Merck Ltd".
+      // Our manufacturer value (Procter & Gamble Health) is correct and unchanged;
+      // what is unresolved is which product the plain catalogue name now denotes.
 ]);
 
 /**
