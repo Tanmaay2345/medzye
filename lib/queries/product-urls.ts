@@ -47,7 +47,7 @@ export async function getProductUrl(
   const supabase = createClient();
   const { data, error } = await supabase
     .from("medicine_product_urls")
-    .select("url, final_url, url_type, verification_status, pharmacy:pharmacies(*)")
+    .select("medicine_id, url, final_url, url_type, verification_status, pharmacy:pharmacies(*)")
     .eq("medicine_id", medicineId)
     .eq("pharmacy_id", pharmacyId);
 
@@ -67,8 +67,44 @@ export async function getProductUrl(
 
   return {
     url: effectiveUrl(best),
+    final_url: best.final_url,
+    medicine_id: best.medicine_id,
     url_type: best.url_type,
     verification_status: best.verification_status,
     pharmacy: best.pharmacy,
   };
+}
+
+/**
+ * Which pharmacies have a verified product URL for this medicine.
+ *
+ * Exists so a caller listing several offers can tell which of them lead
+ * anywhere without issuing one lookup per row. Returns pharmacy ids only —
+ * deliberately not the URLs — because the caller that needs this is choosing
+ * what to SHOW, and resolving a destination is `getProductUrl`'s job. Keeping
+ * them separate means a list view can never accidentally render a URL it
+ * hasn't re-resolved through the ranking rules.
+ *
+ * RLS already restricts this table to VERIFIED / REDIRECT_VERIFIED, so every
+ * id returned is backed by a verified row. An empty set is the honest answer
+ * for a medicine with no URLs, and is also what a missing table returns, so
+ * callers degrade to "no verified links" rather than breaking.
+ */
+export async function getVerifiedUrlPharmacyIds(medicineId: number): Promise<Set<number>> {
+  if (!Number.isInteger(medicineId)) return new Set();
+
+  const supabase = createClient();
+  const { data, error } = await supabase
+    .from("medicine_product_urls")
+    .select("pharmacy_id")
+    .eq("medicine_id", medicineId);
+
+  if (error) {
+    if (error.code !== UNDEFINED_TABLE) {
+      console.error("[product-urls] pharmacy id lookup failed", { medicineId, code: error.code });
+    }
+    return new Set();
+  }
+
+  return new Set((data ?? []).map((row) => row.pharmacy_id as number));
 }

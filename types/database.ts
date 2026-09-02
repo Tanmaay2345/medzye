@@ -114,7 +114,25 @@ export type MedicineProductUrl = {
 
 /** A verified URL joined to the pharmacy it points at, for the detail page. */
 export type ResolvedProductUrl = {
+  /**
+   * The destination to send the user to. Already resolved: for a
+   * REDIRECT_VERIFIED row this is the verified `final_url`, otherwise the
+   * stored `url`. Callers send the user here and never re-derive it.
+   */
   url: string;
+  /**
+   * The stored redirect target, exactly as recorded. Non-null if and only if
+   * `verification_status` is REDIRECT_VERIFIED (a DB check constraint enforces
+   * that), in which case it equals `url`. Exposed so a caller can *observe*
+   * which rule produced the destination rather than having to trust it.
+   */
+  final_url: string | null;
+  /**
+   * Which medicine this URL belongs to. In this data model a `medicines` row
+   * IS the brand, so this is also the brand/product identity — it lets a
+   * caller assert the URL belongs to the product on screen.
+   */
+  medicine_id: number;
   url_type: MedicineProductUrl["url_type"];
   verification_status: MedicineProductUrl["verification_status"];
   pharmacy: Pharmacy;
