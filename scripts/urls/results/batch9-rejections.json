@@ -1,0 +1,478 @@
+{
+  "run_id": "batch9-rejections",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "note": "Rejected pairs from batch 9, the final investigation batch. All four medicines were rejected 4/4 and no URL is proposed for any of them. 60 and 90 are product ranges rather than SKUs; 67 and 82 are dosage-form ambiguities. Nothing was accepted to raise coverage on the last batch. No medicine record was changed.",
+  "medicine_ids": [
+    60,
+    67,
+    82,
+    90
+  ],
+  "invocations": 16,
+  "results": [
+    {
+      "medicine_id": 60,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Band-Aid' product page exists; only the Flexi / Washproof / Waterproof / Square named variants at multiple counts are listed.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No pharmacy offers an unqualified 'Band-Aid' product page. The brand is sold only as named constructions -- Flexi, Washproof, Waterproof, Square Regular, and the Flexi Antiseptic Spots/Patches/Strips -- which differ in backing material, water resistance and shape, and each exists at several counts (1, 10, 20, 30, 100, 100+30). Pack count is identity-bearing for a dressing, the same reason medicines 30 and 45 are deprioritised. The only unqualified 'Band-Aid' destinations found were 1mg's brand CATEGORY page and Apollo's brand listing page, which are not product pages. Secondary observation, not acted on: 1mg names the marketer 'JNTL Consumer Health (India) Pvt. Ltd.' -- the post-Kenvue-separation entity for J&J consumer brands -- while our record says 'Johnson & Johnson'. Even had a single SKU existed, that would have needed checking first."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 60,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Band-Aid' product page exists; only the Flexi / Washproof / Waterproof / Square named variants at multiple counts are listed.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No pharmacy offers an unqualified 'Band-Aid' product page. The brand is sold only as named constructions -- Flexi, Washproof, Waterproof, Square Regular, and the Flexi Antiseptic Spots/Patches/Strips -- which differ in backing material, water resistance and shape, and each exists at several counts (1, 10, 20, 30, 100, 100+30). Pack count is identity-bearing for a dressing, the same reason medicines 30 and 45 are deprioritised. The only unqualified 'Band-Aid' destinations found were 1mg's brand CATEGORY page and Apollo's brand listing page, which are not product pages. Secondary observation, not acted on: 1mg names the marketer 'JNTL Consumer Health (India) Pvt. Ltd.' -- the post-Kenvue-separation entity for J&J consumer brands -- while our record says 'Johnson & Johnson'. Even had a single SKU existed, that would have needed checking first."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 60,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Band-Aid' product page exists; only the Flexi / Washproof / Waterproof / Square named variants at multiple counts are listed.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No pharmacy offers an unqualified 'Band-Aid' product page. The brand is sold only as named constructions -- Flexi, Washproof, Waterproof, Square Regular, and the Flexi Antiseptic Spots/Patches/Strips -- which differ in backing material, water resistance and shape, and each exists at several counts (1, 10, 20, 30, 100, 100+30). Pack count is identity-bearing for a dressing, the same reason medicines 30 and 45 are deprioritised. The only unqualified 'Band-Aid' destinations found were 1mg's brand CATEGORY page and Apollo's brand listing page, which are not product pages. Secondary observation, not acted on: 1mg names the marketer 'JNTL Consumer Health (India) Pvt. Ltd.' -- the post-Kenvue-separation entity for J&J consumer brands -- while our record says 'Johnson & Johnson'. Even had a single SKU existed, that would have needed checking first."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 60,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Band-Aid' product page exists; only the Flexi / Washproof / Waterproof / Square named variants at multiple counts are listed.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No pharmacy offers an unqualified 'Band-Aid' product page. The brand is sold only as named constructions -- Flexi, Washproof, Waterproof, Square Regular, and the Flexi Antiseptic Spots/Patches/Strips -- which differ in backing material, water resistance and shape, and each exists at several counts (1, 10, 20, 30, 100, 100+30). Pack count is identity-bearing for a dressing, the same reason medicines 30 and 45 are deprioritised. The only unqualified 'Band-Aid' destinations found were 1mg's brand CATEGORY page and Apollo's brand listing page, which are not product pages. Secondary observation, not acted on: 1mg names the marketer 'JNTL Consumer Health (India) Pvt. Ltd.' -- the post-Kenvue-separation entity for J&J consumer brands -- while our record says 'Johnson & Johnson'. Even had a single SKU existed, that would have needed checking first."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 67,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pudin Hara Pearls, Active Liquid, Antacid Suspension and the Fizz sachets are all listed; our record names no dosage form and no composition.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Neither our name 'Pudin Hara' nor our description fixes a dosage form, and the brand ships at least five presentations with materially different compositions: Pearls (soft gelatin capsules, pudina satva + hingul), Active Liquid (10ml / 30ml concentrate), Antacid Suspension / Syrup (170ml / 200ml), and Lemon Fizz / Fanto Fizz effervescent sachets. This is the same rule applied to Febrex Plus (62) and Digene (22). It is deliberately NOT the Zincovit (36) or Sinarest (63) case: those records carry a description that names the dosage form ('...tablet...'), which is what allowed the base SKU to be chosen there. Ours names none. Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 67,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pudin Hara Pearls, Active Liquid, Antacid Suspension and the Fizz sachets are all listed; our record names no dosage form and no composition.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Neither our name 'Pudin Hara' nor our description fixes a dosage form, and the brand ships at least five presentations with materially different compositions: Pearls (soft gelatin capsules, pudina satva + hingul), Active Liquid (10ml / 30ml concentrate), Antacid Suspension / Syrup (170ml / 200ml), and Lemon Fizz / Fanto Fizz effervescent sachets. This is the same rule applied to Febrex Plus (62) and Digene (22). It is deliberately NOT the Zincovit (36) or Sinarest (63) case: those records carry a description that names the dosage form ('...tablet...'), which is what allowed the base SKU to be chosen there. Ours names none. Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 67,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pudin Hara Pearls, Active Liquid, Antacid Suspension and the Fizz sachets are all listed; our record names no dosage form and no composition.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Neither our name 'Pudin Hara' nor our description fixes a dosage form, and the brand ships at least five presentations with materially different compositions: Pearls (soft gelatin capsules, pudina satva + hingul), Active Liquid (10ml / 30ml concentrate), Antacid Suspension / Syrup (170ml / 200ml), and Lemon Fizz / Fanto Fizz effervescent sachets. This is the same rule applied to Febrex Plus (62) and Digene (22). It is deliberately NOT the Zincovit (36) or Sinarest (63) case: those records carry a description that names the dosage form ('...tablet...'), which is what allowed the base SKU to be chosen there. Ours names none. Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 67,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dabur India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Pudin Hara Pearls, Active Liquid, Antacid Suspension and the Fizz sachets are all listed; our record names no dosage form and no composition.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Neither our name 'Pudin Hara' nor our description fixes a dosage form, and the brand ships at least five presentations with materially different compositions: Pearls (soft gelatin capsules, pudina satva + hingul), Active Liquid (10ml / 30ml concentrate), Antacid Suspension / Syrup (170ml / 200ml), and Lemon Fizz / Fanto Fizz effervescent sachets. This is the same rule applied to Febrex Plus (62) and Digene (22). It is deliberately NOT the Zincovit (36) or Sinarest (63) case: those records carry a description that names the dosage form ('...tablet...'), which is what allowed the base SKU to be chosen there. Ours names none. Recommended for DEPRIORITIZED_IDS."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 82,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Himalaya Wellness Company"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Liv.52 tablet, DS tablet, syrup, drops and HB capsule are all listed; our record names no dosage form.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Liv.52 ships as tablet (100s), DS tablet (60s, double strength), syrup (100ml / 200ml), drops (60ml / 100ml / 120ml) and the HB capsule, plus a Forte Vet line. Our record is plain 'Liv 52' and our description -- 'Herbal formulation that supports liver function and digestion' -- names no dosage form, so the base SKU cannot be selected without guessing. Same rule as medicine 67 above and as Febrex Plus (62). The tablet is the best-known presentation, but 'best known' is precisely the inference the zero-false-accept standard forbids. Manufacturer was not the blocker: 1mg states both 'The Himalaya Drug Company' and 'Himalaya Wellness Company', consistent with our record and with the entity-granularity note already recorded for Evecare (medicine 55). Recommended for DEPRIORITIZED_IDS: this one becomes eligible immediately once a dosage_form column exists."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 82,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Himalaya Wellness Company"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Liv.52 tablet, DS tablet, syrup, drops and HB capsule are all listed; our record names no dosage form.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Liv.52 ships as tablet (100s), DS tablet (60s, double strength), syrup (100ml / 200ml), drops (60ml / 100ml / 120ml) and the HB capsule, plus a Forte Vet line. Our record is plain 'Liv 52' and our description -- 'Herbal formulation that supports liver function and digestion' -- names no dosage form, so the base SKU cannot be selected without guessing. Same rule as medicine 67 above and as Febrex Plus (62). The tablet is the best-known presentation, but 'best known' is precisely the inference the zero-false-accept standard forbids. Manufacturer was not the blocker: 1mg states both 'The Himalaya Drug Company' and 'Himalaya Wellness Company', consistent with our record and with the entity-granularity note already recorded for Evecare (medicine 55). Recommended for DEPRIORITIZED_IDS: this one becomes eligible immediately once a dosage_form column exists."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 82,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Himalaya Wellness Company"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Liv.52 tablet, DS tablet, syrup, drops and HB capsule are all listed; our record names no dosage form.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Liv.52 ships as tablet (100s), DS tablet (60s, double strength), syrup (100ml / 200ml), drops (60ml / 100ml / 120ml) and the HB capsule, plus a Forte Vet line. Our record is plain 'Liv 52' and our description -- 'Herbal formulation that supports liver function and digestion' -- names no dosage form, so the base SKU cannot be selected without guessing. Same rule as medicine 67 above and as Febrex Plus (62). The tablet is the best-known presentation, but 'best known' is precisely the inference the zero-false-accept standard forbids. Manufacturer was not the blocker: 1mg states both 'The Himalaya Drug Company' and 'Himalaya Wellness Company', consistent with our record and with the entity-granularity note already recorded for Evecare (medicine 55). Recommended for DEPRIORITIZED_IDS: this one becomes eligible immediately once a dosage_form column exists."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 82,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Himalaya Wellness Company"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Liv.52 tablet, DS tablet, syrup, drops and HB capsule are all listed; our record names no dosage form.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Liv.52 ships as tablet (100s), DS tablet (60s, double strength), syrup (100ml / 200ml), drops (60ml / 100ml / 120ml) and the HB capsule, plus a Forte Vet line. Our record is plain 'Liv 52' and our description -- 'Herbal formulation that supports liver function and digestion' -- names no dosage form, so the base SKU cannot be selected without guessing. Same rule as medicine 67 above and as Febrex Plus (62). The tablet is the best-known presentation, but 'best known' is precisely the inference the zero-false-accept standard forbids. Manufacturer was not the blocker: 1mg states both 'The Himalaya Drug Company' and 'Himalaya Wellness Company', consistent with our record and with the entity-granularity note already recorded for Evecare (medicine 55). Recommended for DEPRIORITIZED_IDS: this one becomes eligible immediately once a dosage_form column exists."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 90,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Beiersdorf India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Hansaplast' product page exists; only the named wound-dressing, heat, belladonna and corn plaster lines at multiple counts.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No unqualified 'Hansaplast' product page exists. The range spans three different therapeutic categories: wound dressings (Washproof, Regular, Spot, Jumbo, Antiseptic bandages), pain-relief plasters (Lion Heat Plaster with capsicum, Lion Belladonna Plaster) and a keratolytic (Corn Plaster, salicylic acid), plus first-aid kits and crepe bandages. Our description 'adhesive plasters and bandages for minor wound protection' does narrow this to the dressing category, but within it the Washproof / Regular / Spot / Jumbo constructions still differ and each is sold at several counts (8, 10, 20, 50, 100, 100+36, 250). Pack count is identity-bearing for a dressing. Same outcome and same reasoning as Band-Aid (60) in this batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 90,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Beiersdorf India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Hansaplast' product page exists; only the named wound-dressing, heat, belladonna and corn plaster lines at multiple counts.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No unqualified 'Hansaplast' product page exists. The range spans three different therapeutic categories: wound dressings (Washproof, Regular, Spot, Jumbo, Antiseptic bandages), pain-relief plasters (Lion Heat Plaster with capsicum, Lion Belladonna Plaster) and a keratolytic (Corn Plaster, salicylic acid), plus first-aid kits and crepe bandages. Our description 'adhesive plasters and bandages for minor wound protection' does narrow this to the dressing category, but within it the Washproof / Regular / Spot / Jumbo constructions still differ and each is sold at several counts (8, 10, 20, 50, 100, 100+36, 250). Pack count is identity-bearing for a dressing. Same outcome and same reasoning as Band-Aid (60) in this batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 90,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Beiersdorf India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Hansaplast' product page exists; only the named wound-dressing, heat, belladonna and corn plaster lines at multiple counts.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No unqualified 'Hansaplast' product page exists. The range spans three different therapeutic categories: wound dressings (Washproof, Regular, Spot, Jumbo, Antiseptic bandages), pain-relief plasters (Lion Heat Plaster with capsicum, Lion Belladonna Plaster) and a keratolytic (Corn Plaster, salicylic acid), plus first-aid kits and crepe bandages. Our description 'adhesive plasters and bandages for minor wound protection' does narrow this to the dressing category, but within it the Washproof / Regular / Spot / Jumbo constructions still differ and each is sold at several counts (8, 10, 20, 50, 100, 100+36, 250). Pack count is identity-bearing for a dressing. Same outcome and same reasoning as Band-Aid (60) in this batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 90,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Beiersdorf India"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Hansaplast' product page exists; only the named wound-dressing, heat, belladonna and corn plaster lines at multiple counts.",
+        "notes": "PRODUCT RANGE, NOT A SKU. No unqualified 'Hansaplast' product page exists. The range spans three different therapeutic categories: wound dressings (Washproof, Regular, Spot, Jumbo, Antiseptic bandages), pain-relief plasters (Lion Heat Plaster with capsicum, Lion Belladonna Plaster) and a keratolytic (Corn Plaster, salicylic acid), plus first-aid kits and crepe bandages. Our description 'adhesive plasters and bandages for minor wound protection' does narrow this to the dressing category, but within it the Washproof / Regular / Spot / Jumbo constructions still differ and each is sold at several counts (8, 10, 20, 50, 100, 100+36, 250). Pack count is identity-bearing for a dressing. Same outcome and same reasoning as Band-Aid (60) in this batch."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}
