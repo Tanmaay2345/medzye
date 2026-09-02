@@ -110,6 +110,10 @@ const DEPRIORITIZED_IDS = new Set([
       // Rejected 4/4 in batch 7.
   65, // Storvas -- 5 / 10 / 20 / 40 / 80mg plus the D / EZ / CV / CP / Trio
       // combination families. Rejected 4/4 in batch 7.
+  79, // Istamet -- 50/500, 50/1000 and 100/1000mg plus the XR, XR CP, D-IR,
+      // D-XR and G-IR families. Rejected 4/4 in batch 8.
+  92, // Pyrigesic -- 500 / 650 / 1000mg tablets. Our description does fix the
+      // dosage form as tablet, but not the strength. Rejected 4/4 in batch 8.
   // Bulk commodity where pack size is identity-bearing.
   30, 45,
   // Dosage form itself is unresolvable from the catalogue.
@@ -125,6 +129,16 @@ const DEPRIORITIZED_IDS = new Set([
   53, // Quadriderm RF Cream -- all four pharmacies contradict our "Zydus Healthcare"
       // and agree with each other (Fulford India Ltd / Abbott Healthcare Pvt Ltd).
       // Catalogue is the likely error, but the correction is a separate decision.
+  78, // D-Cold Total -- every pharmacy exposing a marketer names Reckitt Benckiser;
+      // our record says "Piramal Consumer Products". Rejected 4/4 in batch 8.
+  83, // T-Bact Ointment -- all four name GlaxoSmithKline; our record says Glenmark.
+      // Glenmark's own mupirocin brand is Supirocin, so the two may be crossed.
+  96, // Supradyn -- sources split 2-2: Apollo and 1mg say Bayer (matching our
+      // record), Netmeds and PharmEasy say Piramal. Same Bayer-vs-Piramal
+      // disagreement as Saridon (46) above; likely one ownership transfer.
+  25, // i-pill -- all four name a Piramal entity; our record says Mankind Pharma.
+      // Mankind's emergency contraceptive is Unwanted 72 (medicine 40, which has
+      // Mankind confirmed and URLs stored), so 25 and 40 may have been crossed.
   // Catalogue/product identity problem: no confident exact product match exists.
   54, // I-Kul Eye Drops -- no plain "I-Kul Eye Drops" is listed anywhere and no I-Kul
       // product is attributed to FDC Limited. The real brands are Andre I-Kul (Intas)
@@ -144,6 +158,13 @@ const DEPRIORITIZED_IDS = new Set([
       // Apollo still lists one but names the pre-acquisition marketer "Merck Ltd".
       // Our manufacturer value (Procter & Gamble Health) is correct and unchanged;
       // what is unresolved is which product the plain catalogue name now denotes.
+  97, // Isabgol -- "Isabgol" is a commodity name, not a brand. Dabur sells both Sat
+      // Isabgol and Nature Care Isabgol, neither of them an unqualified "Isabgol",
+      // and the product is a bulk commodity from 45g to 375g where pack size is
+      // identity-bearing -- the same reason 30 and 45 are listed above.
+  98, // Itchguard Cream -- plain Itch Guard is clotrimazole and Itch Guard Plus is
+      // terbinafine + menthol; we hold no composition to choose with. Apollo's
+      // plain slug serves the Plus page and the 1mg plain URL returns 404.
 ]);
 
 /**
