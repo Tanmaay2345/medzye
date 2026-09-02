@@ -1,0 +1,594 @@
+{
+  "run_id": "batch7-accepted",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "medicine_ids": [
+    63,
+    66,
+    69,
+    70,
+    75
+  ],
+  "invocations": 20,
+  "results": [
+    {
+      "medicine_id": 63,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/sinarest-tablet",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Centaur Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is 'Sinarest New Tablet'; manufacturer field reads 'Centaur Pharmaceuticals Pvt Ltd', matching catalogue 'Centaur Pharmaceuticals' (legal-entity suffix aside).",
+        "notes": "MEDIUM, not HIGH: the live product name is 'Sinarest New Tablet' while our catalogue name is plain 'Sinarest'. 'New' is a reformulation marker on the base SKU, not a separate variant line. The qualified variants -- AF, LP, Levo, CCF, FX, FXP, OD, Plus, and the Plus/LP suspensions and syrups -- all carry different compositions and were rejected. Composition on the accepted pages (paracetamol 500mg + phenylephrine 10mg + chlorpheniramine 2mg) matches our description 'decongestant and antihistamine tablet for common cold and nasal congestion'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 63,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/sinarest-new-tablet-648652",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "centaur-pharmaceuticals-pvt-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is 'Sinarest New Tablet'; manufacturer field reads 'centaur-pharmaceuticals-pvt-ltd', matching catalogue 'Centaur Pharmaceuticals' (legal-entity suffix aside).",
+        "notes": "MEDIUM, not HIGH: the live product name is 'Sinarest New Tablet' while our catalogue name is plain 'Sinarest'. 'New' is a reformulation marker on the base SKU, not a separate variant line. The qualified variants -- AF, LP, Levo, CCF, FX, FXP, OD, Plus, and the Plus/LP suspensions and syrups -- all carry different compositions and were rejected. Composition on the accepted pages (paracetamol 500mg + phenylephrine 10mg + chlorpheniramine 2mg) matches our description 'decongestant and antihistamine tablet for common cold and nasal congestion'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 63,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/sinarest-new-tablet-15s-lui536-8298626",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Centaur Pharmaceuticals Pvt Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is 'Sinarest New Tablet'; manufacturer field reads 'Centaur Pharmaceuticals Pvt Ltd', matching catalogue 'Centaur Pharmaceuticals' (legal-entity suffix aside).",
+        "notes": "MEDIUM, not HIGH: the live product name is 'Sinarest New Tablet' while our catalogue name is plain 'Sinarest'. 'New' is a reformulation marker on the base SKU, not a separate variant line. The qualified variants -- AF, LP, Levo, CCF, FX, FXP, OD, Plus, and the Plus/LP suspensions and syrups -- all carry different compositions and were rejected. Composition on the accepted pages (paracetamol 500mg + phenylephrine 10mg + chlorpheniramine 2mg) matches our description 'decongestant and antihistamine tablet for common cold and nasal congestion'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 63,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/sinarest-new-strip-of-15-tablets-3132705",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "CENTAUR PHARMACEUTICALS PVT LTD"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is 'Sinarest New Tablet'; manufacturer field reads 'CENTAUR PHARMACEUTICALS PVT LTD', matching catalogue 'Centaur Pharmaceuticals' (legal-entity suffix aside).",
+        "notes": "MEDIUM, not HIGH: the live product name is 'Sinarest New Tablet' while our catalogue name is plain 'Sinarest'. 'New' is a reformulation marker on the base SKU, not a separate variant line. The qualified variants -- AF, LP, Levo, CCF, FX, FXP, OD, Plus, and the Plus/LP suspensions and syrups -- all carry different compositions and were rejected. Composition on the accepted pages (paracetamol 500mg + phenylephrine 10mg + chlorpheniramine 2mg) matches our description 'decongestant and antihistamine tablet for common cold and nasal congestion'."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 66,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/neurobion-forte-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Procter & Gamble Health Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Buy Neurobion Forte (30 Tablets)'; manufacturer 'Procter & Gamble Health Ltd' -- exact match to catalogue 'Procter & Gamble Health'.",
+        "notes": "Extracted salt lists on these pages include tokens such as Vitamin D3, Cholecalciferol, Ascorbic and Tocopherol that belong to the related-products/substitutes sections, not to this product; they are page-template artifacts. Neurobion Plus, Neurobion Forte Plus, Neurobion OD, MET Neurobion and the Neurobion Forte RF/plain injections were all rejected as different products or dosage forms. Noted for the catalogue, not corrected: our description says 'Vitamin B1, B6 and B12' while Apollo, 1mg and PharmEasy describe the tablet as six B vitamins (B1, B2, B3, B5, B6, B12); Netmeds itself describes it as B1/B6/B12, so the pharmacies disagree with each other on the vitamin count. Brand name and marketer are unambiguous, so this did not affect acceptance."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 66,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/neurobion-forte-tablet-otc356742",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "procter-gamble-health-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": "https://www.1mg.com/otc/neurobion-forte-tablet-relief-from-tingling-numbness-weakness-otc356742",
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "YES",
+        "evidence": "HTTP 200 with one redirect to the canonical descriptive slug. Marketer 'procter-gamble-health-ltd' -- exact match to catalogue.",
+        "notes": "Extracted salt lists on these pages include tokens such as Vitamin D3, Cholecalciferol, Ascorbic and Tocopherol that belong to the related-products/substitutes sections, not to this product; they are page-template artifacts. Neurobion Plus, Neurobion Forte Plus, Neurobion OD, MET Neurobion and the Neurobion Forte RF/plain injections were all rejected as different products or dosage forms. Noted for the catalogue, not corrected: our description says 'Vitamin B1, B6 and B12' while Apollo, 1mg and PharmEasy describe the tablet as six B vitamins (B1, B2, B3, B5, B6, B12); Netmeds itself describes it as B1/B6/B12, so the pharmacies disagree with each other on the vitamin count. Brand name and marketer are unambiguous, so this did not affect acceptance."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": "https://www.1mg.com/otc/neurobion-forte-tablet-relief-from-tingling-numbness-weakness-otc356742",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 66,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/neurobion-forte-tablet-30s-lui5uq-8313494",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Procter & Gamble"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Neurobion Forte Tablet 30'S'; manufacturer field reads 'Procter & Gamble'.",
+        "notes": "MEDIUM, not HIGH: the Netmeds manufacturer field reads 'Procter & Gamble' without the 'Health' suffix that our catalogue and the other three pharmacies carry. Same corporate group, lower granularity. Extracted salt lists on these pages include tokens such as Vitamin D3, Cholecalciferol, Ascorbic and Tocopherol that belong to the related-products/substitutes sections, not to this product; they are page-template artifacts. Neurobion Plus, Neurobion Forte Plus, Neurobion OD, MET Neurobion and the Neurobion Forte RF/plain injections were all rejected as different products or dosage forms. Noted for the catalogue, not corrected: our description says 'Vitamin B1, B6 and B12' while Apollo, 1mg and PharmEasy describe the tablet as six B vitamins (B1, B2, B3, B5, B6, B12); Netmeds itself describes it as B1/B6/B12, so the pharmacies disagree with each other on the vitamin count. Brand name and marketer are unambiguous, so this did not affect acceptance."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 66,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/health-care/products/neurobion-forte-tablet-30-s-175817",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PROCTER & GAMBLE HEALTH LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Manufacturer 'PROCTER & GAMBLE HEALTH LIMITED' -- exact match to catalogue, case aside.",
+        "notes": "Extracted salt lists on these pages include tokens such as Vitamin D3, Cholecalciferol, Ascorbic and Tocopherol that belong to the related-products/substitutes sections, not to this product; they are page-template artifacts. Neurobion Plus, Neurobion Forte Plus, Neurobion OD, MET Neurobion and the Neurobion Forte RF/plain injections were all rejected as different products or dosage forms. Noted for the catalogue, not corrected: our description says 'Vitamin B1, B6 and B12' while Apollo, 1mg and PharmEasy describe the tablet as six B vitamins (B1, B2, B3, B5, B6, B12); Netmeds itself describes it as B1/B6/B12, so the pharmacies disagree with each other on the vitamin count. Brand name and marketer are unambiguous, so this did not affect acceptance."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 69,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/medicine/lubrex-eye-drops-10ml",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Micro Labs Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is the unqualified 'Lubrex Eye Drops' 0.5% CMC 10ml; manufacturer 'Micro Labs Ltd' -- exact match to catalogue 'Micro Labs'.",
+        "notes": "Lubrex DS (1% CMC), Lubrex PM (5% eye gel), Lubrex Uno (0.4ml unit dose) and the lookalike brands Lubrix, Lubix, Lubcar, Lubrifresh and Lubrimoist were all rejected. The accepted pages are the unqualified 0.5% carboxymethylcellulose 10ml product, which is the single base SKU at Apollo, 1mg and Netmeds."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 69,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/lubrex-eye-drop-115485",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "micro-labs-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is the unqualified 'Lubrex Eye Drops' 0.5% CMC 10ml; manufacturer 'micro-labs-ltd' -- exact match to catalogue 'Micro Labs'.",
+        "notes": "Lubrex DS (1% CMC), Lubrex PM (5% eye gel), Lubrex Uno (0.4ml unit dose) and the lookalike brands Lubrix, Lubix, Lubcar, Lubrifresh and Lubrimoist were all rejected. The accepted pages are the unqualified 0.5% carboxymethylcellulose 10ml product, which is the single base SKU at Apollo, 1mg and Netmeds."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 69,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/lubrex-eye-drops-10ml-lufu8c-7512992",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Micro Labs Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is the unqualified 'Lubrex Eye Drops' 0.5% CMC 10ml; manufacturer 'Micro Labs Ltd' -- exact match to catalogue 'Micro Labs'.",
+        "notes": "Lubrex DS (1% CMC), Lubrex PM (5% eye gel), Lubrex Uno (0.4ml unit dose) and the lookalike brands Lubrix, Lubix, Lubcar, Lubrifresh and Lubrimoist were all rejected. The accepted pages are the unqualified 0.5% carboxymethylcellulose 10ml product, which is the single base SKU at Apollo, 1mg and Netmeds."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 69,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/lubrex-0-5-eye-drops-10ml-19598",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "MICRO LABS"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Lubrex Bottle Eye Drops'; the SKU is the 0.5% 10ml bottle; manufacturer 'MICRO LABS' matches catalogue 'Micro Labs'.",
+        "notes": "MEDIUM, not HIGH: PharmEasy uniquely carries a second unqualified-name SKU, 'Lubrex 0.05% Eye Drop (5ml)', at a stated concentration ten times lower. Our record carries no strength, so the base name is not self-disambiguating on this pharmacy alone; the 0.5% 10ml SKU was chosen because it is the concentration and pack that Apollo, 1mg and Netmeds all serve as the base product. Lubrex DS (1% CMC), Lubrex PM (5% eye gel), Lubrex Uno (0.4ml unit dose) and the lookalike brands Lubrix, Lubix, Lubcar, Lubrifresh and Lubrimoist were all rejected. The accepted pages are the unqualified 0.5% carboxymethylcellulose 10ml product, which is the single base SKU at Apollo, 1mg and Netmeds."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 70,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/folvite-5mg-tablet",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is Folvite (folic acid 5mg); manufacturer 'Pfizer Ltd' -- match to catalogue 'Pfizer Limited'.",
+        "notes": "Folvite is marketed at a single strength (5mg), so the unqualified catalogue name is unambiguous. Folvite MB (capsule, methylcobalamin combination) and the lookalike brands Folvit, Fol-5, Folitas, Foly, Folmine, Folic, Folrite, Folate, Folzin, Foliride and Folitab were all rejected. Extracted salt tokens (Riboflavin, Aspirin, Metformin, Pyridoxine, Vitamin D3) are related-product template artifacts, not this product's composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 70,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/drugs/folvite-5mg-tablet-138032",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "pfizer-ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is Folvite (folic acid 5mg); manufacturer 'pfizer-ltd' -- match to catalogue 'Pfizer Limited'.",
+        "notes": "Folvite is marketed at a single strength (5mg), so the unqualified catalogue name is unambiguous. Folvite MB (capsule, methylcobalamin combination) and the lookalike brands Folvit, Fol-5, Folitas, Foly, Folmine, Folic, Folrite, Folate, Folzin, Foliride and Folitab were all rejected. Extracted salt tokens (Riboflavin, Aspirin, Metformin, Pyridoxine, Vitamin D3) are related-product template artifacts, not this product's composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 70,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/folvite-5mg-tablet-30s-lui5rz-8310176",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Pfizer Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is Folvite (folic acid 5mg); manufacturer 'Pfizer Ltd' -- match to catalogue 'Pfizer Limited'.",
+        "notes": "Folvite is marketed at a single strength (5mg), so the unqualified catalogue name is unambiguous. Folvite MB (capsule, methylcobalamin combination) and the lookalike brands Folvit, Fol-5, Folitas, Foly, Folmine, Folic, Folrite, Folate, Folzin, Foliride and Folitab were all rejected. Extracted salt tokens (Riboflavin, Aspirin, Metformin, Pyridoxine, Vitamin D3) are related-product template artifacts, not this product's composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 70,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/folvite-5mg-strip-of-45-tablets-29621",
+        "confidence": "HIGH",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "PFIZER LIMITED"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "HIGH",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Live page is Folvite (folic acid 5mg); manufacturer 'PFIZER LIMITED' -- match to catalogue 'Pfizer Limited'.",
+        "notes": "Folvite is marketed at a single strength (5mg), so the unqualified catalogue name is unambiguous. Folvite MB (capsule, methylcobalamin combination) and the lookalike brands Folvit, Fol-5, Folitas, Foly, Folmine, Folic, Folrite, Folate, Folzin, Foliride and Folitab were all rejected. Extracted salt tokens (Riboflavin, Aspirin, Metformin, Pyridoxine, Vitamin D3) are related-product template artifacts, not this product's composition."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.95,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 75,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.apollopharmacy.in/otc/burnol-cream-15g",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Morepen Laboratories Ltd"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Dr.Morepen Burnol Cream, 15 gm'; manufacturer 'Morepen Laboratories Ltd'.",
+        "notes": "All four accepted pages are the plain aminacrine + cetrimide antiseptic cream. Burnol Plus, Burnol Prickderm, Burnol Spray, Burnol Povidine, Burnol Dual Antiseptic and the Burnol antiseptic solutions were rejected as different formulations or dosage forms. Entity-granularity note, not a conflict: no pharmacy states our exact catalogue string 'Dr. Morepen Laboratories'. Apollo and PharmEasy give the legal entity 'Morepen Laboratories', Netmeds and 1mg give the consumer-brand entity 'Dr. Morepen Limited'. Both denote the same company, so every accepted row is capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 75,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.1mg.com/otc/dr.-morepen-burnol-cream-otc798469",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dr. Morepen Limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": "https://www.1mg.com/otc/dr.-morepen-burnol-antiseptic-germ-control-cream-fights-infections-otc798469",
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "YES",
+        "evidence": "HTTP 200 with one redirect to the canonical descriptive slug. The page's schema.org 'manufacturer' names 'A)Biodeal Pharmaceuticals Pvt. Ltd.', a contract manufacturing site; the MARKETER field on the same page reads 'Dr. Morepen Limited' and the brand field reads 'Dr. Morepen'. Composition confirmed on-page as aminacrine + cetrimide, i.e. plain Burnol.",
+        "notes": "The marketer field, not the schema.org manufacturer field, is the value matched here -- the same contract-manufacturer pattern seen previously with Akums, Recipharm and Encore Healthcare. All four accepted pages are the plain aminacrine + cetrimide antiseptic cream. Burnol Plus, Burnol Prickderm, Burnol Spray, Burnol Povidine, Burnol Dual Antiseptic and the Burnol antiseptic solutions were rejected as different formulations or dosage forms. Entity-granularity note, not a conflict: no pharmacy states our exact catalogue string 'Dr. Morepen Laboratories'. Apollo and PharmEasy give the legal entity 'Morepen Laboratories', Netmeds and 1mg give the consumer-brand entity 'Dr. Morepen Limited'. Both denote the same company, so every accepted row is capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "REDIRECT_VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": "https://www.1mg.com/otc/dr.-morepen-burnol-antiseptic-germ-control-cream-fights-infections-otc798469",
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 75,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://www.netmeds.com/product/drmorepen-burnol-cream-20-gm-lui4x7-8294419",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Dr Morepen Limited"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Dr.Morepen Burnol Cream 20 gm'; manufacturer 'Dr Morepen Limited'.",
+        "notes": "All four accepted pages are the plain aminacrine + cetrimide antiseptic cream. Burnol Plus, Burnol Prickderm, Burnol Spray, Burnol Povidine, Burnol Dual Antiseptic and the Burnol antiseptic solutions were rejected as different formulations or dosage forms. Entity-granularity note, not a conflict: no pharmacy states our exact catalogue string 'Dr. Morepen Laboratories'. Apollo and PharmEasy give the legal entity 'Morepen Laboratories', Netmeds and 1mg give the consumer-brand entity 'Dr. Morepen Limited'. Both denote the same company, so every accepted row is capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    },
+    {
+      "medicine_id": 75,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "FOUND",
+        "product_url": "https://pharmeasy.in/online-medicine-order/burnol-cream-10gm-38470",
+        "confidence": "MEDIUM",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "MOREPEN LABORATORIES"
+      },
+      "verifier": {
+        "status": "VALID",
+        "final_url": null,
+        "product_page": "YES",
+        "match_confidence": "MEDIUM",
+        "redirect": "NO",
+        "evidence": "HTTP 200, no redirect. Title 'Burnol Cream'; manufacturer 'MOREPEN LABORATORIES'.",
+        "notes": "All four accepted pages are the plain aminacrine + cetrimide antiseptic cream. Burnol Plus, Burnol Prickderm, Burnol Spray, Burnol Povidine, Burnol Dual Antiseptic and the Burnol antiseptic solutions were rejected as different formulations or dosage forms. Entity-granularity note, not a conflict: no pharmacy states our exact catalogue string 'Dr. Morepen Laboratories'. Apollo and PharmEasy give the legal entity 'Morepen Laboratories', Netmeds and 1mg give the consumer-brand entity 'Dr. Morepen Limited'. Both denote the same company, so every accepted row is capped at MEDIUM."
+      },
+      "resolved": {
+        "verification_status": "VERIFIED",
+        "match_confidence": 0.7,
+        "final_url": null,
+        "accept": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "run_id": "batch7-rejections",
+  "generated_at": "2026-09-02T00:00:00+00:00",
+  "note": "Rejected pairs from batch 7. No URL is proposed for any of these. Medicine 68 is a catalogue-quality issue flagged for separate investigation; 62, 64 and 65 are ambiguity rejections recommended for deprioritisation; 71 is a stale marketer field on one pharmacy plus variant-only listings on the other three. No medicine record was changed.",
+  "medicine_ids": [
+    62,
+    64,
+    65,
+    68,
+    71
+  ],
+  "invocations": 20,
+  "results": [
+    {
+      "medicine_id": 62,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "All six Febrex Plus presentations (tablet, syrup, AF syrup, DS suspension, drops, AF drops) are listed on this pharmacy. Our record names no dosage form, so no single product page can be selected without guessing.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Our catalogue name is plain 'Febrex Plus' with no form, and our own description reads 'Paracetamol-based syrup AND tablet combination', naming both forms. Febrex Plus ships as tablet (paracetamol 500 + phenylephrine 10 + chlorpheniramine 2), plain syrup, AF syrup, DS suspension, drops and AF drops, which differ in composition and in strength. This is the same situation as medicine 22 (Digene), which is already deprioritised for exactly this reason. Recommended for DEPRIORITIZED_IDS. Our composition field lists only 'Acetaminophen', a known artifact of the RxNorm ingredient reduction, so it cannot break the tie either."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 62,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "All six Febrex Plus presentations (tablet, syrup, AF syrup, DS suspension, drops, AF drops) are listed on this pharmacy. Our record names no dosage form, so no single product page can be selected without guessing.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Our catalogue name is plain 'Febrex Plus' with no form, and our own description reads 'Paracetamol-based syrup AND tablet combination', naming both forms. Febrex Plus ships as tablet (paracetamol 500 + phenylephrine 10 + chlorpheniramine 2), plain syrup, AF syrup, DS suspension, drops and AF drops, which differ in composition and in strength. This is the same situation as medicine 22 (Digene), which is already deprioritised for exactly this reason. Recommended for DEPRIORITIZED_IDS. Our composition field lists only 'Acetaminophen', a known artifact of the RxNorm ingredient reduction, so it cannot break the tie either."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 62,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "All six Febrex Plus presentations (tablet, syrup, AF syrup, DS suspension, drops, AF drops) are listed on this pharmacy. Our record names no dosage form, so no single product page can be selected without guessing.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Our catalogue name is plain 'Febrex Plus' with no form, and our own description reads 'Paracetamol-based syrup AND tablet combination', naming both forms. Febrex Plus ships as tablet (paracetamol 500 + phenylephrine 10 + chlorpheniramine 2), plain syrup, AF syrup, DS suspension, drops and AF drops, which differ in composition and in strength. This is the same situation as medicine 22 (Digene), which is already deprioritised for exactly this reason. Recommended for DEPRIORITIZED_IDS. Our composition field lists only 'Acetaminophen', a known artifact of the RxNorm ingredient reduction, so it cannot break the tie either."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 62,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "All six Febrex Plus presentations (tablet, syrup, AF syrup, DS suspension, drops, AF drops) are listed on this pharmacy. Our record names no dosage form, so no single product page can be selected without guessing.",
+        "notes": "DOSAGE-FORM AMBIGUITY. Our catalogue name is plain 'Febrex Plus' with no form, and our own description reads 'Paracetamol-based syrup AND tablet combination', naming both forms. Febrex Plus ships as tablet (paracetamol 500 + phenylephrine 10 + chlorpheniramine 2), plain syrup, AF syrup, DS suspension, drops and AF drops, which differ in composition and in strength. This is the same situation as medicine 22 (Digene), which is already deprioritised for exactly this reason. Recommended for DEPRIORITIZED_IDS. Our composition field lists only 'Acetaminophen', a known artifact of the RxNorm ingredient reduction, so it cannot break the tie either."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met 50/500, 50/850 and 50/1000 mg are all listed; our record is unqualified 'Galvus Met'.",
+        "notes": "STRENGTH AMBIGUITY. Galvus Met ships as 50/500, 50/850 and 50/1000 mg at all four pharmacies and our record carries no strength. Same class of rejection as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Secondary observation, not acted on: 1mg names the marketer 'Novartis India Ltd' while Netmeds names 'Novartis Healthcare Pvt Ltd'; our record says 'Novartis India'. This was not investigated further because the strength ambiguity already blocks acceptance."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met 50/500, 50/850 and 50/1000 mg are all listed; our record is unqualified 'Galvus Met'.",
+        "notes": "STRENGTH AMBIGUITY. Galvus Met ships as 50/500, 50/850 and 50/1000 mg at all four pharmacies and our record carries no strength. Same class of rejection as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Secondary observation, not acted on: 1mg names the marketer 'Novartis India Ltd' while Netmeds names 'Novartis Healthcare Pvt Ltd'; our record says 'Novartis India'. This was not investigated further because the strength ambiguity already blocks acceptance."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met 50/500, 50/850 and 50/1000 mg are all listed; our record is unqualified 'Galvus Met'.",
+        "notes": "STRENGTH AMBIGUITY. Galvus Met ships as 50/500, 50/850 and 50/1000 mg at all four pharmacies and our record carries no strength. Same class of rejection as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Secondary observation, not acted on: 1mg names the marketer 'Novartis India Ltd' while Netmeds names 'Novartis Healthcare Pvt Ltd'; our record says 'Novartis India'. This was not investigated further because the strength ambiguity already blocks acceptance."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 64,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Galvus Met 50/500, 50/850 and 50/1000 mg are all listed; our record is unqualified 'Galvus Met'.",
+        "notes": "STRENGTH AMBIGUITY. Galvus Met ships as 50/500, 50/850 and 50/1000 mg at all four pharmacies and our record carries no strength. Same class of rejection as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Secondary observation, not acted on: 1mg names the marketer 'Novartis India Ltd' while Netmeds names 'Novartis Healthcare Pvt Ltd'; our record says 'Novartis India'. This was not investigated further because the strength ambiguity already blocks acceptance."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas 5/10/20/40/80 mg plus D, EZ, CV, CP and Trio variants are listed; our record is unqualified 'Storvas'.",
+        "notes": "STRENGTH AMBIGUITY. Storvas ships as 5, 10, 20, 40 and 80 mg, plus the Storvas D, EZ, CV, CP and Trio combination families, and our record carries no strength. Same class as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Atorvastatin + Cholesterol'. Cholesterol is not an ingredient -- medicine 65 is one of the five rows affected by the known composition-artifact bug whose fix is deferred until after the URL run."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas 5/10/20/40/80 mg plus D, EZ, CV, CP and Trio variants are listed; our record is unqualified 'Storvas'.",
+        "notes": "STRENGTH AMBIGUITY. Storvas ships as 5, 10, 20, 40 and 80 mg, plus the Storvas D, EZ, CV, CP and Trio combination families, and our record carries no strength. Same class as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Atorvastatin + Cholesterol'. Cholesterol is not an ingredient -- medicine 65 is one of the five rows affected by the known composition-artifact bug whose fix is deferred until after the URL run."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas 5/10/20/40/80 mg plus D, EZ, CV, CP and Trio variants are listed; our record is unqualified 'Storvas'.",
+        "notes": "STRENGTH AMBIGUITY. Storvas ships as 5, 10, 20, 40 and 80 mg, plus the Storvas D, EZ, CV, CP and Trio combination families, and our record carries no strength. Same class as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Atorvastatin + Cholesterol'. Cholesterol is not an ingredient -- medicine 65 is one of the five rows affected by the known composition-artifact bug whose fix is deferred until after the URL run."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 65,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Storvas 5/10/20/40/80 mg plus D, EZ, CV, CP and Trio variants are listed; our record is unqualified 'Storvas'.",
+        "notes": "STRENGTH AMBIGUITY. Storvas ships as 5, 10, 20, 40 and 80 mg, plus the Storvas D, EZ, CV, CP and Trio combination families, and our record carries no strength. Same class as Amaryl (49) and Rosuvas (50). Recommended for DEPRIORITIZED_IDS. Separately noted, not corrected: our composition field reads 'Atorvastatin + Cholesterol'. Cholesterol is not an ingredient -- medicine 65 is one of the five rows affected by the known composition-artifact bug whose fix is deferred until after the URL run."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 68,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Macleods Pharmaceuticals"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page is titled 'Panderm ++ Cream', not 'Panderm Plus Cream'; Macleods Pharmaceuticals Ltd.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Our name is 'Panderm Plus Cream', which does not distinguish 'Panderm +' from 'Panderm ++', and our record has no composition. Apollo, 1mg and Netmeds all serve the '++' product (clobetasol 0.05% + miconazole 2% + neomycin 0.5%) under a panderm-plus slug, while a separate 'Panderm +' product also exists. Decisively, PharmEasy serves TWO different products that both render the display title 'Panderm Plus Cream', both from Macleods, with verified-different compositions: /panderm-plus-plus-cream-15gm-212766 is clobetasol + miconazole + neomycin, and /panderm-plus-cream-15gm-17432 is clobetasol + ofloxacin + ornidazole + terbinafine (PharmEasy salt group 321). Three-pharmacy agreement was NOT treated as sufficient: the name our catalogue holds maps to a four-drug product on one pharmacy and a three-drug product on the others. Our description ('steroid-based cream for eczema and other inflammatory skin conditions') fits both. Panderm NM, Panderm Super, Panderm V Gel and the Panderm dusting powders were also rejected."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 68,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Macleods Pharmaceuticals"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Live page is titled 'Panderm + + Cream'; macleods-pharmaceuticals-pvt-ltd.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Our name is 'Panderm Plus Cream', which does not distinguish 'Panderm +' from 'Panderm ++', and our record has no composition. Apollo, 1mg and Netmeds all serve the '++' product (clobetasol 0.05% + miconazole 2% + neomycin 0.5%) under a panderm-plus slug, while a separate 'Panderm +' product also exists. Decisively, PharmEasy serves TWO different products that both render the display title 'Panderm Plus Cream', both from Macleods, with verified-different compositions: /panderm-plus-plus-cream-15gm-212766 is clobetasol + miconazole + neomycin, and /panderm-plus-cream-15gm-17432 is clobetasol + ofloxacin + ornidazole + terbinafine (PharmEasy salt group 321). Three-pharmacy agreement was NOT treated as sufficient: the name our catalogue holds maps to a four-drug product on one pharmacy and a three-drug product on the others. Our description ('steroid-based cream for eczema and other inflammatory skin conditions') fits both. Panderm NM, Panderm Super, Panderm V Gel and the Panderm dusting powders were also rejected."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 68,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Macleods Pharmaceuticals"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Redirects to /product/panderm-cream-15gm-lui5ia-8306024, titled 'Panderm++ Cream 15gm'; Macleods Pharmaceuticals Pvt Ltd.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Our name is 'Panderm Plus Cream', which does not distinguish 'Panderm +' from 'Panderm ++', and our record has no composition. Apollo, 1mg and Netmeds all serve the '++' product (clobetasol 0.05% + miconazole 2% + neomycin 0.5%) under a panderm-plus slug, while a separate 'Panderm +' product also exists. Decisively, PharmEasy serves TWO different products that both render the display title 'Panderm Plus Cream', both from Macleods, with verified-different compositions: /panderm-plus-plus-cream-15gm-212766 is clobetasol + miconazole + neomycin, and /panderm-plus-cream-15gm-17432 is clobetasol + ofloxacin + ornidazole + terbinafine (PharmEasy salt group 321). Three-pharmacy agreement was NOT treated as sufficient: the name our catalogue holds maps to a four-drug product on one pharmacy and a three-drug product on the others. Our description ('steroid-based cream for eczema and other inflammatory skin conditions') fits both. Panderm NM, Panderm Super, Panderm V Gel and the Panderm dusting powders were also rejected."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 68,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Macleods Pharmaceuticals"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Two distinct product pages both titled 'Panderm Plus Cream', both MACLEODS PHARMACEUTICALS, with different verified compositions.",
+        "notes": "AMBIGUOUS PRODUCT IDENTITY -- catalogue-quality issue flagged for separate investigation, NOT corrected. Our name is 'Panderm Plus Cream', which does not distinguish 'Panderm +' from 'Panderm ++', and our record has no composition. Apollo, 1mg and Netmeds all serve the '++' product (clobetasol 0.05% + miconazole 2% + neomycin 0.5%) under a panderm-plus slug, while a separate 'Panderm +' product also exists. Decisively, PharmEasy serves TWO different products that both render the display title 'Panderm Plus Cream', both from Macleods, with verified-different compositions: /panderm-plus-plus-cream-15gm-212766 is clobetasol + miconazole + neomycin, and /panderm-plus-cream-15gm-17432 is clobetasol + ofloxacin + ornidazole + terbinafine (PharmEasy salt group 321). Three-pharmacy agreement was NOT treated as sufficient: the name our catalogue holds maps to a four-drug product on one pharmacy and a three-drug product on the others. Our description ('steroid-based cream for eczema and other inflammatory skin conditions') fits both. Panderm NM, Panderm Super, Panderm V Gel and the Panderm dusting powders were also rejected."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 71,
+      "pharmacy_id": 1,
+      "pharmacy_name": "Apollo Pharmacy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "apollo-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": "Merck Ltd"
+      },
+      "verifier": {
+        "status": "AMBIGUOUS",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "Apollo's plain 'Polybion Syrup' page (HTTP 200) names the manufacturer as 'Merck Ltd', which does not match catalogue 'Procter & Gamble Health'.",
+        "notes": "No plain 'Polybion Syrup' product is offered at 1mg, Netmeds or PharmEasy -- the brand there is sold only as Polybion LC (adds lysine), Polybion Active (sugar-free B-complex + lysine), Polybion SF / SF Complete (sugar-free) and Osto Polybion (adds calcium and vitamin D), each a different composition. Apollo does still list a plain 'Polybion Syrup', but its manufacturer field reads 'Merck Ltd', the pre-acquisition name: Merck's Indian consumer-health business became Procter & Gamble Health Ltd, which is the value our catalogue holds and which 1mg confirms on the Polybion SF page (procter-gamble-health-ltd). This is a stale marketer field on Apollo, not a catalogue error, and it was rejected rather than accepted -- the same treatment given to the Apollo and PharmEasy Practin pages that still name Wockhardt. Our catalogue value is correct and is NOT being changed."
+      },
+      "resolved": {
+        "verification_status": "AMBIGUOUS",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 71,
+      "pharmacy_id": 3,
+      "pharmacy_name": "Tata 1mg",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "tata-1mg-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Polybion Syrup' product page exists on this pharmacy; only the LC, Active, SF and Osto variants are listed, each with a different composition.",
+        "notes": "No plain 'Polybion Syrup' product is offered at 1mg, Netmeds or PharmEasy -- the brand there is sold only as Polybion LC (adds lysine), Polybion Active (sugar-free B-complex + lysine), Polybion SF / SF Complete (sugar-free) and Osto Polybion (adds calcium and vitamin D), each a different composition. Apollo does still list a plain 'Polybion Syrup', but its manufacturer field reads 'Merck Ltd', the pre-acquisition name: Merck's Indian consumer-health business became Procter & Gamble Health Ltd, which is the value our catalogue holds and which 1mg confirms on the Polybion SF page (procter-gamble-health-ltd). This is a stale marketer field on Apollo, not a catalogue error, and it was rejected rather than accepted -- the same treatment given to the Apollo and PharmEasy Practin pages that still name Wockhardt. Our catalogue value is correct and is NOT being changed."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 71,
+      "pharmacy_id": 4,
+      "pharmacy_name": "Netmeds",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "netmeds-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Polybion Syrup' product page exists on this pharmacy; only the LC, Active, SF and Osto variants are listed, each with a different composition.",
+        "notes": "No plain 'Polybion Syrup' product is offered at 1mg, Netmeds or PharmEasy -- the brand there is sold only as Polybion LC (adds lysine), Polybion Active (sugar-free B-complex + lysine), Polybion SF / SF Complete (sugar-free) and Osto Polybion (adds calcium and vitamin D), each a different composition. Apollo does still list a plain 'Polybion Syrup', but its manufacturer field reads 'Merck Ltd', the pre-acquisition name: Merck's Indian consumer-health business became Procter & Gamble Health Ltd, which is the value our catalogue holds and which 1mg confirms on the Polybion SF page (procter-gamble-health-ltd). This is a stale marketer field on Apollo, not a catalogue error, and it was rejected rather than accepted -- the same treatment given to the Apollo and PharmEasy Practin pages that still name Wockhardt. Our catalogue value is correct and is NOT being changed."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    },
+    {
+      "medicine_id": 71,
+      "pharmacy_id": 5,
+      "pharmacy_name": "PharmEasy",
+      "url_type": "DIRECT_PRODUCT",
+      "finder": {
+        "source_skill": "pharmeasy-product-url-finder",
+        "status": "NO_MATCH",
+        "product_url": null,
+        "confidence": "LOW",
+        "url_status": "REACHABLE",
+        "manufacturer_found": null
+      },
+      "verifier": {
+        "status": "NOT_FOUND",
+        "final_url": null,
+        "product_page": "UNKNOWN",
+        "match_confidence": "LOW",
+        "redirect": "NO",
+        "evidence": "No unqualified 'Polybion Syrup' product page exists on this pharmacy; only the LC, Active, SF and Osto variants are listed, each with a different composition.",
+        "notes": "No plain 'Polybion Syrup' product is offered at 1mg, Netmeds or PharmEasy -- the brand there is sold only as Polybion LC (adds lysine), Polybion Active (sugar-free B-complex + lysine), Polybion SF / SF Complete (sugar-free) and Osto Polybion (adds calcium and vitamin D), each a different composition. Apollo does still list a plain 'Polybion Syrup', but its manufacturer field reads 'Merck Ltd', the pre-acquisition name: Merck's Indian consumer-health business became Procter & Gamble Health Ltd, which is the value our catalogue holds and which 1mg confirms on the Polybion SF page (procter-gamble-health-ltd). This is a stale marketer field on Apollo, not a catalogue error, and it was rejected rather than accepted -- the same treatment given to the Apollo and PharmEasy Practin pages that still name Wockhardt. Our catalogue value is correct and is NOT being changed."
+      },
+      "resolved": {
+        "verification_status": "NOT_FOUND",
+        "match_confidence": 0.4,
+        "final_url": null,
+        "accept": false
+      }
+    }
+  ]
+}
