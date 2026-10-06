@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Medyze film compositor</title>
+<!-- Same families the app ships (app/layout.tsx): Albert Sans for UI/type, Geist Mono. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    /* Brand tokens copied from app/globals.css */
+    --primary: #1f69e0;
+    --navy: #0b254e;
+    --navy-deep: #020b42;
+    --gray-500: #808080;
+    --stage: #f4f5f7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--stage); }
+  body { font-family: "Albert Sans", sans-serif; color: var(--navy-deep); -webkit-font-smoothing: antialiased; }
+  #stage { position: absolute; inset: 0; overflow: hidden; }
+
+  .seg { position: absolute; white-space: nowrap; will-change: filter, transform, opacity; transform-origin: 0 50%; }
+
+  /* Hook */
+  #hook .seg { font-size: 88px; line-height: 1; letter-spacing: -0.03em; }
+
+  /* Product window: no fake browser chrome, just a surface for the real UI. */
+  #window {
+    position: absolute; left: 600px; top: 194px; width: 1232px; height: 693px;
+    border-radius: 18px; overflow: hidden; background: #fff;
+    box-shadow: 0 0 0 1px rgba(2, 11, 66, 0.07), 0 30px 80px -30px rgba(2, 11, 66, 0.28), 0 8px 24px -12px rgba(2, 11, 66, 0.12);
+    will-change: filter, transform, opacity;
+  }
+  .layer { position: absolute; inset: 0; will-change: filter, opacity; }
+  .cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+  .cam > img.ui { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; display: block; }
+  .dim { position: absolute; background: #fff; pointer-events: none; }
+  .ring { position: absolute; border: 2px solid var(--primary); border-radius: 12px; pointer-events: none; }
+  .lift { position: absolute; overflow: hidden; border-radius: 8px; box-shadow: 0 18px 40px -16px rgba(2, 11, 66, 0.35); }
+  .lift > img { position: absolute; width: 1440px; height: 810px; }
+  .pulse { position: absolute; border-radius: 999px; border: 2px solid var(--primary); pointer-events: none; }
+
+  /* Left column labels */
+  .eyebrow { font-family: "Geist Mono", monospace; font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase; color: #8b90a0; }
+  .label { font-size: 100px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; color: var(--navy-deep); }
+  .note { font-size: 22px; font-weight: 500; letter-spacing: -0.01em; color: #5f6475; }
+
+  /* End frame */
+  .end-line { font-size: 92px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; transform-origin: 50% 50%; }
+  .end-url { font-family: "Geist Mono", monospace; font-size: 22px; color: #6b7080; letter-spacing: 0; transform-origin: 50% 50%; }
+  #brand { display: flex; align-items: center; gap: 12px; transform-origin: 50% 50%; }
+  #brand span { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: var(--navy-deep); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="hook">
+    <span class="seg" id="h-finding"   style="left:168px; top:300px; font-weight:500; color:#8b90a0;">Finding</span>
+    <span class="seg" id="h-price"     style="top:300px; font-weight:600;">the right price</span>
+    <span class="seg" id="h-shouldnt"  style="left:168px; top:410px; font-weight:500;">shouldn’t take</span>
+    <span class="seg" id="h-websites"  style="left:160px; top:540px; font-size:184px; font-weight:800; letter-spacing:-0.05em; color:var(--primary);">5 websites.</span>
+  </div>
+
+  <div id="window">
+    <div class="layer" id="L-search"><div class="cam"><img class="ui"></div></div>
+    <div class="layer" id="L-modal">
+      <div class="cam">
+        <img class="ui">
+        <div class="dims"></div>
+        <div class="lift"><img></div>
+        <div class="ring" id="ring-lowest"></div>
+        <div class="ring" id="ring-chosen"></div>
+        <div class="pulse" id="pulse-card"></div>
+        <div class="pulse" id="pulse-add"></div>
+        <div class="pulse" id="pulse-continue"></div>
+      </div>
+    </div>
+    <div class="layer" id="L-detail">
+      <div class="cam">
+        <img class="ui">
+        <div class="ring" id="ring-buy"></div>
+        <div class="pulse" id="pulse-buy"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="labels">
+    <span class="seg eyebrow" id="e-search"  style="left:96px; top:420px;">01 — Search</span>
+    <span class="seg label"   id="l-find"    style="left:92px; top:452px;">Find it.</span>
+    <span class="seg eyebrow" id="e-compare" style="left:96px; top:420px;">02 — Price comparison</span>
+    <span class="seg label"   id="l-compare" style="left:92px; top:452px;">Compare.</span>
+    <span class="seg note"    id="n-compare" style="left:96px; top:572px;"></span>
+    <span class="seg eyebrow" id="e-choose"  style="left:96px; top:420px;">03 — Offer selection</span>
+    <span class="seg eyebrow" id="e-redirect" style="left:96px; top:420px;">04 — Verified redirect</span>
+    <span class="seg label"   id="l-choose"  style="left:92px; top:452px;">Choose.</span>
+    <span class="seg note"    id="n-choose"  style="left:96px; top:572px;"></span>
+  </div>
+
+  <div id="end">
+    <span class="seg end-line" id="end-1" style="top:388px; color:var(--navy-deep);">Right product.</span>
+    <span class="seg end-line" id="end-2" style="top:494px; color:var(--primary);">Right pharmacy.</span>
+    <span class="seg end-url"  id="end-url" style="top:628px;"></span>
+    <div  class="seg" id="brand" style="top:968px;"><img src="../../public/images/logo-mark.svg" width="35" height="30" alt=""><span>Medyze</span></div>
+  </div>
+</div>
+<script src="film.js"></script>
+</body>
+</html>

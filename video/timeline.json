@@ -1,0 +1,40 @@
+{
+  "fps": 60,
+  "duration": 10,
+  "width": 1920,
+  "height": 1080,
+  "cues": {
+    "hook": {
+      "finding": -0.12,
+      "rightPrice": 0.24,
+      "shouldnt": 0.58,
+      "websites": 0.9,
+      "exit": 1.62
+    },
+    "searchIn": 1.86,
+    "searchSharp": 2.18,
+    "typeStart": 2.22,
+    "typeStep": 0.075,
+    "searchLoading": 3.08,
+    "searchResults": 3.24,
+    "searchHover": 3.7,
+    "searchOut": 4.3,
+    "cardIn": 4.34,
+    "cardSharp": 4.56,
+    "cardHover": 4.6,
+    "cardClick": 4.94,
+    "modalLoaded": 5.3,
+    "comparePush": 5.55,
+    "lowestRing": 6.05,
+    "addClick": 7.12,
+    "addedSharp": 7.3,
+    "continueFrame": 7.7,
+    "continueClick": 8.22,
+    "detailIn": 8.26,
+    "detailSharp": 8.46,
+    "buyClick": 9.04,
+    "redirect": 9.08,
+    "endOut": 9.42,
+    "endSharp": 9.66
+  }
+}
