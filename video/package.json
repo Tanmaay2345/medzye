@@ -1,0 +1,15 @@
+{
+  "name": "medyze-product-film",
+  "private": true,
+  "type": "module",
+  "description": "10-second product film for Medyze, captured from the real running app. Isolated from the production app.",
+  "scripts": {
+    "capture": "node capture.mjs",
+    "render": "node render.mjs",
+    "audio": "python3 audio.py",
+    "film": "node capture.mjs && python3 audio.py && node render.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

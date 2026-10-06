@@ -1,0 +1,6 @@
+node_modules/
+captures/
+frames/
+output/stills/
+output/audio.wav
+output/type-preview.mp4
